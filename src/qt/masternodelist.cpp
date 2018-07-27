@@ -1,5 +1,6 @@
 // Copyright (c) 2014-2016 The Dash Developers
 // Copyright (c) 2016-2018 The PIVX developers
+// Copyright (c) 2018 The MYCE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -32,12 +33,12 @@ MasternodeList::MasternodeList(QWidget* parent) : QWidget(parent),
 
     ui->startButton->setEnabled(false);
 
-    int columnAliasWidth = 100;
-    int columnAddressWidth = 200;
-    int columnProtocolWidth = 60;
-    int columnStatusWidth = 80;
-    int columnActiveWidth = 130;
-    int columnLastSeenWidth = 130;
+    int columnAliasWidth = 35;
+    int columnAddressWidth = 138;
+    int columnProtocolWidth = 63;
+    int columnStatusWidth = 65;
+    int columnActiveWidth = 65;
+    int columnLastSeenWidth = 125;
 
     ui->tableWidgetMyMasternodes->setAlternatingRowColors(true);
     ui->tableWidgetMyMasternodes->setColumnWidth(0, columnAliasWidth);

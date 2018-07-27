@@ -1,5 +1,6 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2017-2018 The PIVX developers
+// Copyright (c) 2018 The MYCE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -61,8 +62,27 @@ public:
         // 25000 rounds is just under 0.1 seconds on a 1.86 GHz Pentium M
         // ie slightly lower than the lowest hardware we need bother supporting
         nDeriveIterations = 25000;
-        nDerivationMethod = 0;
+        nDerivationMethod = 1;
         vchOtherDerivationParameters = std::vector<unsigned char>(0);
+    }
+
+    CMasterKey(unsigned int nDerivationMethodIndex)
+    {
+        switch (nDerivationMethodIndex)
+        {
+            case 0: // sha512
+            default:
+                nDeriveIterations = 25000;
+                nDerivationMethod = 0;
+                vchOtherDerivationParameters = std::vector<unsigned char>(0);
+            break;
+
+            case 1: // scrypt+sha512
+                nDeriveIterations = 10000;
+                nDerivationMethod = 1;
+                vchOtherDerivationParameters = std::vector<unsigned char>(0);
+            break;
+        }
     }
 };
 

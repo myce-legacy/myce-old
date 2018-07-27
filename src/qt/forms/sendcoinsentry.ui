@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>729</width>
-    <height>156</height>
+    <width>646</width>
+    <height>182</height>
    </rect>
   </property>
   <property name="focusPolicy">
@@ -27,10 +27,29 @@
     <enum>QFrame::Sunken</enum>
    </property>
    <layout class="QGridLayout" name="gridLayout">
+    <property name="topMargin">
+     <number>9</number>
+    </property>
+    <property name="rightMargin">
+     <number>15</number>
+    </property>
     <property name="spacing">
      <number>12</number>
     </property>
-    <item row="0" column="0">
+    <item row="0" column="1">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="0">
      <widget class="QLabel" name="payToLabel">
       <property name="text">
        <string>Pay &amp;To:</string>
@@ -43,17 +62,43 @@
       </property>
      </widget>
     </item>
-    <item row="0" column="1">
+    <item row="3" column="0">
+     <widget class="QLabel" name="amountLabel">
+      <property name="text">
+       <string>A&amp;mount:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="buddy">
+       <cstring>payAmount</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
      <layout class="QHBoxLayout" name="payToLayout">
       <property name="spacing">
        <number>0</number>
       </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
       <item>
-       <widget class="QValidatedLineEdit" name="payTo">
-        <property name="toolTip">
-         <string>The PIVX address to send the payment to</string>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="leftMargin">
+         <number>0</number>
         </property>
-       </widget>
+        <property name="rightMargin">
+         <number>15</number>
+        </property>
+        <item>
+         <widget class="QValidatedLineEdit" name="payTo">
+          <property name="toolTip">
+           <string>The MYCE address to send the payment to</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </item>
       <item>
        <widget class="QToolButton" name="addressBookButton">
@@ -64,8 +109,14 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="../pivx.qrc">
+         <iconset resource="../myce.qrc">
           <normaloff>:/icons/address-book</normaloff>:/icons/address-book</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>23</width>
+          <height>23</height>
+         </size>
         </property>
         <property name="shortcut">
          <string>Alt+A</string>
@@ -81,8 +132,14 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="../pivx.qrc">
+         <iconset resource="../myce.qrc">
           <normaloff>:/icons/editpaste</normaloff>:/icons/editpaste</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>23</width>
+          <height>23</height>
+         </size>
         </property>
         <property name="shortcut">
          <string>Alt+P</string>
@@ -98,14 +155,62 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="../pivx.qrc">
+         <iconset resource="../myce.qrc">
           <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>23</width>
+          <height>23</height>
+         </size>
         </property>
        </widget>
       </item>
      </layout>
     </item>
-    <item row="1" column="0">
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="addAsLabel">
+      <property name="toolTip">
+       <string>Enter a label for this address to add it to the list of used addresses</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="BitcoinAmountField" name="payAmount"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="messageLabel">
+      <property name="maximumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Message:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QLabel" name="messageTextLabel">
+      <property name="maximumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="toolTip">
+       <string>A message that was attached to the MYCE: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MYCE network.</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::PlainText</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
      <widget class="QLabel" name="labelLabel">
       <property name="text">
        <string>&amp;Label:</string>
@@ -118,48 +223,18 @@
       </property>
      </widget>
     </item>
-    <item row="1" column="1">
-     <widget class="QLineEdit" name="addAsLabel">
-      <property name="toolTip">
-       <string>Enter a label for this address to add it to the list of used addresses</string>
+    <item row="4" column="1">
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
       </property>
-     </widget>
-    </item>
-    <item row="2" column="0">
-     <widget class="QLabel" name="amountLabel">
-      <property name="text">
-       <string>A&amp;mount:</string>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
       </property>
-      <property name="alignment">
-       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-      </property>
-      <property name="buddy">
-       <cstring>payAmount</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="1">
-     <widget class="BitcoinAmountField" name="payAmount"/>
-    </item>
-    <item row="3" column="0">
-     <widget class="QLabel" name="messageLabel">
-      <property name="text">
-       <string>Message:</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="1">
-     <widget class="QLabel" name="messageTextLabel">
-      <property name="toolTip">
-       <string>A message that was attached to the PIVX: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the PIVX network.</string>
-      </property>
-      <property name="textFormat">
-       <enum>Qt::PlainText</enum>
-      </property>
-     </widget>
+     </spacer>
     </item>
    </layout>
   </widget>
@@ -622,7 +697,7 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="../pivx.qrc">
+         <iconset resource="../myce.qrc">
           <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
         </property>
        </widget>
@@ -1158,7 +1233,7 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="../pivx.qrc">
+         <iconset resource="../myce.qrc">
           <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
         </property>
        </widget>
@@ -1215,10 +1290,10 @@
    <class>BitcoinAmountField</class>
    <extends>QLineEdit</extends>
    <header>bitcoinamountfield.h</header>
+   <container>1</container>
   </customwidget>
  </customwidgets>
  <tabstops>
-  <tabstop>payTo</tabstop>
   <tabstop>addressBookButton</tabstop>
   <tabstop>pasteButton</tabstop>
   <tabstop>deleteButton</tabstop>
@@ -1230,7 +1305,7 @@
   <tabstop>deleteButton_s</tabstop>
  </tabstops>
  <resources>
-  <include location="../pivx.qrc"/>
+  <include location="../myce.qrc"/>
  </resources>
  <connections/>
 </ui>

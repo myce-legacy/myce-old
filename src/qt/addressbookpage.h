@@ -1,5 +1,6 @@
 // Copyright (c) 2011-2013 The Bitcoin developers
 // Copyright (c) 2017 The PIVX developers
+// Copyright (c) 2018 The MYCE developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -8,8 +9,11 @@
 
 #include <QDialog>
 
+
 class AddressTableModel;
 class OptionsModel;
+class ClientModel;
+class WalletModel;
 
 namespace Ui
 {
@@ -30,6 +34,7 @@ class AddressBookPage : public QDialog
 {
     Q_OBJECT
 
+
 public:
     enum Tabs {
         SendingTab = 0,
@@ -41,10 +46,13 @@ public:
         ForEditing    /**< Open address book for editing */
     };
 
-    explicit AddressBookPage(Mode mode, Tabs tab, QWidget* parent);
+    explicit AddressBookPage(Mode mode, Tabs tab, QWidget* parent = 0);
     ~AddressBookPage();
 
     void setModel(AddressTableModel* model);
+    void setClientModel(ClientModel* clientModel);
+    void setWalletModel(WalletModel* walletModel);
+
     const QString& getReturnValue() const { return returnValue; }
 
 public slots:
@@ -53,6 +61,8 @@ public slots:
 private:
     Ui::AddressBookPage* ui;
     AddressTableModel* model;
+    ClientModel* clientModel;
+    WalletModel* walletModel;
     Mode mode;
     Tabs tab;
     QString returnValue;
