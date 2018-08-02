@@ -125,20 +125,20 @@ public:
         nTargetSpacing = 1 * 60;  // PIVX: 1 minute
         nMaturity = 5;
         nMasternodeCountDrift = 20;
-        nMaxMoneyOut = 21000000 * COIN;
+        nMaxMoneyOut = 250000000 * COIN;
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 200000;
         nPOSStartBlock = 9999;
         nMandatoryUpgradeBlock = 284000;
-        nModifierUpdateBlock = 284001;
-        nZerocoinStartHeight = 284002;
+        nModifierUpdateBlock = 284001; // +1
+        nZerocoinStartHeight = 284002; // +2
         nZerocoinStartTime = 1508214600; // October 17, 2017 4:30:00 AM
-        nBlockEnforceSerialRange = 284004; //Enforce serial range starting this block
-        nBlockRecalculateAccumulators = 284005; //Trigger a recalculation of accumulators
-        nBlockFirstFraudulent = 284003; //First block that bad serials emerged
-        nBlockLastGoodCheckpoint = 284005; //Last valid accumulator checkpoint
-        nBlockEnforceInvalidUTXO = 284001; //Start enforcing the invalid UTXO's
+        nBlockEnforceSerialRange = 284004; // +4 Enforce serial range starting this block
+        nBlockRecalculateAccumulators = 284005; // +5 Trigger a recalculation of accumulators
+        nBlockFirstFraudulent = 284003; // +3 First block that bad serials emerged
+        nBlockLastGoodCheckpoint = 284005; // +5 Last valid accumulator checkpoint
+        nBlockEnforceInvalidUTXO = 284001; // +1 Start enforcing the invalid UTXO's
         nInvalidAmountFiltered = 0*COIN; //Amount of invalid coins filtered through exchanges, that should be considered valid
         nBlockZerocoinV2 = nZerocoinStartHeight + 100; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
         nEnforceNewSporkKey = 1525158000; //!> Sporks signed after (GMT): Tuesday, May 1, 2018 7:00:00 AM GMT must use the new spork key
@@ -199,7 +199,7 @@ public:
         fMineBlocksOnDemand = false;
         fSkipProofOfWorkCheck = false;
         fTestnetToBeDeprecatedFieldRPC = false;
-        fHeadersFirstSyncingActive = false;
+        fHeadersFirstSyncingActive = true;
 
         nPoolMaxTransactions = 3;
         strSporkKey = "046f78dcf911fbd61910136f7f0f8d90578f68d0b3ac973b5040fb7afb501b5939f39b108b0569dca71488f5bbf498d92e4d1194f6f941307ffd95f75e76869f0e";

@@ -1813,6 +1813,9 @@ int64_t GetBlockValue(int nHeight)
     }
 
     int64_t nSubsidy = 0;
+    // if (block.IsProofOfStake())
+    // PoS subsidy
+    // else
     if (nHeight == 1){
         nSubsidy = 250 * COIN;
     } else if (nHeight > 1 && nHeight <= 11){
