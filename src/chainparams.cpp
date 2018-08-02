@@ -131,16 +131,16 @@ public:
         nLastPOWBlock = 200000;
         nPOSStartBlock = 9999;
         nMandatoryUpgradeBlock = 284000;
-        nModifierUpdateBlock = nMandatoryUpgradeBlock;
-        nZerocoinStartHeight = nMandatoryUpgradeBlock;
+        nModifierUpdateBlock = nMandatoryUpgradeBlock + 1;
+        nZerocoinStartHeight = nMandatoryUpgradeBlock + 3;
         nZerocoinStartTime = 1508214600; // October 17, 2017 4:30:00 AM
-        nBlockEnforceSerialRange = nMandatoryUpgradeBlock; //Enforce serial range starting this block
-        nBlockRecalculateAccumulators = 908000; //Trigger a recalculation of accumulators
-        nBlockFirstFraudulent = 891737; //First block that bad serials emerged
-        nBlockLastGoodCheckpoint = 891730; //Last valid accumulator checkpoint
-        nBlockEnforceInvalidUTXO = nMandatoryUpgradeBlock; //Start enforcing the invalid UTXO's
-        nInvalidAmountFiltered = 268200*COIN; //Amount of invalid coins filtered through exchanges, that should be considered valid
-        nBlockZerocoinV2 = nMandatoryUpgradeBlock + 1; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
+        nBlockEnforceSerialRange = nMandatoryUpgradeBlock + 1; //Enforce serial range starting this block
+        nBlockRecalculateAccumulators = nMandatoryUpgradeBlock; //Trigger a recalculation of accumulators
+        nBlockFirstFraudulent = nMandatoryUpgradeBlock + 2; //First block that bad serials emerged
+        nBlockLastGoodCheckpoint = nMandatoryUpgradeBlock; //Last valid accumulator checkpoint
+        nBlockEnforceInvalidUTXO = nMandatoryUpgradeBlock + 1; //Start enforcing the invalid UTXO's
+        nInvalidAmountFiltered = 0*COIN; //Amount of invalid coins filtered through exchanges, that should be considered valid
+        nBlockZerocoinV2 = nZerocoinStartHeight + 100; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
         nEnforceNewSporkKey = 1525158000; //!> Sporks signed after (GMT): Tuesday, May 1, 2018 7:00:00 AM GMT must use the new spork key
         nRejectOldSporkKey = 1527811200; //!> Fully reject old spork key after (GMT): Friday, June 1, 2018 12:00:00 AM
 
