@@ -133,7 +133,7 @@ public:
         nMandatoryUpgradeBlock = 284000;
         nModifierUpdateBlock = 284001; // +1
         nZerocoinStartHeight = 284002; // +2
-        nZerocoinStartTime = 1508214600; // October 17, 2017 4:30:00 AM
+        nZerocoinStartTime = 1532677440; // October 17, 2017 4:30:00 AM
         nBlockEnforceSerialRange = 284004; // +4 Enforce serial range starting this block
         nBlockRecalculateAccumulators = 284005; // +5 Trigger a recalculation of accumulators
         nBlockFirstFraudulent = 284003; // +3 First block that bad serials emerged
