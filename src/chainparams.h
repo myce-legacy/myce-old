@@ -114,6 +114,7 @@ public:
 
     /** Height or Time Based Activations **/
     int ModifierUpgradeBlock() const { return nModifierUpdateBlock; }
+    int WALLET_UPGRADE_BLOCK() const { return nMandatoryUpgradeBlock; }
     int LAST_POW_BLOCK() const { return nLastPOWBlock; }
     int POS_START_BLOCK() const { return nPOSStartBlock; }
     int Zerocoin_StartHeight() const { return nZerocoinStartHeight; }
