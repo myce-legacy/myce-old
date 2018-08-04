@@ -349,9 +349,6 @@ bool CheckProofOfStake(const CBlock block, uint256& hashProofOfStake, std::uniqu
     if (!tx.IsCoinStake())
         return error("CheckProofOfStake() : called on non-coinstake %s", tx.GetHash().ToString().c_str());
 
-    if (block.nVersion > 8 && block.nHeight < Params().WALLET_UPGRADE_BLOCK())
-        return error("CheckProofOfStake(): INFO: staking on new wallet disabled until block %d", Params().WALLET_UPGRADE_BLOCK());
-
     // Kernel (input 0) must match the stake hash target per coin age (nBits)
     const CTxIn& txin = tx.vin[0];
 
@@ -381,6 +378,9 @@ bool CheckProofOfStake(const CBlock block, uint256& hashProofOfStake, std::uniqu
     CBlockIndex* pindex = stake->GetIndexFrom();
     if (!pindex)
         return error("%s: Failed to find the block index", __func__);
+
+    if (block.nVersion > 8 && pindex->nHeight < Params().WALLET_UPGRADE_BLOCK())
+        return error("CheckProofOfStake(): INFO: staking on new wallet disabled until block %d", Params().WALLET_UPGRADE_BLOCK());
 
     // Read block header
     CBlock blockprev;
