@@ -141,7 +141,9 @@ protected:
     int nToCheckBlockUpgradeMajority;
     int64_t nTargetTimespan;
     int64_t nTargetSpacing;
+    int nMandatoryUpgradeBlock;
     int nLastPOWBlock;
+    int nPOSStartBlock;
     int nMasternodeCountDrift;
     int nMaturity;
     int nModifierUpdateBlock;

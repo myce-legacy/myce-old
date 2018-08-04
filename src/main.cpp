@@ -52,7 +52,7 @@ using namespace std;
 using namespace libzerocoin;
 
 #if defined(NDEBUG)
-#error "PIVX cannot be compiled without assertions."
+#error "MYCE cannot be compiled without assertions."
 #endif
 
 /**
@@ -80,7 +80,7 @@ bool fVerifyingBlocks = false;
 unsigned int nCoinCacheSize = 5000;
 bool fAlerts = DEFAULT_ALERTS;
 
-unsigned int nStakeMinAge = 60 * 60;
+unsigned int nStakeMinAge = 120; // set to 60 * 60 * 6 after testing // 6 hours
 int64_t nReserveBalance = 0;
 
 /** Fees smaller than this (in upiv) are considered zero fee (for relaying and mining)
@@ -1812,26 +1812,69 @@ int64_t GetBlockValue(int nHeight)
             return 250000 * COIN;
     }
 
-    int64_t nSubsidy = 0;
-    // if (block.IsProofOfStake())
-    // PoS subsidy
-    // else
-    if (nHeight == 1){
-        nSubsidy = 250 * COIN;
-    } else if (nHeight > 1 && nHeight <= 11){
-        nSubsidy = 3500000 * COIN;
-    } else if (nHeight > 11 && nHeight <= 20000){
-        nSubsidy = 50 * COIN;
-    } else if (nHeight > 20000 && nHeight <= 50000){
-        nSubsidy = 25 * COIN;
-    } else if(nHeight > 50000 && nHeight <= 100000){
-        nSubsidy = 20 * COIN;
-    } else if(nHeight > 100000 && nHeight <= 200000){
-        nSubsidy = 10 * COIN;
-    } else {
-        nSubsidy = 10 * COIN; //needs adjustment
-    }
-    return nSubsidy;
+	int64_t nSubsidy = 0;
+	if (chainActive[nHeight].IsProofOfStake())
+	{
+		if (nHeight >= 10000 && nHeight <= 50000)
+		{
+			nSubsidy = 25 * COIN;
+		} else if (nHeight <= 100000 && nHeight > 50000)
+		{
+			nSubsidy = 50 * COIN;
+		} else if (nHeight <= 150000 && nHeight > 100000)
+		{
+			nSubsidy = 75 * COIN;
+		} else if (nHeight <= 200000 && nHeight > 150000)
+		{
+			nSubsidy = 100 * COIN;
+		} else if (nHeight <= 250000 && nHeight > 200000)
+		{
+			nSubsidy = 75 * COIN;
+		} else if (nHeight <= 300000 && nHeight > 250000)
+		{
+			nSubsidy = 10000 * COIN; // set to 100 after testing
+		} else if (nHeight <= 350000 && nHeight > 300000)
+		{
+			nSubsidy = 10000 * COIN; // should be 75
+		} else if (nHeight <= 400000 && nHeight > 350000)
+		{
+			nSubsidy = 50 * COIN;
+		} else if (nHeight <= 450000 && nHeight > 400000)
+		{
+			nSubsidy = 25 * COIN;
+		} else if (nHeight <= 500000 && nHeight > 450000)
+		{
+			nSubsidy = 20 * COIN;
+		} else
+		{
+			nSubsidy = 10 * COIN;
+		}
+	}
+	else
+	{
+		if (nHeight == 1)
+		{
+			nSubsidy = 250 * COIN;
+		} else if (nHeight > 1 && nHeight <= 11)
+		{
+			nSubsidy = 3500000 * COIN;
+		} else if (nHeight > 11 && nHeight <= 20000)
+		{
+			nSubsidy = 50 * COIN;
+		} else if (nHeight > 20000 && nHeight <= 50000)
+		{
+			nSubsidy = 25 * COIN;
+		} else if(nHeight > 50000 && nHeight <= 100000)
+		{
+			nSubsidy = 20 * COIN;
+		} else if(nHeight > 100000 && nHeight <= 200000)
+		{
+			nSubsidy = 10 * COIN;
+		} else {
+			nSubsidy = 0 * COIN;
+		}
+	}
+	return nSubsidy;
 }
 
 CAmount GetSeeSaw(const CAmount& blockValue, int nMasternodeCount, int nHeight)
