@@ -156,6 +156,7 @@ public:
          */
         const char* pszTimestamp = "Myce masternodes";
         CMutableTransaction txNew;
+        txNew.nVersion = 1;
         txNew.nTime = 1515436125;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
