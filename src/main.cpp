@@ -4189,6 +4189,9 @@ bool CheckWork(const CBlock block, CBlockIndex* const pindexPrev)
     if (pindexPrev == NULL)
         return error("%s : null pindexPrev for block %s", __func__, block.GetHash().ToString().c_str());
 
+    if (block.nVersion < 9)
+        return true;
+
     unsigned int nBitsRequired = GetNextWorkRequired(pindexPrev, &block);
 
     if (block.IsProofOfWork() && (pindexPrev->nHeight + 1 <= 68589)) {
