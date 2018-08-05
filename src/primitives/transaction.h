@@ -231,8 +231,7 @@ public:
     inline void SerializationOp(Stream& s, Operation ser_action, int nType, int nVersion) {
         READWRITE(*const_cast<int32_t*>(&this->nVersion));
         nVersion = this->nVersion;
-        if (nVersion < 2)
-            READWRITE(*const_cast<unsigned int*>(&nTime));
+        READWRITE(*const_cast<unsigned int*>(&nTime));
         READWRITE(*const_cast<std::vector<CTxIn>*>(&vin));
         READWRITE(*const_cast<std::vector<CTxOut>*>(&vout));
         READWRITE(*const_cast<uint32_t*>(&nLockTime));
@@ -325,8 +324,7 @@ struct CMutableTransaction
     inline void SerializationOp(Stream& s, Operation ser_action, int nType, int nVersion) {
         READWRITE(this->nVersion);
         nVersion = this->nVersion;
-        if (nVersion < 2)
-            READWRITE(nTime);
+        READWRITE(nTime);
         READWRITE(vin);
         READWRITE(vout);
         READWRITE(nLockTime);

@@ -4052,7 +4052,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
     if (fCheckMerkleRoot) {
         bool mutated;
         uint256 hashMerkleRoot2 = block.BuildMerkleTree(&mutated);
-        if (block.hashMerkleRoot != hashMerkleRoot2)
+        if (block.nVersion > 8 && block.hashMerkleRoot != hashMerkleRoot2)
             return state.DoS(100, error("CheckBlock() : hashMerkleRoot mismatch"),
                 REJECT_INVALID, "bad-txnmrklroot", true);
 
