@@ -131,14 +131,15 @@ public:
         nLastPOWBlock = 200000;
         nPOSStartBlock = 10000;
         nMandatoryUpgradeBlock = 284000;
-        nModifierUpdateBlock = 284001; // +1
-        nZerocoinStartHeight = 284002; // +2
-        nZerocoinStartTime = 1532677440; // October 17, 2017 4:30:00 AM
-        nBlockEnforceSerialRange = 284004; // +4 Enforce serial range starting this block
-        nBlockRecalculateAccumulators = 284005; // +5 Trigger a recalculation of accumulators
-        nBlockFirstFraudulent = 284003; // +3 First block that bad serials emerged
-        nBlockLastGoodCheckpoint = 284005; // +5 Last valid accumulator checkpoint
-        nBlockEnforceInvalidUTXO = 284001; // +1 Start enforcing the invalid UTXO's
+        nUpgradeBlockVersion = 9; // Block headers must be this version after upgrade block
+        nModifierUpdateBlock = nMandatoryUpgradeBlock + 1;
+        nZerocoinStartHeight = nMandatoryUpgradeBlock + 2;
+        nZerocoinStartTime = 1508214600; // October 17, 2017 4:30:00 AM
+        nBlockEnforceSerialRange = nMandatoryUpgradeBlock + 4; // Enforce serial range starting this block
+        nBlockRecalculateAccumulators = nMandatoryUpgradeBlock + 5; // Trigger a recalculation of accumulators
+        nBlockFirstFraudulent = nMandatoryUpgradeBlock + 3; // First block that bad serials emerged
+        nBlockLastGoodCheckpoint = nMandatoryUpgradeBlock + 5; // Last valid accumulator checkpoint
+        nBlockEnforceInvalidUTXO = nMandatoryUpgradeBlock + 1; // Start enforcing the invalid UTXO's
         nInvalidAmountFiltered = 0*COIN; //Amount of invalid coins filtered through exchanges, that should be considered valid
         nBlockZerocoinV2 = nZerocoinStartHeight + 100; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
         nEnforceNewSporkKey = 1525158000; //!> Sporks signed after (GMT): Tuesday, May 1, 2018 7:00:00 AM GMT must use the new spork key
@@ -220,7 +221,7 @@ public:
         nMintRequiredConfirmations = 20; //the maximum amount of confirmations until accumulated in 19
         nRequiredAccumulation = 1;
         nDefaultSecurityLevel = 100; //full security level for accumulators
-        nZerocoinHeaderVersion = 9; //Block headers must be this version once zerocoin is active
+        nZerocoinHeaderVersion = nUpgradeBlockVersion; //Block headers must be this version once zerocoin is active
         nZerocoinRequiredStakeDepth = 200; //The required confirmations for a zpiv to be stakable
 
         nBudget_Fee_Confirmations = 6; // Number of confirmations for the finalization fee

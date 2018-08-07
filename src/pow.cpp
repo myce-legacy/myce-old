@@ -128,7 +128,7 @@ bool CheckProofOfWork(uint256 hash, int nVersion, unsigned int nBits)
         return error("CheckProofOfWork() : nBits below minimum work");
 
     // Check proof of work matches claimed amount
-    if (nVersion > 8 && hash > bnTarget)
+    if (nVersion >= Params().WALLET_UPGRADE_VERSION() && hash > bnTarget)
         return error("CheckProofOfWork() : hash doesn't match nBits");
 
     return true;

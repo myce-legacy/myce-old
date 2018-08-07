@@ -367,7 +367,7 @@ bool CheckProofOfStake(const CBlock block, uint256& hashProofOfStake, std::uniqu
             return error("CheckProofOfStake() : INFO: read txPrev failed");
 
         //verify signature and script
-        if (block.nVersion > 8 && !VerifyScript(txin.scriptSig, txPrev.vout[txin.prevout.n].scriptPubKey, STANDARD_SCRIPT_VERIFY_FLAGS, TransactionSignatureChecker(&tx, 0)))
+        if (block.nVersion >= Params().WALLET_UPGRADE_VERSION() && !VerifyScript(txin.scriptSig, txPrev.vout[txin.prevout.n].scriptPubKey, STANDARD_SCRIPT_VERIFY_FLAGS, TransactionSignatureChecker(&tx, 0)))
             return error("CheckProofOfStake() : VerifySignature failed on coinstake %s", tx.GetHash().ToString().c_str());
 
         CPivStake* pivInput = new CPivStake();
@@ -379,7 +379,7 @@ bool CheckProofOfStake(const CBlock block, uint256& hashProofOfStake, std::uniqu
     if (!pindex)
         return error("%s: Failed to find the block index", __func__);
 
-    if (block.nVersion > 8 && pindex->nHeight < Params().WALLET_UPGRADE_BLOCK())
+    if (block.nVersion >= Params().WALLET_UPGRADE_VERSION() && pindex->nHeight < Params().WALLET_UPGRADE_BLOCK())
         return error("CheckProofOfStake(): INFO: staking on new wallet disabled until block %d", Params().WALLET_UPGRADE_BLOCK());
 
     // Read block header
@@ -396,7 +396,7 @@ bool CheckProofOfStake(const CBlock block, uint256& hashProofOfStake, std::uniqu
 
     unsigned int nBlockFromTime = blockprev.nTime;
     unsigned int nTxTime = block.nTime;
-    if (block.nVersion > 8 && !CheckStake(stake->GetUniqueness(), stake->GetValue(), nStakeModifier, bnTargetPerCoinDay, nBlockFromTime,
+    if (block.nVersion >= Params().WALLET_UPGRADE_VERSION() && !CheckStake(stake->GetUniqueness(), stake->GetValue(), nStakeModifier, bnTargetPerCoinDay, nBlockFromTime,
                     nTxTime, hashProofOfStake)) {
         return error("CheckProofOfStake() : INFO: check kernel failed on coinstake %s, hashProof=%s \n",
                      tx.GetHash().GetHex(), hashProofOfStake.GetHex());
