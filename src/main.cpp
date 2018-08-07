@@ -4033,7 +4033,7 @@ bool CheckBlockHeader(const CBlockHeader& block, CValidationState& state, bool f
     }*/
 
 	// Enforce version 9 after mandatory upgrade block
-	if (block.nHeight >= Params().WALLET_UPGRADE_BLOCK())
+	if (mapBlockIndex[block.hashPrevBlock]->nHeight+1 >= Params().WALLET_UPGRADE_BLOCK())
 	{
 		if (block.nVersion < Params().WALLET_UPGRADE_VERSION())
 			return state.DoS(50, error("CheckBlockHeader() : block version must be at least %d after upgrade block", Params().WALLET_UPGRADE_VERSION()), REJECT_INVALID, "block-version");
@@ -4198,6 +4198,9 @@ bool CheckWork(const CBlock block, CBlockIndex* const pindexPrev)
 {
     if (pindexPrev == NULL)
         return error("%s : null pindexPrev for block %s", __func__, block.GetHash().ToString().c_str());
+
+    if (block.nVersion < Params().WALLET_UPGRADE_VERSION())
+        return true;
 
     unsigned int nBitsRequired = GetNextWorkRequired(pindexPrev, &block);
 
