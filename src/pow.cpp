@@ -13,6 +13,7 @@
 #include "primitives/block.h"
 #include "uint256.h"
 #include "util.h"
+#include "bignum.h"
 
 #include <math.h>
 
@@ -108,6 +109,49 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     if (bnNew > Params().ProofOfWorkLimit()) {
         bnNew = Params().ProofOfWorkLimit();
     }
+
+    return bnNew.GetCompact();
+}
+
+const CBlockIndex* GetLastBlockIndex(const CBlockIndex* pindex, bool fProofOfStake)
+{
+    while (pindex && pindex->pprev && (pindex->IsProofOfStake() != fProofOfStake))
+        pindex = pindex->pprev;
+    return pindex;
+}
+
+unsigned int GetLegacyNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader* pblock, bool fProofOfStake)
+{
+    int64_t nTargetSpacing = 60;
+    int64_t nTargetTimespan = 10 * 60;
+
+    CBigNum bnTargetLimit = fProofOfStake ? CBigNum(~uint256(0) >> 20) : CBigNum(~uint256(0) >> 16);
+
+    if (pindexLast == NULL)
+        return bnTargetLimit.GetCompact(); // genesis block
+
+    const CBlockIndex* pindexPrev = GetLastBlockIndex(pindexLast, fProofOfStake);
+    if (pindexPrev->pprev == NULL)
+        return bnTargetLimit.GetCompact(); // first block
+
+    const CBlockIndex* pindexPrevPrev = GetLastBlockIndex(pindexPrev->pprev, fProofOfStake);
+    if (pindexPrevPrev->pprev == NULL)
+        return bnTargetLimit.GetCompact(); // second block
+
+    int64_t nActualSpacing = pindexPrev->GetBlockTime() - pindexPrevPrev->GetBlockTime();
+    
+    if (nActualSpacing < 0)
+        nActualSpacing = nTargetSpacing;
+
+    CBigNum bnNew;
+    bnNew.SetCompact(pindexPrev->nBits);
+
+    int64_t nInterval = nTargetTimespan / nTargetSpacing;
+    bnNew *= ((nInterval - 1) * nTargetSpacing + nActualSpacing + nActualSpacing);
+    bnNew /= ((nInterval + 1) * nTargetSpacing);
+
+    if (bnNew <= 0 || bnNew > bnTargetLimit)
+        bnNew = bnTargetLimit;
 
     return bnNew.GetCompact();
 }
