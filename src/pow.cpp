@@ -36,7 +36,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     int64_t CountBlocks = 0;
     uint256 PastDifficultyAverage;
     uint256 PastDifficultyAveragePrev;
-    bool fProofOfStake = CBlock(pblock).IsProofOfStake();
+    bool fProofOfStake = pindexLast->pnext->IsProofOfStake();
 
     if (BlockLastSolved == NULL || BlockLastSolved->nHeight == 0 || BlockLastSolved->nHeight < PastBlocksMin) {
         return Params().ProofOfWorkLimit().GetCompact();
@@ -52,7 +52,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
         {
             const CBlockIndex* pindexPrev = GetLastBlockIndex(pindexLast, fProofOfStake);
             const CBlockIndex* pindexPrevPrev = GetLastBlockIndex(pindexPrev->pprev, fProofOfStake);
-            nActualSpacing = pindexLast->GetBlockTime() - pindexLast->pprev->GetBlockTime();
+            nActualSpacing = pindexPrev->GetBlockTime() - pindexPrevPrev->GetBlockTime();
         }
 
         if (nActualSpacing < 0)
@@ -129,7 +129,7 @@ unsigned int GetLegacyNextWorkRequired(const CBlockIndex* pindexLast, const CBlo
     int64_t nTargetSpacing = 60;
     int64_t nTargetTimespan = 10 * 60;
 
-    bool fProofOfStake = CBlock(pblock).IsProofOfStake();
+    bool fProofOfStake = pindexLast->pnext->IsProofOfStake();
     uint256 bnTargetLimit = fProofOfStake ? (~uint256(0) >> 20) : Params().ProofOfWorkLimit();
 
     if (pindexLast == NULL)
