@@ -4202,9 +4202,9 @@ bool CheckWork(const CBlock block, CBlockIndex* const pindexPrev)
     unsigned int nBitsRequired;
 
     if (block.nVersion >= Params().WALLET_UPGRADE_VERSION())
-        nBitsRequired = GetNextWorkRequired(pindexPrev, &block, block.IsProofOfStake());
+        nBitsRequired = GetNextWorkRequired(pindexPrev, &block);
     else
-        nBitsRequired = GetLegacyNextWorkRequired(pindexPrev, &block, block.IsProofOfStake());
+        nBitsRequired = GetLegacyNextWorkRequired(pindexPrev, &block);
 
     if (block.nBits != nBitsRequired)
         return error("%s : incorrect proof of work at %d", __func__, pindexPrev->nHeight + 1);
