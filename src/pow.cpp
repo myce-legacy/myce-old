@@ -13,7 +13,6 @@
 #include "primitives/block.h"
 #include "uint256.h"
 #include "util.h"
-#include "bignum.h"
 
 #include <math.h>
 
@@ -35,10 +34,10 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
         return Params().ProofOfWorkLimit().GetCompact();
     }
 
-    if (pindexLast->nHeight > Params().LAST_POW_BLOCK()) {
-        uint256 bnTargetLimit = (~uint256(0) >> 8);
+    if (pindexLast.IsProofOfStake()) {
+        uint256 bnTargetLimit = (~uint256(0) >> 20);
         int64_t nTargetSpacing = 60;
-        int64_t nTargetTimespan = 60 * 40;
+        int64_t nTargetTimespan = 60 * 10;
 
         int64_t nActualSpacing = 0;
         if (pindexLast->nHeight != 0)
@@ -120,12 +119,13 @@ const CBlockIndex* GetLastBlockIndex(const CBlockIndex* pindex, bool fProofOfSta
     return pindex;
 }
 
-unsigned int GetLegacyNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader* pblock, bool fProofOfStake)
+unsigned int GetLegacyNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader* pblock)
 {
     int64_t nTargetSpacing = 60;
     int64_t nTargetTimespan = 10 * 60;
 
-    CBigNum bnTargetLimit = fProofOfStake ? CBigNum(~uint256(0) >> 20) : CBigNum(~uint256(0) >> 16);
+    bool fProofOfStake = pindexLast.IsProofOfStake();
+    uint256 bnTargetLimit = fProofOfStake ? (~uint256(0) >> 20) : Params().ProofOfWorkLimit();
 
     if (pindexLast == NULL)
         return bnTargetLimit.GetCompact(); // genesis block
@@ -139,11 +139,13 @@ unsigned int GetLegacyNextWorkRequired(const CBlockIndex* pindexLast, const CBlo
         return bnTargetLimit.GetCompact(); // second block
 
     int64_t nActualSpacing = pindexPrev->GetBlockTime() - pindexPrevPrev->GetBlockTime();
-    
+
     if (nActualSpacing < 0)
         nActualSpacing = nTargetSpacing;
 
-    CBigNum bnNew;
+    // ppcoin: target change every block
+    // ppcoin: retarget with exponential moving toward target spacing
+    uint256 bnNew;
     bnNew.SetCompact(pindexPrev->nBits);
 
     int64_t nInterval = nTargetTimespan / nTargetSpacing;

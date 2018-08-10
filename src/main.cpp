@@ -1295,7 +1295,7 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
                 CoinSpend spend = TxInToZerocoinSpend(txIn);
                 if (!ContextualCheckZerocoinSpend(tx, spend, chainActive.Tip(), 0))
                     return state.Invalid(error("%s: ContextualCheckZerocoinSpend failed for tx %s", __func__,
-                                               tx.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-zpiv");
+                                               tx.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-zyce");
             }
         } else {
             LOCK(pool.cs);
@@ -2638,7 +2638,7 @@ static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck()
 {
-    RenameThread("pivx-scriptch");
+    RenameThread("myce-scriptch");
     scriptcheckqueue.Thread();
 }
 
@@ -4201,10 +4201,10 @@ bool CheckWork(const CBlock block, CBlockIndex* const pindexPrev)
 
     unsigned int nBitsRequired;
 
-    if (block.nVersion < Params().WALLET_UPGRADE_VERSION())
-        nBitsRequired = GetLegacyNextWorkRequired(pindexPrev, &block, block.IsProofOfStake());
-    else
+    if (block.nVersion >= Params().WALLET_UPGRADE_VERSION())
         nBitsRequired = GetNextWorkRequired(pindexPrev, &block);
+    else
+        nBitsRequired = GetLegacyNextWorkRequired(pindexPrev, &block);
 
     if (block.nBits != nBitsRequired)
         return error("%s : incorrect proof of work at %d", __func__, pindexPrev->nHeight + 1);
