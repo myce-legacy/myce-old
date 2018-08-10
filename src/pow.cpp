@@ -163,7 +163,7 @@ unsigned int GetLegacyNextWorkRequired(const CBlockIndex* pindexLast, const CBlo
     return bnNew.GetCompact();
 }
 
-bool CheckProofOfWork(uint256 hash, int nVersion, unsigned int nBits)
+bool CheckProofOfWork(uint256 hash, unsigned int nBits)
 {
     bool fNegative;
     bool fOverflow;
