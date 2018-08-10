@@ -17,6 +17,13 @@
 #include <math.h>
 
 
+const CBlockIndex* GetLastBlockIndex(const CBlockIndex* pindex, bool fProofOfStake)
+{
+    while (pindex && pindex->pprev && (pindex->IsProofOfStake() != fProofOfStake))
+        pindex = pindex->pprev;
+    return pindex;
+}
+
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader* pblock)
 {
     /* current difficulty formula, pivx - DarkGravity v3, written by Evan Duffield - evan@dashpay.io */
@@ -29,19 +36,24 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     int64_t CountBlocks = 0;
     uint256 PastDifficultyAverage;
     uint256 PastDifficultyAveragePrev;
+    bool fProofOfStake = pindexLast.IsProofOfStake();
 
     if (BlockLastSolved == NULL || BlockLastSolved->nHeight == 0 || BlockLastSolved->nHeight < PastBlocksMin) {
         return Params().ProofOfWorkLimit().GetCompact();
     }
 
-    if (pindexLast.IsProofOfStake()) {
+    if (pindexLast->nHeight >= Params().POS_START_BLOCK()) {
         uint256 bnTargetLimit = (~uint256(0) >> 20);
         int64_t nTargetSpacing = 60;
         int64_t nTargetTimespan = 60 * 10;
 
         int64_t nActualSpacing = 0;
         if (pindexLast->nHeight != 0)
+        {
+            const CBlockIndex* pindexPrev = GetLastBlockIndex(pindexLast, fProofOfStake);
+            const CBlockIndex* pindexPrevPrev = GetLastBlockIndex(pindexPrev->pprev, fProofOfStake);
             nActualSpacing = pindexLast->GetBlockTime() - pindexLast->pprev->GetBlockTime();
+        }
 
         if (nActualSpacing < 0)
             nActualSpacing = 1;
@@ -112,13 +124,6 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     return bnNew.GetCompact();
 }
 
-const CBlockIndex* GetLastBlockIndex(const CBlockIndex* pindex, bool fProofOfStake)
-{
-    while (pindex && pindex->pprev && (pindex->IsProofOfStake() != fProofOfStake))
-        pindex = pindex->pprev;
-    return pindex;
-}
-
 unsigned int GetLegacyNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader* pblock)
 {
     int64_t nTargetSpacing = 60;
@@ -174,7 +179,7 @@ bool CheckProofOfWork(uint256 hash, int nVersion, unsigned int nBits)
         return error("CheckProofOfWork() : nBits below minimum work");
 
     // Check proof of work matches claimed amount
-    if (nVersion >= Params().WALLET_UPGRADE_VERSION() && hash > bnTarget)
+    if (hash > bnTarget)
         return error("CheckProofOfWork() : hash doesn't match nBits");
 
     return true;
