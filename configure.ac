@@ -12,10 +12,10 @@ AC_CONFIG_HEADERS([src/config/pivx-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
-BITCOIN_DAEMON_NAME=myced
-BITCOIN_GUI_NAME=myce-qt
-BITCOIN_CLI_NAME=myce-cli
-BITCOIN_TX_NAME=myce-tx
+BITCOIN_DAEMON_NAME=pivxd
+BITCOIN_GUI_NAME=pivx-qt
+BITCOIN_CLI_NAME=pivx-cli
+BITCOIN_TX_NAME=pivx-tx
 
 dnl Unless the user specified ARFLAGS, force it to be cr
 AC_ARG_VAR(ARFLAGS, [Flags for the archiver, defaults to <cr> if not set])

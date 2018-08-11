@@ -132,7 +132,6 @@ public:
         nPOSStartBlock = 10000;
         nMandatoryUpgradeBlock = 284000;
         nUpgradeBlockVersion = 9; // Block headers must be this version after upgrade block
-        nUpgradeTime = 1532677440;
         nModifierUpdateBlock = nMandatoryUpgradeBlock + 1;
         nZerocoinStartHeight = nMandatoryUpgradeBlock + 2;
         nZerocoinStartTime = 1508214600; // October 17, 2017 4:30:00 AM
