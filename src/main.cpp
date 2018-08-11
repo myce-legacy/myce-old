@@ -1070,7 +1070,7 @@ bool CheckTransaction(const CTransaction& tx, bool fZerocoinActive, bool fReject
         return state.DoS(10, error("CheckTransaction() : vout empty"),
             REJECT_INVALID, "bad-txns-vout-empty");
 
-    if (tx.nVersion < 2 && chainActive.Tip()->nHeight >= Params().WALLET_UPGRADE_BLOCK())
+    if (tx.nVersion < 2 && chainActive.Height() >= Params().WALLET_UPGRADE_BLOCK())
         return state.DoS(50, error("CheckTransaction() : transaction version must be at least 2 after upgrade block"), REJECT_INVALID, "bad-txns-version");
 
     // Size limits
@@ -4180,7 +4180,6 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
             }
         }
     }
-
 
     unsigned int nSigOps = 0;
     BOOST_FOREACH (const CTransaction& tx, block.vtx) {
