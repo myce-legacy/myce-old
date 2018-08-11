@@ -2290,7 +2290,7 @@ void UpdateCoins(const CTransaction& tx, CValidationState& state, CCoinsViewCach
 bool CScriptCheck::operator()()
 {
     const CScript& scriptSig = ptxTo->vin[nIn].scriptSig;
-    if (chainActive.Tip()->nVersion >= Params().WALLET_UPGRADE_VERSION() && !VerifyScript(scriptSig, scriptPubKey, nFlags, CachingTransactionSignatureChecker(ptxTo, nIn, cacheStore), &error)) {
+    if (chainActive.Height() >= Params().WALLET_UPGRADE_BLOCK() && !VerifyScript(scriptSig, scriptPubKey, nFlags, CachingTransactionSignatureChecker(ptxTo, nIn, cacheStore), &error)) {
         return ::error("CScriptCheck(): %s:%d VerifySignature failed: %s", ptxTo->GetHash().ToString(), nIn, ScriptErrorString(error));
     }
     return true;
@@ -4033,7 +4033,7 @@ bool CheckBlockHeader(const CBlockHeader& block, CValidationState& state, bool f
     }*/
 
 	// Enforce version 9 after mandatory upgrade block
-	if (mapBlockIndex[block.hashPrevBlock]->nHeight+1 >= Params().WALLET_UPGRADE_BLOCK())
+	if (mapBlockIndex.at(block.hashPrevBlock)->nHeight+1 >= Params().WALLET_UPGRADE_BLOCK())
 	{
 		if (block.nVersion < Params().WALLET_UPGRADE_VERSION())
 			return state.DoS(50, error("CheckBlockHeader() : block version must be at least %d after upgrade block", Params().WALLET_UPGRADE_VERSION()), REJECT_INVALID, "block-version");
