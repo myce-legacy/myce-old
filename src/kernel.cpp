@@ -379,13 +379,15 @@ bool CheckProofOfStake(const CBlock block, uint256& hashProofOfStake, std::uniqu
     if (!pindex)
         return error("%s: Failed to find the block index", __func__);
 
-    if (block.nVersion >= Params().WALLET_UPGRADE_VERSION() && pindex->nHeight < Params().WALLET_UPGRADE_BLOCK())
-        return error("CheckProofOfStake(): INFO: staking on new wallet disabled until block %d", Params().WALLET_UPGRADE_BLOCK());
-
     // Read block header
     CBlock blockprev;
     if (!ReadBlockFromDisk(blockprev, pindex->GetBlockPos()))
         return error("CheckProofOfStake(): INFO: failed to find block");
+
+    if (block.nVersion < Params().WALLET_UPGRADE_VERSION() && pindex->nHeight >= Params().WALLET_UPGRADE_BLOCK())
+        return error("CheckProofOfStake(): INFO: staking on old version disabled at block %d", Params().WALLET_UPGRADE_BLOCK());
+    else if (block.nVersion >= Params().WALLET_UPGRADE_VERSION() && pindex->nHeight < Params().WALLET_UPGRADE_BLOCK())
+        return error("CheckProofOfStake(): INFO: staking on new wallet disabled until block %d", Params().WALLET_UPGRADE_BLOCK());
 
     uint256 bnTargetPerCoinDay;
     bnTargetPerCoinDay.SetCompact(block.nBits);

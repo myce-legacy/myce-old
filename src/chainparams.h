@@ -116,6 +116,7 @@ public:
     int ModifierUpgradeBlock() const { return nModifierUpdateBlock; }
     int WALLET_UPGRADE_BLOCK() const { return nMandatoryUpgradeBlock; }
     int WALLET_UPGRADE_VERSION() const { return nUpgradeBlockVersion; }
+    int WALLET_UPGRADE_TIME() const { return nUpgradeTime; }
     int LAST_POW_BLOCK() const { return nLastPOWBlock; }
     int POS_START_BLOCK() const { return nPOSStartBlock; }
     int Zerocoin_StartHeight() const { return nZerocoinStartHeight; }
@@ -145,6 +146,7 @@ protected:
     int64_t nTargetSpacing;
     int nMandatoryUpgradeBlock;
     int nUpgradeBlockVersion;
+    int nUpgradeTime;
     int nLastPOWBlock;
     int nPOSStartBlock;
     int nMasternodeCountDrift;
