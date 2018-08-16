@@ -446,8 +446,8 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
         // Fill in header
         pblock->hashPrevBlock = pindexPrev->GetBlockHash();
         if (!fProofOfStake)
-            UpdateTime(pblock, pindexPrev);
-        pblock->nBits = GetNextWorkRequired(pindexPrev, pblock);
+            UpdateTime(pblock, pindexPrev, false);
+        pblock->nBits = GetNextWorkRequired(pindexPrev, pblock, fProofOfStake);
         pblock->nNonce = 0;
 
         //Calculate the accumulator checkpoint only if the previous cached checkpoint need to be updated
@@ -738,7 +738,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
                 break;
 
             // Update nTime every few seconds
-            UpdateTime(pblock, pindexPrev);
+            UpdateTime(pblock, pindexPrev, pblock->IsProofOfStake());
             if (Params().AllowMinDifficultyBlocks()) {
                 // Changing pblock->nTime can change work required on testnet:
                 hashTarget.SetCompact(pblock->nBits);
