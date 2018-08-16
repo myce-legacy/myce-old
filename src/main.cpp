@@ -1070,12 +1070,13 @@ bool CheckTransaction(const CTransaction& tx, bool fZerocoinActive, bool fReject
         return state.DoS(10, error("CheckTransaction() : vout empty"),
             REJECT_INVALID, "bad-txns-vout-empty");
 
-    if (tx.nVersion > 3)
+    // Some primitive replay protection for future use
+    if (tx.nVersion > 4)
         return state.DoS(50, error("CheckTransaction() : unknown transaction version"), REJECT_INVALID, "bad-txns-version");
-    else if (tx.nVersion < 2 && chainActive.Height() >= Params().WALLET_UPGRADE_BLOCK())
-        return state.DoS(50, error("CheckTransaction() : transaction version must be at least 2 after upgrade block"), REJECT_INVALID, "bad-txns-version");
-    else if (tx.nVersion > 1 && chainActive.Height() < Params().WALLET_UPGRADE_BLOCK())
-        return state.DoS(50, error("CheckTransaction() : transaction version must be 1 before upgrade block"), REJECT_INVALID, "bad-txns-version");
+    else if (tx.nVersion < 3 && chainActive.Height() >= Params().WALLET_UPGRADE_BLOCK())
+        return state.DoS(50, error("CheckTransaction() : transaction version must be at least 3 after upgrade block"), REJECT_INVALID, "bad-txns-version");
+    else if (tx.nVersion > 2 && chainActive.Height() < Params().WALLET_UPGRADE_BLOCK())
+        return state.DoS(50, error("CheckTransaction() : transaction version must be under 2 before upgrade block"), REJECT_INVALID, "bad-txns-version");
 
     // Size limits
     unsigned int nMaxSize = MAX_ZEROCOIN_TX_SIZE;
