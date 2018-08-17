@@ -1835,15 +1835,15 @@ int64_t GetBlockValue(int nHeight)
 		} else if (nHeight <= 200000 && nHeight > 150000)
 		{
 			nSubsidy = 100 * COIN;
-		} else if (nHeight < Params().WALLET_UPGRADE_BLOCK() && nHeight > 200000)
+		} else if (nHeight <= 250000 && nHeight > 200000)
 		{
 			nSubsidy = 75 * COIN;
-		} else if (nHeight <= 300000 && nHeight >= Params().WALLET_UPGRADE_BLOCK())
+		} else if (nHeight < Params().WALLET_UPGRADE_BLOCK() && nHeight > 250000)
 		{
-			nSubsidy = 10000 * COIN; // set to 100 after testing
-		} else if (nHeight <= 350000 && nHeight > 300000)
+			nSubsidy = 100 * COIN;
+		} else if (nHeight <= 350000 && nHeight >= Params().WALLET_UPGRADE_BLOCK())
 		{
-			nSubsidy = 10000 * COIN; // should be 75
+			nSubsidy = 10000 * COIN; // set to 75 after testing
 		} else if (nHeight <= 400000 && nHeight > 350000)
 		{
 			nSubsidy = 50 * COIN;
