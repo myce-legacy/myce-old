@@ -1073,9 +1073,9 @@ bool CheckTransaction(const CTransaction& tx, bool fZerocoinActive, bool fReject
     // Some primitive replay protection for future use
     if (tx.nVersion > 4)
         return state.DoS(50, error("CheckTransaction() : unknown transaction version"), REJECT_INVALID, "bad-txns-version");
-    else if (tx.nVersion < 3 && chainActive.Height() >= Params().WALLET_UPGRADE_BLOCK())
+    else if (tx.nVersion < 3 && chainActive.Height()+1 >= Params().WALLET_UPGRADE_BLOCK())
         return state.DoS(50, error("CheckTransaction() : transaction version must be at least 3 after upgrade block"), REJECT_INVALID, "bad-txns-version");
-    else if (tx.nVersion > 2 && chainActive.Height() < Params().WALLET_UPGRADE_BLOCK())
+    else if (tx.nVersion > 2 && chainActive.Height()+1 < Params().WALLET_UPGRADE_BLOCK())
         return state.DoS(50, error("CheckTransaction() : transaction version must be under 2 before upgrade block"), REJECT_INVALID, "bad-txns-version");
 
     // Size limits
@@ -4037,8 +4037,8 @@ bool CheckBlockHeader(const CBlockHeader& block, CValidationState& state, bool f
             REJECT_INVALID, "block-version");
     }*/
 
-	// Enforce version 9 after mandatory upgrade block and make sure we have a block database to check chain height
-	if (block.nVersion >= Params().WALLET_UPGRADE_VERSION()-2 && mapBlockIndex.size()+1 >= Params().WALLET_UPGRADE_BLOCK())
+	// Enforce version 9 after mandatory upgrade block
+	if (chainActive.Height()+1 >= Params().WALLET_UPGRADE_BLOCK())
 	{
 		if (block.nVersion < Params().WALLET_UPGRADE_VERSION())
 			return state.DoS(50, error("CheckBlockHeader() : block version must be at least %d after upgrade block", Params().WALLET_UPGRADE_VERSION()), REJECT_INVALID, "block-version");
@@ -4166,7 +4166,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
     }
 
     // Check transactions
-    bool fZerocoinActive = block.GetBlockTime() > Params().Zerocoin_StartTime();
+    bool fZerocoinActive = nHeight >= Params().Zerocoin_StartHeight();
     vector<CBigNum> vBlockSerials;
     for (const CTransaction& tx : block.vtx) {
         if (!CheckTransaction(tx, fZerocoinActive, chainActive.Height() + 1 >= Params().Zerocoin_Block_EnforceSerialRange(), state))
