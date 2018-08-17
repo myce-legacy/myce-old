@@ -4038,7 +4038,7 @@ bool CheckBlockHeader(const CBlockHeader& block, CValidationState& state, bool f
     }*/
 
 	// Enforce version 9 after mandatory upgrade block and make sure we have a block database to check chain height
-	if (block.nVersion >= Params().WALLET_UPGRADE_VERSION()-2 && mapBlockIndex.at(block.hashPrevBlock)->nHeight+1 >= Params().WALLET_UPGRADE_BLOCK())
+	if (block.nVersion >= Params().WALLET_UPGRADE_VERSION()-2 && mapBlockIndex.size()+1 >= Params().WALLET_UPGRADE_BLOCK())
 	{
 		if (block.nVersion < Params().WALLET_UPGRADE_VERSION())
 			return state.DoS(50, error("CheckBlockHeader() : block version must be at least %d after upgrade block", Params().WALLET_UPGRADE_VERSION()), REJECT_INVALID, "block-version");

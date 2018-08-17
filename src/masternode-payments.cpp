@@ -191,9 +191,6 @@ bool IsBlockValueValid(const CBlock& block, CAmount nExpectedValue, CAmount nMin
         LogPrint("masternode","IsBlockValueValid() : WARNING: Couldn't find previous block\n");
     }
 
-    if (nHeight == Params().WALLET_UPGRADE_BLOCK())
-        return true;
-
     //LogPrintf("XX69----------> IsBlockValueValid(): nMinted: %d, nExpectedValue: %d\n", FormatMoney(nMinted), FormatMoney(nExpectedValue));
 
     if (!masternodeSync.IsSynced()) { //there is no budget data to use to check anything
@@ -234,9 +231,6 @@ bool IsBlockPayeeValid(const CBlock& block, int nBlockHeight)
         return true;
     }
 
-    if (nBlockHeight == Params().WALLET_UPGRADE_BLOCK())
-        return true;
-
     const CTransaction& txNew = (block.IsProofOfStake() ? block.vtx[1] : block.vtx[0]);
 
     //check if it's a budget block
@@ -267,7 +261,7 @@ bool IsBlockPayeeValid(const CBlock& block, int nBlockHeight)
         return true;
     LogPrint("masternode","Invalid mn payment detected %s\n", txNew.ToString().c_str());
 
-    if (IsSporkActive(SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT))
+    if (IsSporkActive(SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT) && nBlockHeight != Params().WALLET_UPGRADE_BLOCK())
         return false;
     LogPrint("masternode","Masternode payment enforcement is disabled, accepting block\n");
 
