@@ -4205,7 +4205,7 @@ bool CheckWork(const CBlock block, CBlockIndex* const pindexPrev)
 
     unsigned int nBitsRequired;
 
-    if (block.nVersion >= Params().WALLET_UPGRADE_VERSION())
+    if (pindexPrev->nHeight+1 >= Params().WALLET_UPGRADE_BLOCK())
         nBitsRequired = GetNextWorkRequired(pindexPrev, &block, block.IsProofOfStake());
     else
         nBitsRequired = GetLegacyNextWorkRequired(pindexPrev, &block, block.IsProofOfStake());
