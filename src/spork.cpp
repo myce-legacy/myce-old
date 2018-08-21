@@ -148,7 +148,7 @@ bool IsSporkActive(int nSporkID)
 {
     int64_t r = GetSporkValue(nSporkID);
     if (r == -1) return false;
-    if (r == SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT_DEFAULT && chainActive.Height() <= Params().WALLET_UPGRADE_BLOCK()+60) return false;
+    if (r == SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT_DEFAULT && chainActive.Height() + 1 <= Params().WALLET_UPGRADE_BLOCK()+60) return false;
     return r < GetTime();
 }
 

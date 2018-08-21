@@ -1073,9 +1073,9 @@ bool CheckTransaction(const CTransaction& tx, bool fZerocoinActive, bool fReject
     // Some primitive replay protection for future use
     if (tx.nVersion > 4)
         return state.DoS(50, error("CheckTransaction() : unknown transaction version"), REJECT_INVALID, "bad-txns-version");
-    else if (tx.nVersion < 3 && chainActive.Height() >= Params().WALLET_UPGRADE_BLOCK())
+    else if (tx.nVersion < 3 && chainActive.Height()+1 >= Params().WALLET_UPGRADE_BLOCK())
         return state.DoS(50, error("CheckTransaction() : transaction version must be at least 3 after upgrade block"), REJECT_INVALID, "bad-txns-version");
-    else if (tx.nVersion > 2 && chainActive.Height() < Params().WALLET_UPGRADE_BLOCK())
+    else if (tx.nVersion > 2 && chainActive.Height()+1 < Params().WALLET_UPGRADE_BLOCK())
         return state.DoS(50, error("CheckTransaction() : transaction version must be under 2 before upgrade block"), REJECT_INVALID, "bad-txns-version");
 
     // Size limits
@@ -1813,7 +1813,7 @@ double ConvertBitsToDouble(unsigned int nBits)
     return dDiff;
 }
 
-int64_t GetBlockValue(int nHeight)
+int64_t GetBlockValue(int nHeight, bool fProofOfStake)
 {
     if (Params().NetworkID() == CBaseChainParams::TESTNET) {
         if (nHeight < 200 && nHeight > 0)
@@ -1821,7 +1821,7 @@ int64_t GetBlockValue(int nHeight)
     }
 
 	int64_t nSubsidy = 0;
-	if (chainActive[nHeight]->IsProofOfStake())
+	if (fProofOfStake)
 	{
 		if (nHeight >= 10000 && nHeight <= 50000)
 		{
@@ -3115,11 +3115,11 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         nExpectedMint += nFees;
 
     //Check that the block does not overmint
-    if (block.nVersion >= Params().WALLET_UPGRADE_VERSION() && !IsBlockValueValid(block, nExpectedMint, pindex->nMint)) {
+/*     if (block.nVersion >= Params().WALLET_UPGRADE_VERSION() && !IsBlockValueValid(block, nExpectedMint, pindex->nMint)) {
         return state.DoS(100, error("ConnectBlock() : reward pays too much (actual=%s vs limit=%s)",
                                     FormatMoney(pindex->nMint), FormatMoney(nExpectedMint)),
                          REJECT_INVALID, "bad-cb-amount");
-    }
+    } */
 
     // Ensure that accumulator checkpoints are valid and in the same state as this instance of the chain
     AccumulatorMap mapAccumulators(Params().Zerocoin_Params(pindex->nHeight < Params().Zerocoin_Block_V2_Start()));
@@ -4205,7 +4205,7 @@ bool CheckWork(const CBlock block, CBlockIndex* const pindexPrev)
 
     unsigned int nBitsRequired;
 
-    if (pindexPrev->nHeight+1 >= Params().WALLET_UPGRADE_BLOCK())
+    if (block.nVersion >= Params().WALLET_UPGRADE_VERSION())
         nBitsRequired = GetNextWorkRequired(pindexPrev, &block, block.IsProofOfStake());
     else
         nBitsRequired = GetLegacyNextWorkRequired(pindexPrev, &block, block.IsProofOfStake());

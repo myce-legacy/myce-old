@@ -47,12 +47,10 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
         int64_t nTargetTimespan = 60 * 10;
 
         int64_t nActualSpacing = 0;
-        if (pindexLast->nHeight != 0)
-        {
-            const CBlockIndex* pindexPrev = GetLastBlockIndex(pindexLast, fProofOfStake);
-            const CBlockIndex* pindexPrevPrev = GetLastBlockIndex(pindexPrev->pprev, fProofOfStake);
-            nActualSpacing = pindexPrev->GetBlockTime() - pindexPrevPrev->GetBlockTime();
-        }
+
+        const CBlockIndex* pindexPrev = GetLastBlockIndex(pindexLast, fProofOfStake);
+        const CBlockIndex* pindexPrevPrev = GetLastBlockIndex(pindexPrev->pprev, fProofOfStake);
+        nActualSpacing = pindexPrev->GetBlockTime() - pindexPrevPrev->GetBlockTime();
 
         if (nActualSpacing < 0)
             nActualSpacing = 1;
@@ -60,7 +58,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
         // ppcoin: target change every block
         // ppcoin: retarget with exponential moving toward target spacing
         uint256 bnNew;
-        bnNew.SetCompact(pindexLast->nBits);
+        bnNew.SetCompact(pindexPrev->nBits);
 
         int64_t nInterval = nTargetTimespan / nTargetSpacing;
         bnNew *= ((nInterval - 1) * nTargetSpacing + nActualSpacing + nActualSpacing);
