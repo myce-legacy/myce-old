@@ -126,7 +126,7 @@ public:
 };
 
 /**
- * PIVX RPC command dispatcher.
+ * MYCE RPC command dispatcher.
  */
 class CRPCTable
 {
