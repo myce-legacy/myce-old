@@ -66,7 +66,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
 
         int height = pindexLast->nHeight + 1;
 
-        if (height < (Params().WALLET_UPGRADE_BLOCK()+10) && height >= Params().WALLET_UPGRADE_BLOCK())
+        if (height < (Params().WALLET_UPGRADE_BLOCK()+100) && height >= Params().WALLET_UPGRADE_BLOCK())
         {
             //bnNew /= (int)pow(4.0, (double)(10+Params().WALLET_UPGRADE_BLOCK()-height)); // slash difficulty and gradually ramp back up over 10 blocks
 

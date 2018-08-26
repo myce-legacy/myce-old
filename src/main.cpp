@@ -80,7 +80,7 @@ bool fVerifyingBlocks = false;
 unsigned int nCoinCacheSize = 5000;
 bool fAlerts = DEFAULT_ALERTS;
 
-unsigned int nStakeMinAge = 120; // set to 60 * 60 * 6 after testing // 6 hours
+unsigned int nStakeMinAge = 1; // set to 60 * 60 * 6 after testing // 6 hours
 int64_t nReserveBalance = 0;
 
 /** Fees smaller than this (in upiv) are considered zero fee (for relaying and mining)
