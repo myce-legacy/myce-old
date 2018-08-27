@@ -263,6 +263,8 @@ bool GetKernelStakeModifier(uint256 hashBlockFrom, uint64_t& nStakeModifier, int
         }
 
         pindex = pindexNext;
+        if(pindexNext->nHeight == chainActive.Height())
+            return true;
         pindexNext = chainActive[pindexNext->nHeight + 1];
         if (pindex->GeneratedStakeModifier()) {
             nStakeModifierHeight = pindex->nHeight;
