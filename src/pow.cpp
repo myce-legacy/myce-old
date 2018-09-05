@@ -48,15 +48,6 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
 
         int64_t nActualSpacing = 0;
 
-        int height = pindexLast->nHeight + 1;
-
-        if (height < (Params().WALLET_UPGRADE_BLOCK()+10) && height >= Params().WALLET_UPGRADE_BLOCK())
-        {
-            bnTargetLimit /= (int)pow(5, (double)(height-Params().WALLET_UPGRADE_BLOCK())); // slash difficulty and gradually ramp back up over 10 blocks
-
-            return bnTargetLimit.GetCompact();
-        }
-
         const CBlockIndex* pindexPrev = GetLastBlockIndex(pindexLast, fProofOfStake);
         const CBlockIndex* pindexPrevPrev = GetLastBlockIndex(pindexPrev->pprev, fProofOfStake);
         nActualSpacing = pindexPrev->GetBlockTime() - pindexPrevPrev->GetBlockTime();
@@ -72,6 +63,11 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
         int64_t nInterval = nTargetTimespan / nTargetSpacing;
         bnNew *= ((nInterval - 1) * nTargetSpacing + nActualSpacing + nActualSpacing);
         bnNew /= ((nInterval + 1) * nTargetSpacing);
+
+        int height = pindexLast->nHeight + 1;
+
+        if (height < (Params().WALLET_UPGRADE_BLOCK()+10) && height >= Params().WALLET_UPGRADE_BLOCK())
+            bnTargetLimit *= (int)pow(4.0, (double)(10+Params().WALLET_UPGRADE_BLOCK()-height)); // slash difficulty and gradually ramp back up over 10 blocks
 
         if (bnNew <= 0 || bnNew > bnTargetLimit)
             bnNew = bnTargetLimit;

@@ -80,7 +80,7 @@ bool fVerifyingBlocks = false;
 unsigned int nCoinCacheSize = 5000;
 bool fAlerts = DEFAULT_ALERTS;
 
-unsigned int nStakeMinAge = 1; // set to 60 * 60 * 6 after testing // 6 hours
+unsigned int nStakeMinAge = 120; // set to 60 * 60 * 6 after testing // 6 hours
 int64_t nReserveBalance = 0;
 
 /** Fees smaller than this (in upiv) are considered zero fee (for relaying and mining)
@@ -1070,15 +1070,6 @@ bool CheckTransaction(const CTransaction& tx, bool fZerocoinActive, bool fReject
         return state.DoS(10, error("CheckTransaction() : vout empty"),
             REJECT_INVALID, "bad-txns-vout-empty");
 
-/*     // Some primitive replay protection for future use
-    if (tx.nVersion > 4)
-        return state.DoS(50, error("CheckTransaction() : unknown transaction version"), REJECT_INVALID, "bad-txns-version");
-    else if (tx.nVersion < 3 && chainActive.Height()+1 >= Params().WALLET_UPGRADE_BLOCK())
-        return state.DoS(50, error("CheckTransaction() : transaction version must be at least 3 after upgrade block"), REJECT_INVALID, "bad-txns-version");
-    else if (tx.nVersion > 2 && chainActive.Height()+1 < Params().WALLET_UPGRADE_BLOCK())
-        return state.DoS(50, error("CheckTransaction() : transaction version must be under 2 before upgrade block"), REJECT_INVALID, "bad-txns-version");
- */
-
     // Size limits
     unsigned int nMaxSize = MAX_ZEROCOIN_TX_SIZE;
 
@@ -1847,7 +1838,7 @@ int64_t GetBlockValue(int nHeight, bool fProofOfStake)
 			nSubsidy = 10000 * COIN; // set to 75 after testing
 		} else if (nHeight <= 400000 && nHeight > 350000)
 		{
-			nSubsidy = 50 * COIN;
+			nSubsidy = 10000 * COIN; // should be 50
 		} else if (nHeight <= 450000 && nHeight > 400000)
 		{
 			nSubsidy = 25 * COIN;
@@ -1890,7 +1881,7 @@ CAmount GetSeeSaw(const CAmount& blockValue, int nMasternodeCount, int nHeight)
 {
     //if a mn count is inserted into the function we are looking for a specific result for a masternode count
     if (nMasternodeCount < 1){
-        if (IsSporkActive(SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT))
+        if (IsSporkActive(SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT) && chainActive.Height() > Params().WALLET_UPGRADE_BLOCK()+60)
             nMasternodeCount = mnodeman.stable_size();
         else
             nMasternodeCount = mnodeman.size();
@@ -4038,8 +4029,8 @@ bool CheckBlockHeader(const CBlockHeader& block, CValidationState& state, bool f
             REJECT_INVALID, "block-version");
     }*/
 
-	// Enforce version 9 after mandatory upgrade block
-	if (chainActive.Height()+1 >= Params().WALLET_UPGRADE_BLOCK())
+	// Enforce version 8 after mandatory upgrade block and make sure we have a block database to check chain height
+	if (block.nVersion >= Params().WALLET_UPGRADE_VERSION()-2 && mapBlockIndex.at(block.hashPrevBlock)->nHeight+2 >= Params().WALLET_UPGRADE_BLOCK())
 	{
 		if (block.nVersion < Params().WALLET_UPGRADE_VERSION())
 			return state.DoS(50, error("CheckBlockHeader() : block version must be at least %d after upgrade block", Params().WALLET_UPGRADE_VERSION()), REJECT_INVALID, "block-version");

@@ -27,7 +27,7 @@ class CBlockHeader
 {
 public:
     // header
-    static const int32_t CURRENT_VERSION=9;
+    static const int32_t CURRENT_VERSION=8;
     int32_t nVersion;
     uint256 hashPrevBlock;
     uint256 hashMerkleRoot;
@@ -54,7 +54,7 @@ public:
         READWRITE(nNonce);
 
         //zerocoin active, header changes to include accumulator checksum
-        if(nVersion > 8)
+        if(nVersion > 7)
             READWRITE(nAccumulatorCheckpoint);
     }
 
