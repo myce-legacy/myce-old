@@ -9,6 +9,9 @@
 #include "amount.h"
 #include "askpassphrasedialog.h"
 #include "masternodelist.h"
+#include "addressbookpage.h"
+#include "ui_addressbookpage.h"
+#include "addresstablemodel.h"
 
 #include <QStackedWidget>
 #include <ui_interface.h>
@@ -16,6 +19,7 @@
 class BitcoinGUI;
 class ClientModel;
 class OverviewPage;
+class AddressBookPage;
 class ReceiveCoinsDialog;
 class PrivacyDialog;
 class SendCoinsDialog;
@@ -65,7 +69,8 @@ private:
 
     OverviewPage* overviewPage;
     QWidget* transactionsPage;
-    ReceiveCoinsDialog* receiveCoinsPage;
+    AddressBookPage* addressBookPage;
+    AddressBookPage* receiveCoinsPage;
     PrivacyDialog* privacyPage;
     SendCoinsDialog* sendCoinsPage;
     BlockExplorer* explorerWindow;

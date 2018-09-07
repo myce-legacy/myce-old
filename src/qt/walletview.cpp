@@ -39,7 +39,7 @@
 WalletView::WalletView(QWidget* parent) : QStackedWidget(parent),
                                           clientModel(0),
                                           walletModel(0)
-{   
+{
     // Create tabs
     overviewPage = new OverviewPage();
     explorerWindow = new BlockExplorer(this);
@@ -116,7 +116,7 @@ WalletView::WalletView(QWidget* parent) : QStackedWidget(parent),
     transactionsPage->setLayout(vbox);
 
     privacyPage = new PrivacyDialog();
-    receiveCoinsPage = new ReceiveCoinsDialog();
+    receiveCoinsPage = new AddressBookPage(AddressBookPage::ForEditing, AddressBookPage::ReceivingTab, this);
     sendCoinsPage = new SendCoinsDialog();
 
     addWidget(overviewPage);
@@ -178,6 +178,7 @@ void WalletView::setClientModel(ClientModel* clientModel)
 
     overviewPage->setClientModel(clientModel);
     sendCoinsPage->setClientModel(clientModel);
+    receiveCoinsPage->setClientModel(clientModel);
     QSettings settings;
     if (settings.value("fShowMasternodesTab").toBool()) {
         masternodeListPage->setClientModel(clientModel);
@@ -191,13 +192,16 @@ void WalletView::setWalletModel(WalletModel* walletModel)
     // Put transaction list in tabs
     transactionView->setModel(walletModel);
     overviewPage->setWalletModel(walletModel);
+    receiveCoinsPage->setWalletModel(walletModel);
+
     QSettings settings;
     if (settings.value("fShowMasternodesTab").toBool()) {
         masternodeListPage->setWalletModel(walletModel);
     }
     privacyPage->setModel(walletModel);
-    receiveCoinsPage->setModel(walletModel);
     sendCoinsPage->setModel(walletModel);
+    receiveCoinsPage->setModel(walletModel->getAddressTableModel());
+
 
     if (walletModel) {
         // Receive and pass through messages from wallet model
@@ -265,7 +269,9 @@ void WalletView::gotoMasternodePage()
 
 void WalletView::gotoReceiveCoinsPage()
 {
+
     setCurrentWidget(receiveCoinsPage);
+
 }
 
 void WalletView::gotoPrivacyPage()
@@ -349,7 +355,7 @@ void WalletView::encryptWallet(bool status)
 {
     if (!walletModel)
         return;
-    AskPassphraseDialog dlg(status ? AskPassphraseDialog::Mode::Encrypt : AskPassphraseDialog::Mode::Decrypt, this, 
+    AskPassphraseDialog dlg(status ? AskPassphraseDialog::Mode::Encrypt : AskPassphraseDialog::Mode::Decrypt, this,
                             walletModel, AskPassphraseDialog::Context::Encrypt);
     dlg.exec();
 

@@ -251,10 +251,13 @@ void WalletFrame::usedSendingAddresses()
 }
 
 void WalletFrame::usedReceivingAddresses()
+
 {
+
     WalletView* walletView = currentWalletView();
     if (walletView)
         walletView->usedReceivingAddresses();
+
 }
 
 WalletView* WalletFrame::currentWalletView()

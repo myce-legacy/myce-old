@@ -8,8 +8,11 @@
 
 #include <QDialog>
 
+
 class AddressTableModel;
 class OptionsModel;
+class ClientModel;
+class WalletModel;
 
 namespace Ui
 {
@@ -30,6 +33,7 @@ class AddressBookPage : public QDialog
 {
     Q_OBJECT
 
+
 public:
     enum Tabs {
         SendingTab = 0,
@@ -41,10 +45,13 @@ public:
         ForEditing    /**< Open address book for editing */
     };
 
-    explicit AddressBookPage(Mode mode, Tabs tab, QWidget* parent);
+    explicit AddressBookPage(Mode mode, Tabs tab, QWidget* parent = 0);
     ~AddressBookPage();
 
     void setModel(AddressTableModel* model);
+    void setClientModel(ClientModel* clientModel);
+    void setWalletModel(WalletModel* walletModel);
+
     const QString& getReturnValue() const { return returnValue; }
 
 public slots:
@@ -53,6 +60,8 @@ public slots:
 private:
     Ui::AddressBookPage* ui;
     AddressTableModel* model;
+    ClientModel* clientModel;
+    WalletModel* walletModel;
     Mode mode;
     Tabs tab;
     QString returnValue;
