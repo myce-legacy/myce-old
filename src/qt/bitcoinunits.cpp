@@ -41,11 +41,11 @@ QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
     case PIV:
-        return QString("pivx");
+        return QString("myce");
     case mPIV:
-        return QString("mpivx");
+        return QString("mmyce");
     case uPIV:
-        return QString::fromUtf8("upivx");
+        return QString::fromUtf8("umyce");
     default:
         return QString("???");
     }
@@ -56,22 +56,22 @@ QString BitcoinUnits::name(int unit)
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
         case PIV:
-            return QString("PIV");
+            return QString("YCE");
         case mPIV:
-            return QString("mPIV");
+            return QString("mYCE");
         case uPIV:
-            return QString::fromUtf8("μPIV");
+            return QString::fromUtf8("μYCE");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
         case PIV:
-            return QString("tPIV");
+            return QString("tYCE");
         case mPIV:
-            return QString("mtPIV");
+            return QString("mtYCE");
         case uPIV:
-            return QString::fromUtf8("μtPIV");
+            return QString::fromUtf8("μtYCE");
         default:
             return QString("???");
         }
@@ -83,22 +83,22 @@ QString BitcoinUnits::description(int unit)
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
         case PIV:
-            return QString("PIV");
+            return QString("YCE");
         case mPIV:
-            return QString("Milli-PIV (1 / 1" THIN_SP_UTF8 "000)");
+            return QString("Milli-YCE (1 / 1" THIN_SP_UTF8 "000)");
         case uPIV:
-            return QString("Micro-PIV (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            return QString("Micro-YCE (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
         case PIV:
-            return QString("TestPIVs");
+            return QString("TestYCEs");
         case mPIV:
-            return QString("Milli-TestPIV (1 / 1" THIN_SP_UTF8 "000)");
+            return QString("Milli-TestYCE (1 / 1" THIN_SP_UTF8 "000)");
         case uPIV:
-            return QString("Micro-TestPIV (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            return QString("Micro-TestYCE (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }

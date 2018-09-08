@@ -32,7 +32,7 @@ QT_TRANSLATE_NOOP("pivx-core", ""
 QT_TRANSLATE_NOOP("pivx-core", ""
 "Calculated accumulator checkpoint is not what is recorded by block index"),
 QT_TRANSLATE_NOOP("pivx-core", ""
-"Cannot obtain a lock on data directory %s. PIVX Core is probably already "
+"Cannot obtain a lock on data directory %s. MYCE Core is probably already "
 "running."),
 QT_TRANSLATE_NOOP("pivx-core", ""
 "Change automatic finalized budget voting behavior. mode=auto: Vote for only "
@@ -50,7 +50,7 @@ QT_TRANSLATE_NOOP("pivx-core", ""
 "Delete all zerocoin spends and mints that have been recorded to the "
 "blockchain database and reindex them (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("pivx-core", ""
-"Disable all PIVX specific functionality (Masternodes, Zerocoin, SwiftX, "
+"Disable all MYCE specific functionality (Masternodes, Zerocoin, SwiftX, "
 "Budgeting) (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("pivx-core", ""
 "Distributed under the MIT software license, see the accompanying file "
@@ -58,12 +58,12 @@ QT_TRANSLATE_NOOP("pivx-core", ""
 QT_TRANSLATE_NOOP("pivx-core", ""
 "Enable SwiftX, show confirmations for locked transactions (bool, default: %s)"),
 QT_TRANSLATE_NOOP("pivx-core", ""
-"Enable automatic wallet backups triggered after each zPIV minting (0-1, "
+"Enable automatic wallet backups triggered after each zYCE minting (0-1, "
 "default: %u)"),
 QT_TRANSLATE_NOOP("pivx-core", ""
-"Enable or disable staking functionality for PIV inputs (0-1, default: %u)"),
+"Enable or disable staking functionality for YCE inputs (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("pivx-core", ""
-"Enable or disable staking functionality for zPIV inputs (0-1, default: %u)"),
+"Enable or disable staking functionality for zYCE inputs (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("pivx-core", ""
 "Enable spork administration functionality with the appropriate private key."),
 QT_TRANSLATE_NOOP("pivx-core", ""
@@ -100,10 +100,10 @@ QT_TRANSLATE_NOOP("pivx-core", ""
 QT_TRANSLATE_NOOP("pivx-core", ""
 "Failed to find coin set amongst held coins with less than maxNumber of Spends"),
 QT_TRANSLATE_NOOP("pivx-core", ""
-"Fees (in PIV/Kb) smaller than this are considered zero fee for relaying "
+"Fees (in YCE/Kb) smaller than this are considered zero fee for relaying "
 "(default: %s)"),
 QT_TRANSLATE_NOOP("pivx-core", ""
-"Fees (in PIV/Kb) smaller than this are considered zero fee for transaction "
+"Fees (in YCE/Kb) smaller than this are considered zero fee for transaction "
 "creation (default: %s)"),
 QT_TRANSLATE_NOOP("pivx-core", ""
 "Flush database activity from memory pool to disk log every <n> megabytes "
@@ -171,7 +171,7 @@ QT_TRANSLATE_NOOP("pivx-core", ""
 "Show N confirmations for a successfully locked transaction (0-9999, default: "
 "%u)"),
 QT_TRANSLATE_NOOP("pivx-core", ""
-"Specify custom backup path to add a copy of any automatic zPIV backup. If "
+"Specify custom backup path to add a copy of any automatic zYCE backup. If "
 "set as dir, every backup generates a timestamped file. If set as file, will "
 "rewrite to that file every backup. If backuppath is set as well, 4 backups "
 "will happen"),
@@ -192,15 +192,15 @@ QT_TRANSLATE_NOOP("pivx-core", ""
 "the OpenSSL Toolkit <https://www.openssl.org/> and cryptographic software "
 "written by Eric Young and UPnP software written by Thomas Bernard."),
 QT_TRANSLATE_NOOP("pivx-core", ""
-"Unable to bind to %s on this computer. PIVX Core is probably already running."),
+"Unable to bind to %s on this computer. MYCE Core is probably already running."),
 QT_TRANSLATE_NOOP("pivx-core", ""
 "Unable to locate enough Obfuscation denominated funds for this transaction."),
 QT_TRANSLATE_NOOP("pivx-core", ""
 "Unable to locate enough Obfuscation non-denominated funds for this "
-"transaction that are not equal 10000 PIV."),
+"transaction that are not equal 10000 YCE."),
 QT_TRANSLATE_NOOP("pivx-core", ""
 "Unable to locate enough funds for this transaction that are not equal 10000 "
-"PIV."),
+"YCE."),
 QT_TRANSLATE_NOOP("pivx-core", ""
 "Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: "
 "%s)"),
@@ -212,7 +212,7 @@ QT_TRANSLATE_NOOP("pivx-core", ""
 "pay if you send a transaction."),
 QT_TRANSLATE_NOOP("pivx-core", ""
 "Warning: Please check that your computer's date and time are correct! If "
-"your clock is wrong PIVX Core will not work properly."),
+"your clock is wrong MYCE Core will not work properly."),
 QT_TRANSLATE_NOOP("pivx-core", ""
 "Warning: The network does not appear to fully agree! Some miners appear to "
 "be experiencing issues."),
@@ -297,7 +297,7 @@ QT_TRANSLATE_NOOP("pivx-core", "Error initializing wallet database environment %
 QT_TRANSLATE_NOOP("pivx-core", "Error loading block database"),
 QT_TRANSLATE_NOOP("pivx-core", "Error loading wallet.dat"),
 QT_TRANSLATE_NOOP("pivx-core", "Error loading wallet.dat: Wallet corrupted"),
-QT_TRANSLATE_NOOP("pivx-core", "Error loading wallet.dat: Wallet requires newer version of PIVX Core"),
+QT_TRANSLATE_NOOP("pivx-core", "Error loading wallet.dat: Wallet requires newer version of MYCE Core"),
 QT_TRANSLATE_NOOP("pivx-core", "Error opening block database"),
 QT_TRANSLATE_NOOP("pivx-core", "Error reading from database, shutting down."),
 QT_TRANSLATE_NOOP("pivx-core", "Error recovering public key."),
@@ -321,7 +321,7 @@ QT_TRANSLATE_NOOP("pivx-core", "Failed to read block"),
 QT_TRANSLATE_NOOP("pivx-core", "Failed to select a zerocoin"),
 QT_TRANSLATE_NOOP("pivx-core", "Failed to wipe zerocoinDB"),
 QT_TRANSLATE_NOOP("pivx-core", "Failed to write coin serial number into wallet"),
-QT_TRANSLATE_NOOP("pivx-core", "Fee (in PIV/kB) to add to transactions you send (default: %s)"),
+QT_TRANSLATE_NOOP("pivx-core", "Fee (in YCE/kB) to add to transactions you send (default: %s)"),
 QT_TRANSLATE_NOOP("pivx-core", "Finalizing transaction."),
 QT_TRANSLATE_NOOP("pivx-core", "Force safe mode (default: %u)"),
 QT_TRANSLATE_NOOP("pivx-core", "Found enough users, signing ( waiting %s )"),
@@ -336,7 +336,7 @@ QT_TRANSLATE_NOOP("pivx-core", "Incompatible mode."),
 QT_TRANSLATE_NOOP("pivx-core", "Incompatible version."),
 QT_TRANSLATE_NOOP("pivx-core", "Incorrect or no genesis block found. Wrong datadir for network?"),
 QT_TRANSLATE_NOOP("pivx-core", "Information"),
-QT_TRANSLATE_NOOP("pivx-core", "Initialization sanity check failed. PIVX Core is shutting down."),
+QT_TRANSLATE_NOOP("pivx-core", "Initialization sanity check failed. MYCE Core is shutting down."),
 QT_TRANSLATE_NOOP("pivx-core", "Input is not valid."),
 QT_TRANSLATE_NOOP("pivx-core", "Insufficient funds"),
 QT_TRANSLATE_NOOP("pivx-core", "Insufficient funds."),
@@ -410,7 +410,7 @@ QT_TRANSLATE_NOOP("pivx-core", "Randomly drop 1 of every <n> network messages"),
 QT_TRANSLATE_NOOP("pivx-core", "Randomly fuzz 1 of every <n> network messages"),
 QT_TRANSLATE_NOOP("pivx-core", "Rebuild block chain index from current blk000??.dat files"),
 QT_TRANSLATE_NOOP("pivx-core", "Receive and display P2P network alerts (default: %u)"),
-QT_TRANSLATE_NOOP("pivx-core", "Reindex the PIV and zPIV money supply statistics"),
+QT_TRANSLATE_NOOP("pivx-core", "Reindex the YCE and zYCE money supply statistics"),
 QT_TRANSLATE_NOOP("pivx-core", "Reindex the accumulator database"),
 QT_TRANSLATE_NOOP("pivx-core", "Reindexing zerocoin database..."),
 QT_TRANSLATE_NOOP("pivx-core", "Reindexing zerocoin failed"),
@@ -462,7 +462,7 @@ QT_TRANSLATE_NOOP("pivx-core", "Synchronizing budgets..."),
 QT_TRANSLATE_NOOP("pivx-core", "Synchronizing masternode winners..."),
 QT_TRANSLATE_NOOP("pivx-core", "Synchronizing masternodes..."),
 QT_TRANSLATE_NOOP("pivx-core", "Synchronizing sporks..."),
-QT_TRANSLATE_NOOP("pivx-core", "Syncing zPIV wallet..."),
+QT_TRANSLATE_NOOP("pivx-core", "Syncing zYCE wallet..."),
 QT_TRANSLATE_NOOP("pivx-core", "The coin spend has been used"),
 QT_TRANSLATE_NOOP("pivx-core", "The new spend coin transaction did not verify"),
 QT_TRANSLATE_NOOP("pivx-core", "The selected mint coin is an invalid coin"),
@@ -499,14 +499,14 @@ QT_TRANSLATE_NOOP("pivx-core", "Use UPnP to map the listening port (default: 1 w
 QT_TRANSLATE_NOOP("pivx-core", "Use a custom max chain reorganization depth (default: %u)"),
 QT_TRANSLATE_NOOP("pivx-core", "Use the test network"),
 QT_TRANSLATE_NOOP("pivx-core", "Username for JSON-RPC connections"),
-QT_TRANSLATE_NOOP("pivx-core", "Value is below the smallest available denomination (= 1) of zPIV"),
+QT_TRANSLATE_NOOP("pivx-core", "Value is below the smallest available denomination (= 1) of zYCE"),
 QT_TRANSLATE_NOOP("pivx-core", "Value more than Obfuscation pool maximum allows."),
 QT_TRANSLATE_NOOP("pivx-core", "Verifying blocks..."),
 QT_TRANSLATE_NOOP("pivx-core", "Verifying wallet..."),
-QT_TRANSLATE_NOOP("pivx-core", "Version 1 zPIV require a security level of 100 to successfully spend."),
+QT_TRANSLATE_NOOP("pivx-core", "Version 1 zYCE require a security level of 100 to successfully spend."),
 QT_TRANSLATE_NOOP("pivx-core", "Wallet %s resides outside data directory %s"),
 QT_TRANSLATE_NOOP("pivx-core", "Wallet is locked."),
-QT_TRANSLATE_NOOP("pivx-core", "Wallet needed to be rewritten: restart PIVX Core to complete"),
+QT_TRANSLATE_NOOP("pivx-core", "Wallet needed to be rewritten: restart MYCE Core to complete"),
 QT_TRANSLATE_NOOP("pivx-core", "Wallet options:"),
 QT_TRANSLATE_NOOP("pivx-core", "Wallet window title"),
 QT_TRANSLATE_NOOP("pivx-core", "Warning"),
