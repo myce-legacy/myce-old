@@ -80,7 +80,7 @@ bool fVerifyingBlocks = false;
 unsigned int nCoinCacheSize = 5000;
 bool fAlerts = DEFAULT_ALERTS;
 
-unsigned int nStakeMinAge = 120; // set to 60 * 60 * 6 after testing // 6 hours
+unsigned int nStakeMinAge = 60 * 60 * 6; // set to 60 * 60 * 6 after testing // 6 hours
 int64_t nReserveBalance = 0;
 
 /** Fees smaller than this (in upiv) are considered zero fee (for relaying and mining)
@@ -1888,7 +1888,7 @@ CAmount GetSeeSaw(const CAmount& blockValue, int nMasternodeCount, int nHeight)
     }
 
     int64_t nMoneySupply = chainActive.Tip()->nMoneySupply;
-    int64_t mNodeCoins = nMasternodeCount * 10000 * COIN;
+    int64_t mNodeCoins = nMasternodeCount * 100000 * COIN;
 
     // Use this log to compare the masternode count for different clients
     //LogPrintf("Adjusting seesaw at height %d with %d masternodes (without drift: %d) at %ld\n", nHeight, nMasternodeCount, nMasternodeCount - Params().MasternodeCountDrift(), GetTime());
