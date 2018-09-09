@@ -883,7 +883,7 @@ void SendCoinsDialog::coinControlChangeEdited(const QString& text)
             ui->labelCoinControlChangeLabel->setText("");
         } else if (!addr.IsValid()) // Invalid address
         {
-            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid PIVX address"));
+            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid MYCE address"));
         } else // Valid address
         {
             CPubKey pubkey;
