@@ -131,7 +131,7 @@ public:
         /** Height or Time Based Activations **/
         nLastPOWBlock = 200000;
         nPOSStartBlock = 10000;
-        nMandatoryUpgradeBlock = 341900;
+        nMandatoryUpgradeBlock = 346370;
         nUpgradeBlockVersion = 8; //Block headers must be this version after upgrade block
         nModifierUpdateBlock = nMandatoryUpgradeBlock + 1;
         nZerocoinStartHeight = nMandatoryUpgradeBlock + 2;
