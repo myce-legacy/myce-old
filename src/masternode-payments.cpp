@@ -311,8 +311,8 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
         }
     }
 
-    CAmount blockValue = GetBlockValue(pindexPrev->nHeight, fProofOfStake);
-    CAmount masternodePayment = GetMasternodePayment(pindexPrev->nHeight, blockValue, 0, fZYCEStake);
+    CAmount blockValue = GetBlockValue(pindexPrev->nHeight + 1, fProofOfStake);
+    CAmount masternodePayment = GetMasternodePayment(pindexPrev->nHeight + 1, blockValue, 0, fZYCEStake);
 
     if (hasPayment) {
         if (fProofOfStake) {
@@ -534,7 +534,7 @@ bool CMasternodeBlockPayees::IsTransactionValid(const CTransaction& txNew)
 
     std::string strPayeesPossible = "";
 
-    CAmount nReward = GetBlockValue(nBlockHeight, chainActive[nBlockHeight]->IsProofOfStake());
+    CAmount nReward = GetBlockValue(nBlockHeight, true);
 
     if (IsSporkActive(SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT) && chainActive.Height() > Params().WALLET_UPGRADE_BLOCK()+60) {
         // Get a stable number of masternodes by ignoring newly activated (< 8000 sec old) masternodes

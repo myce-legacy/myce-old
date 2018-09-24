@@ -1831,15 +1831,15 @@ int64_t GetBlockValue(int nHeight, bool fProofOfStake)
 		} else if (nHeight <= 250000 && nHeight > 200000)
 		{
 			nSubsidy = 75 * COIN;
-		} else if (nHeight < Params().WALLET_UPGRADE_BLOCK() && nHeight > 250000)
+		} else if (nHeight <= 300000 && nHeight > 250000)
 		{
 			nSubsidy = 100 * COIN;
-		} else if (nHeight <= 350000 && nHeight >= Params().WALLET_UPGRADE_BLOCK())
+		} else if (nHeight <= 350000 && nHeight > 300000)
 		{
-			nSubsidy = 10000 * COIN; // set to 75 after testing
+			nSubsidy = 75 * COIN;
 		} else if (nHeight <= 400000 && nHeight > 350000)
 		{
-			nSubsidy = 10000 * COIN; // should be 50
+			nSubsidy = 50 * COIN;
 		} else if (nHeight <= 450000 && nHeight > 400000)
 		{
 			nSubsidy = 25 * COIN;
@@ -3103,7 +3103,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     LogPrint("bench", "      - Connect %u transactions: %.2fms (%.3fms/tx, %.3fms/txin) [%.2fs]\n", (unsigned)block.vtx.size(), 0.001 * (nTime1 - nTimeStart), 0.001 * (nTime1 - nTimeStart) / block.vtx.size(), nInputs <= 1 ? 0 : 0.001 * (nTime1 - nTimeStart) / (nInputs - 1), nTimeConnect * 0.000001);
 
     //PoW phase redistributed fees to miner. PoS stage destroys fees.
-    CAmount nExpectedMint = GetBlockValue(pindex->pprev->nHeight, block.IsProofOfStake());
+    CAmount nExpectedMint = GetBlockValue(pindex->nHeight, block.IsProofOfStake());
     if (pindex->nHeight < Params().WALLET_UPGRADE_BLOCK())
         nExpectedMint += nFees;
 
@@ -4296,8 +4296,8 @@ bool ContextualCheckBlock(const CBlock& block, CValidationState& state, CBlockIn
 
     // Enforce block.nVersion=2 rule that the coinbase starts with serialized block height
     // if 750 of the last 1,000 blocks are version 2 or greater (51/100 if testnet):
-    if (block.nVersion >= 2 &&
-        CBlockIndex::IsSuperMajority(2, pindexPrev, Params().EnforceBlockUpgradeMajority())) {
+    if (block.nVersion >= Params().WALLET_UPGRADE_VERSION() &&
+        CBlockIndex::IsSuperMajority(Params().WALLET_UPGRADE_VERSION(), pindexPrev, Params().EnforceBlockUpgradeMajority())) {
         CScript expect = CScript() << nHeight;
         if (block.vtx[0].vin[0].scriptSig.size() < expect.size() ||
             !std::equal(expect.begin(), expect.end(), block.vtx[0].vin[0].scriptSig.begin())) {
@@ -5628,6 +5628,12 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         if (!vRecv.empty()) {
             vRecv >> LIMITED_STRING(pfrom->strSubVer, 256);
             pfrom->cleanSubVer = SanitizeString(pfrom->strSubVer);
+        }
+        // Instantly ban old peers after the upgrade block
+        if (pfrom->cleanSubVer == "/Myce:1.0.0/" && chainActive.Height() >= Params().WALLET_UPGRADE_BLOCK()) {
+            LOCK(cs_main);
+            Misbehaving(pfrom->GetId(), 100);
+            return false;
         }
         if (!vRecv.empty())
             vRecv >> pfrom->nStartingHeight;
