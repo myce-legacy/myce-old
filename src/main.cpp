@@ -1816,6 +1816,7 @@ int64_t GetBlockValue(int nHeight, bool fProofOfStake)
 	int64_t nSubsidy = 0;
 	if (fProofOfStake)
 	{
+		nHeight--;
 		if (nHeight >= 10000 && nHeight <= 50000)
 		{
 			nSubsidy = 25 * COIN;
