@@ -135,8 +135,8 @@ public:
         nMandatoryUpgradeBlock = 346370;
         nUpgradeBlockVersion = 8;                                   // Block headers must be this version after upgrade block
         nModifierUpdateBlock = nZerocoinStartHeight - 1;
-        nZerocoinStartHeight = 99999999;                            // OFF
-        nZerocoinStartTime = 4070908800;                            // OFF
+        nZerocoinStartHeight = 9999999;                             // OFF
+        nZerocoinStartTime = 4000000000;                            // OFF
         nBlockEnforceSerialRange = nZerocoinStartHeight + 2;        // Enforce serial range starting this block
         nBlockRecalculateAccumulators = nZerocoinStartHeight + 3;   // Trigger a recalculation of accumulators
         nBlockFirstFraudulent = nZerocoinStartHeight + 1;           // First block that bad serials emerged
