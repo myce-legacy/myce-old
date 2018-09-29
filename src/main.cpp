@@ -5630,8 +5630,8 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
             vRecv >> LIMITED_STRING(pfrom->strSubVer, 256);
             pfrom->cleanSubVer = SanitizeString(pfrom->strSubVer);
         }
-        // Instantly ban old peers after the upgrade block
-        if (pfrom->cleanSubVer == "/Myce:1.0.0/" && chainActive.Height() >= Params().WALLET_UPGRADE_BLOCK()) {
+        // Instantly ban old peers once we are at the upgrade block
+        if (pfrom->cleanSubVer == "/Myce:1.0.0/" && chainActive.Height() + 1 >= Params().WALLET_UPGRADE_BLOCK()) {
             LOCK(cs_main);
             Misbehaving(pfrom->GetId(), 100);
             return false;
