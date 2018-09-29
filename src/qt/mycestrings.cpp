@@ -235,10 +235,10 @@ QT_TRANSLATE_NOOP("myce-core", ""
 QT_TRANSLATE_NOOP("myce-core", ""
 "You must specify a masternodeprivkey in the configuration. Please see "
 "documentation for help."),
-QT_TRANSLATE_NOOP("myce-core", "(51472 could be used only on mainnet)"),
+QT_TRANSLATE_NOOP("myce-core", "(23511 could be used only on mainnet)"),
 QT_TRANSLATE_NOOP("myce-core", "(default: %s)"),
 QT_TRANSLATE_NOOP("myce-core", "(default: 1)"),
-QT_TRANSLATE_NOOP("myce-core", "(must be 51472 for mainnet)"),
+QT_TRANSLATE_NOOP("myce-core", "(must be 23511 for mainnet)"),
 QT_TRANSLATE_NOOP("myce-core", "<category> can be:"),
 QT_TRANSLATE_NOOP("myce-core", "Accept command line and JSON-RPC commands"),
 QT_TRANSLATE_NOOP("myce-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),
