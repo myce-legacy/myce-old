@@ -119,7 +119,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
     if (fZerocoinActive)
         pblock->nVersion = Params().Zerocoin_HeaderVersion();
     else
-        pblock->nVersion = 7;
+        pblock->nVersion = Params().WALLET_UPGRADE_VERSION();
 
     // Create coinbase tx
     CMutableTransaction txNew;

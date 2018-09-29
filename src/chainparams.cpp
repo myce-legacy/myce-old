@@ -133,19 +133,19 @@ public:
         nLastPOWBlock = 200000;
         nPOSStartBlock = 10000;
         nMandatoryUpgradeBlock = 346370;
-        nUpgradeBlockVersion = 8; //Block headers must be this version after upgrade block
-        nModifierUpdateBlock = nMandatoryUpgradeBlock + 1;
-        nZerocoinStartHeight = nMandatoryUpgradeBlock + 2;
-        nZerocoinStartTime = 1508214600; // October 17, 2017 4:30:00 AM
-        nBlockEnforceSerialRange = nMandatoryUpgradeBlock + 4; //Enforce serial range starting this block
-        nBlockRecalculateAccumulators = nMandatoryUpgradeBlock + 5; //Trigger a recalculation of accumulators
-        nBlockFirstFraudulent = nMandatoryUpgradeBlock + 3; //First block that bad serials emerged
-        nBlockLastGoodCheckpoint = nMandatoryUpgradeBlock + 5; //Last valid accumulator checkpoint
-        nBlockEnforceInvalidUTXO = nMandatoryUpgradeBlock + 1; //Start enforcing the invalid UTXO's
-        nInvalidAmountFiltered = 0*COIN; //Amount of invalid coins filtered through exchanges, that should be considered valid
-        nBlockZerocoinV2 = nZerocoinStartHeight + 10; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
-        nEnforceNewSporkKey = 1525158000; //!> Sporks signed after (GMT): Tuesday, May 1, 2018 7:00:00 AM GMT must use the new spork key
-        nRejectOldSporkKey = 1527811200; //!> Fully reject old spork key after (GMT): Friday, June 1, 2018 12:00:00 AM
+        nUpgradeBlockVersion = 8;                                   // Block headers must be this version after upgrade block
+        nModifierUpdateBlock = nZerocoinStartHeight - 1;
+        nZerocoinStartHeight = 99999999;                            // OFF
+        nZerocoinStartTime = 4070908800;                            // OFF
+        nBlockEnforceSerialRange = nZerocoinStartHeight + 2;        // Enforce serial range starting this block
+        nBlockRecalculateAccumulators = nZerocoinStartHeight + 3;   // Trigger a recalculation of accumulators
+        nBlockFirstFraudulent = nZerocoinStartHeight + 1;           // First block that bad serials emerged
+        nBlockLastGoodCheckpoint = nZerocoinStartHeight + 3;        // Last valid accumulator checkpoint
+        nBlockEnforceInvalidUTXO = nZerocoinStartHeight - 1;        // Start enforcing the invalid UTXO's
+        nInvalidAmountFiltered = 0*COIN;                            // Amount of invalid coins filtered through exchanges, that should be considered valid
+        nBlockZerocoinV2 = nZerocoinStartHeight + 10;               // The block that zerocoin v2 becomes active
+        nEnforceNewSporkKey = 1525158000;                           // Sporks signed after (GMT): Tuesday, May 1, 2018 7:00:00 AM GMT must use the new spork key
+        nRejectOldSporkKey = 1527811200;                            // Fully reject old spork key after (GMT): Friday, June 1, 2018 12:00:00 AM
 
         /**
          * Build the genesis block. Note that the output of the genesis coinbase cannot
@@ -223,7 +223,7 @@ public:
         nMintRequiredConfirmations = 20; //the maximum amount of confirmations until accumulated in 19
         nRequiredAccumulation = 1;
         nDefaultSecurityLevel = 100; //full security level for accumulators
-        nZerocoinHeaderVersion = nUpgradeBlockVersion; //Block headers must be this version once zerocoin is active
+        nZerocoinHeaderVersion = nUpgradeBlockVersion + 1; //Block headers must be this version once zerocoin is active
         nZerocoinRequiredStakeDepth = 200; //The required confirmations for a zyce to be stakable
 
         nBudget_Fee_Confirmations = 6; // Number of confirmations for the finalization fee
