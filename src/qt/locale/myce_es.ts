@@ -2442,7 +2442,7 @@ Para habilitar AutoMint cambie 'enablezeromint = 0' a 'enablezeromint = 1' en my
         <translation>PRIVACIDAD</translation>
     </message>
     <message>
-        <source>Enter an amount of Piv to convert to zYCE</source>
+        <source>Enter an amount of Yce to convert to zYCE</source>
         <translation>Introduzca la cantidad de YCE que desea convertir a zYce</translation>
     </message>
     <message>
@@ -4857,7 +4857,7 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     </message>
 </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZYceControlDialog</name>
     <message>
         <source>Select zYCE to Spend</source>
         <translation>Selecciona zYCE para Gastar</translation>

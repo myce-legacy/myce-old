@@ -1961,7 +1961,7 @@ Per attivare il Conio automatico cambiare 'enablezeromint=0' in 'enablezeromint=
         <translation>PRIVACY</translation>
     </message>
     <message>
-        <source>Enter an amount of Piv to convert to zYCE</source>
+        <source>Enter an amount of Yce to convert to zYCE</source>
         <translation>Immetti un importo di YCE da convertire in zYCE</translation>
     </message>
     <message>
@@ -2666,7 +2666,7 @@ Per cambiare la percentuale (riavvio non necessario):
     </message>
     </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZYceControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>

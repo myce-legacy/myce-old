@@ -2376,7 +2376,7 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
         <translation>CONFIDENTIALITÉ</translation>
     </message>
     <message>
-        <source>Enter an amount of Piv to convert to zYCE</source>
+        <source>Enter an amount of Yce to convert to zYCE</source>
         <translation>Entrez un montant de YCE à convertir en zYCE</translation>
     </message>
     <message>
@@ -4388,7 +4388,7 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
     </message>
 </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZYceControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Quantité </translation>

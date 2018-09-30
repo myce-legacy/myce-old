@@ -4375,7 +4375,7 @@ bool ContextualCheckZerocoinStake(int nHeight, CStakeInput* stake)
     if (nHeight < Params().Zerocoin_Block_V2_Start())
         return error("%s: zYCE stake block is less than allowed start height", __func__);
 
-    if (CZPivStake* zYCE = dynamic_cast<CZPivStake*>(stake)) {
+    if (CZYceStake* zYCE = dynamic_cast<CZYceStake*>(stake)) {
         CBlockIndex* pindexFrom = zYCE->GetIndexFrom();
         if (!pindexFrom)
             return error("%s: failed to get index associated with zYCE stake checksum", __func__);

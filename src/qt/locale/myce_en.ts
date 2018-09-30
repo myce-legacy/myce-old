@@ -3098,7 +3098,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     <message>
         <location line="+182"/>
         <location line="+52"/>
-        <source>Enter an amount of Piv to convert to zYCE</source>
+        <source>Enter an amount of Yce to convert to zYCE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6224,7 +6224,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZYceControlDialog</name>
     <message>
         <location filename="../forms/zycecontroldialog.ui" line="+20"/>
         <source>Select zYCE to Spend</source>

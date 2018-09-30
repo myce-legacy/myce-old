@@ -2441,7 +2441,7 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in myce.conf<
         <translation>프라이버시</translation>
     </message>
     <message>
-        <source>Enter an amount of Piv to convert to zYCE</source>
+        <source>Enter an amount of Yce to convert to zYCE</source>
         <translation>zYCE로 변환할 YCE 수량을 입력하세요.</translation>
     </message>
     <message>
@@ -4858,7 +4858,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZYceControlDialog</name>
     <message>
         <source>Select zYCE to Spend</source>
         <translation>사용할 zYCE 선택</translation>

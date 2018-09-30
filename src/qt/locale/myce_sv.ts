@@ -2417,7 +2417,7 @@ För att aktivera AutoMint ändra 'enablezeromint=0' till 'enablezeromint=1' i m
         <translation>SEKRETESS</translation>
     </message>
     <message>
-        <source>Enter an amount of Piv to convert to zYCE</source>
+        <source>Enter an amount of Yce to convert to zYCE</source>
         <translation>Mata in en mängd YCE att konvertera till zYCE</translation>
     </message>
     <message>
@@ -4773,7 +4773,7 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     </message>
 </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZYceControlDialog</name>
     <message>
         <source>Select zYCE to Spend</source>
         <translation>Välj zYCE att Spendera</translation>

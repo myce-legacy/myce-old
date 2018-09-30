@@ -1670,8 +1670,8 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
         //Inititalize zYCEWallet
         uiInterface.InitMessage(_("Syncing zYCE wallet..."));
 
-        bool fEnableZPivBackups = GetBoolArg("-backupzyce", true);
-        pwalletMain->setZPivAutoBackups(fEnableZPivBackups);
+        bool fEnableZYceBackups = GetBoolArg("-backupzyce", true);
+        pwalletMain->setZYceAutoBackups(fEnableZYceBackups);
 
         //Load zerocoin mint hashes to memory
         pwalletMain->zyceTracker->Init();

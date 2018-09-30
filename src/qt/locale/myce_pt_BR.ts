@@ -3635,7 +3635,7 @@ https://www.transifex.com/myce-project/myce-project-translations</translation>
     </message>
 </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZYceControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Quantia</translation>

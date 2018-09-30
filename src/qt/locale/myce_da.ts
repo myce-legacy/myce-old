@@ -2441,8 +2441,8 @@ For at aktivere AutoMint-ændring 'enablezeromint = 0' til 'enablezeromint = 1' 
         <translation>PRIVATLIV</translation>
     </message>
     <message>
-        <source>Enter an amount of Piv to convert to zYCE</source>
-        <translation>Indtast en mængde Piv for at konvertere til zYce</translation>
+        <source>Enter an amount of Yce to convert to zYCE</source>
+        <translation>Indtast en mængde Yce for at konvertere til zYce</translation>
     </message>
     <message>
         <source>zYCE Control</source>
@@ -4557,7 +4557,7 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     </message>
     <message>
         <source>Received YCE from zYCE</source>
-        <translation>Modtaget Piv fra zYce</translation>
+        <translation>Modtaget Yce fra zYce</translation>
     </message>
     <message>
         <source>Minted Change as zYCE from zYCE Spend</source>
@@ -4784,7 +4784,7 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     </message>
     <message>
         <source>Received YCE from zYCE</source>
-        <translation>Modtaget Piv fra zYce</translation>
+        <translation>Modtaget Yce fra zYce</translation>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zYCE</source>
@@ -4856,7 +4856,7 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     </message>
 </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZYceControlDialog</name>
     <message>
         <source>Select zYCE to Spend</source>
         <translation>Vælg zYCE for at bruge</translation>

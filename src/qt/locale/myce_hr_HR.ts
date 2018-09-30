@@ -2442,8 +2442,8 @@ Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablez
         <translation>PRIVATNOST</translation>
     </message>
     <message>
-        <source>Enter an amount of Piv to convert to zYCE</source>
-        <translation>Unesite iznos Piv za pretvorbu u zYCE</translation>
+        <source>Enter an amount of Yce to convert to zYCE</source>
+        <translation>Unesite iznos Yce za pretvorbu u zYCE</translation>
     </message>
     <message>
         <source>zYCE Control</source>
@@ -4858,7 +4858,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZYceControlDialog</name>
     <message>
         <source>Select zYCE to Spend</source>
         <translation>Odabrani zYCE za utrošiti</translation>

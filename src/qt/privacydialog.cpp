@@ -293,17 +293,17 @@ void PrivacyDialog::on_pushButtonSpendzYCE_clicked()
     sendzYCE();
 }
 
-void PrivacyDialog::on_pushButtonZPivControl_clicked()
+void PrivacyDialog::on_pushButtonZYceControl_clicked()
 {
     if (!walletModel || !walletModel->getOptionsModel())
         return;
 
-    ZPivControlDialog* zYceControl = new ZPivControlDialog(this);
+    ZYceControlDialog* zYceControl = new ZYceControlDialog(this);
     zYceControl->setModel(walletModel);
     zYceControl->exec();
 }
 
-void PrivacyDialog::setZPivControlLabels(int64_t nAmount, int nQuantity)
+void PrivacyDialog::setZYceControlLabels(int64_t nAmount, int nQuantity)
 {
     ui->labelzYceSelected_int->setText(QString::number(nAmount));
     ui->labelQuantitySelected_int->setText(QString::number(nQuantity));
@@ -414,8 +414,8 @@ void PrivacyDialog::sendzYCE()
     // use mints from zYCE selector if applicable
     vector<CMintMeta> vMintsToFetch;
     vector<CZerocoinMint> vMintsSelected;
-    if (!ZPivControlDialog::setSelectedMints.empty()) {
-        vMintsToFetch = ZPivControlDialog::GetSelectedMints();
+    if (!ZYceControlDialog::setSelectedMints.empty()) {
+        vMintsToFetch = ZYceControlDialog::GetSelectedMints();
 
         for (auto& meta : vMintsToFetch) {
             if (meta.nVersion < libzerocoin::PrivateCoin::PUBKEY_VERSION) {
@@ -487,7 +487,7 @@ void PrivacyDialog::sendzYCE()
     }
 
     // Clear zyce selector in case it was used
-    ZPivControlDialog::setSelectedMints.clear();
+    ZYceControlDialog::setSelectedMints.clear();
     ui->labelzYceSelected_int->setText(QString("0"));
     ui->labelQuantitySelected_int->setText(QString("0"));
 
@@ -506,7 +506,7 @@ void PrivacyDialog::sendzYCE()
 
     CAmount nValueOut = 0;
     for (const CTxOut& txout: wtxNew.vout) {
-        strStats += tr("value out: ") + FormatMoney(txout.nValue).c_str() + " Piv, ";
+        strStats += tr("value out: ") + FormatMoney(txout.nValue).c_str() + " Yce, ";
         nValueOut += txout.nValue;
 
         strStats += tr("address: ");

@@ -15,16 +15,16 @@ class CZerocoinMint;
 class WalletModel;
 
 namespace Ui {
-class ZPivControlDialog;
+class ZYceControlDialog;
 }
 
-class ZPivControlDialog : public QDialog
+class ZYceControlDialog : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit ZPivControlDialog(QWidget *parent);
-    ~ZPivControlDialog();
+    explicit ZYceControlDialog(QWidget *parent);
+    ~ZYceControlDialog();
 
     void setModel(WalletModel* model);
 
@@ -33,7 +33,7 @@ public:
     static std::vector<CMintMeta> GetSelectedMints();
 
 private:
-    Ui::ZPivControlDialog *ui;
+    Ui::ZYceControlDialog *ui;
     WalletModel* model;
     PrivacyDialog* privacyDialog;
 

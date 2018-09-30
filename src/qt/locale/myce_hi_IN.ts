@@ -321,7 +321,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZYceControlDialog</name>
     </context>
 <context>
     <name>myce-core</name>

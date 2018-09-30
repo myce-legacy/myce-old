@@ -1959,7 +1959,7 @@
     </message>
     </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZYceControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Quantitat</translation>

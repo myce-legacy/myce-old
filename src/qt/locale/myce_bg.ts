@@ -2430,7 +2430,7 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in myce.conf<
         <translation>КОНФИДЕНЦИАЛНОСТ</translation>
     </message>
     <message>
-        <source>Enter an amount of Piv to convert to zYCE</source>
+        <source>Enter an amount of Yce to convert to zYCE</source>
         <translation>Въведете колко YCE  да се конвертират в zYCE</translation>
     </message>
     <message>
@@ -4845,7 +4845,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZYceControlDialog</name>
     <message>
         <source>Select zYCE to Spend</source>
         <translation>Изберете zYCE за Изпращане</translation>

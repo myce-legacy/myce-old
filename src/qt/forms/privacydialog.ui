@@ -252,7 +252,7 @@
                            </size>
                           </property>
                           <property name="toolTip">
-                           <string>Enter an amount of Piv to convert to zYCE</string>
+                           <string>Enter an amount of Yce to convert to zYCE</string>
                           </property>
                           <property name="text">
                            <string>Mint Zerocoin</string>
@@ -304,7 +304,7 @@
                            </font>
                           </property>
                           <property name="toolTip">
-                           <string>Enter an amount of Piv to convert to zYCE</string>
+                           <string>Enter an amount of Yce to convert to zYCE</string>
                           </property>
                           <property name="text">
                            <string>0.000 000 00 YCE</string>
@@ -603,7 +603,7 @@
                          <number>0</number>
                         </property>
                         <item>
-                         <widget class="QPushButton" name="pushButtonZPivControl">
+                         <widget class="QPushButton" name="pushButtonZYceControl">
                           <property name="text">
                            <string>zYCE Control</string>
                           </property>
