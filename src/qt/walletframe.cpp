@@ -1,5 +1,6 @@
 // Copyright (c) 2011-2013 The Bitcoin developers
 // Copyright (c) 2016-2018 The PIVX developers
+// Copyright (c) 2018 The MYCE developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -251,10 +252,13 @@ void WalletFrame::usedSendingAddresses()
 }
 
 void WalletFrame::usedReceivingAddresses()
+
 {
+
     WalletView* walletView = currentWalletView();
     if (walletView)
         walletView->usedReceivingAddresses();
+
 }
 
 WalletView* WalletFrame::currentWalletView()

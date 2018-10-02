@@ -1,11 +1,12 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2018 The MYCE developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/pivx-config.h"
+#include "config/myce-config.h"
 #endif
 
 #include "addressbookpage.h"
@@ -16,6 +17,9 @@
 #include "csvmodelwriter.h"
 #include "editaddressdialog.h"
 #include "guiutil.h"
+#include "wallet.h"
+#include "walletmodel.h"
+#include "clientmodel.h"
 
 #include <QIcon>
 #include <QMenu>
@@ -23,8 +27,11 @@
 #include <QSortFilterProxyModel>
 
 AddressBookPage::AddressBookPage(Mode mode, Tabs tab, QWidget* parent) : QDialog(parent, Qt::WindowSystemMenuHint | Qt::WindowTitleHint | Qt::WindowCloseButtonHint),
+
                                                                          ui(new Ui::AddressBookPage),
                                                                          model(0),
+                                                                         clientModel(0),
+                                                                         walletModel(0),
                                                                          mode(mode),
                                                                          tab(tab)
 {
@@ -42,6 +49,8 @@ AddressBookPage::AddressBookPage(Mode mode, Tabs tab, QWidget* parent) : QDialog
         switch (tab) {
         case SendingTab:
             setWindowTitle(tr("Choose the address to send coins to"));
+            setStyleSheet("QLabel { color:#333; } , QTableView { font-size:12px; } , QHeaderView::section {  min-width:260px; }");
+
             break;
         case ReceivingTab:
             setWindowTitle(tr("Choose the address to receive coins with"));
@@ -66,11 +75,11 @@ AddressBookPage::AddressBookPage(Mode mode, Tabs tab, QWidget* parent) : QDialog
     }
     switch (tab) {
     case SendingTab:
-        ui->labelExplanation->setText(tr("These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins."));
+        ui->labelExplanation->setText(tr("These are your MYCE addresses for sending payments. Always check the amount and the receiving address before sending coins."));
         ui->deleteAddress->setVisible(true);
         break;
     case ReceivingTab:
-        ui->labelExplanation->setText(tr("These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction."));
+        ui->labelExplanation->setText(tr("These are your MYCE addresses for receiving payments. It is recommended to use a new receiving address for each transaction."));
         ui->deleteAddress->setVisible(false);
         break;
     }
@@ -105,6 +114,17 @@ AddressBookPage::~AddressBookPage()
 {
     delete ui;
 }
+
+void AddressBookPage::setClientModel(ClientModel* model)
+{
+    this->clientModel = model;
+}
+
+void AddressBookPage::setWalletModel(WalletModel* model)
+{
+    this->walletModel = model;
+}
+
 
 void AddressBookPage::setModel(AddressTableModel* model)
 {

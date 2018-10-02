@@ -2,6 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2018 The MYCE developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -17,9 +18,16 @@
 #include <math.h>
 
 
-unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader* pblock)
+const CBlockIndex* GetLastBlockIndex(const CBlockIndex* pindex, bool fProofOfStake)
 {
-    /* current difficulty formula, pivx - DarkGravity v3, written by Evan Duffield - evan@dashpay.io */
+    while (pindex && pindex->pprev && (pindex->IsProofOfStake() != fProofOfStake))
+        pindex = pindex->pprev;
+    return pindex;
+}
+
+unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader* pblock, bool fProofOfStake)
+{
+    /* current difficulty formula, myce - DarkGravity v3, written by Evan Duffield - evan@dashpay.io */
     const CBlockIndex* BlockLastSolved = pindexLast;
     const CBlockIndex* BlockReading = pindexLast;
     int64_t nActualTimespan = 0;
@@ -34,14 +42,16 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
         return Params().ProofOfWorkLimit().GetCompact();
     }
 
-    if (pindexLast->nHeight > Params().LAST_POW_BLOCK()) {
-        uint256 bnTargetLimit = (~uint256(0) >> 24);
+    if (pindexLast->nHeight >= Params().POS_START_BLOCK()) {
+        uint256 bnTargetLimit = (~uint256(0) >> 20);
         int64_t nTargetSpacing = 60;
-        int64_t nTargetTimespan = 60 * 40;
+        int64_t nTargetTimespan = 60 * 10;
 
         int64_t nActualSpacing = 0;
-        if (pindexLast->nHeight != 0)
-            nActualSpacing = pindexLast->GetBlockTime() - pindexLast->pprev->GetBlockTime();
+
+        const CBlockIndex* pindexPrev = GetLastBlockIndex(pindexLast, fProofOfStake);
+        const CBlockIndex* pindexPrevPrev = GetLastBlockIndex(pindexPrev->pprev, fProofOfStake);
+        nActualSpacing = pindexPrev->GetBlockTime() - pindexPrevPrev->GetBlockTime();
 
         if (nActualSpacing < 0)
             nActualSpacing = 1;
@@ -49,11 +59,16 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
         // ppcoin: target change every block
         // ppcoin: retarget with exponential moving toward target spacing
         uint256 bnNew;
-        bnNew.SetCompact(pindexLast->nBits);
+        bnNew.SetCompact(pindexPrev->nBits);
 
         int64_t nInterval = nTargetTimespan / nTargetSpacing;
         bnNew *= ((nInterval - 1) * nTargetSpacing + nActualSpacing + nActualSpacing);
         bnNew /= ((nInterval + 1) * nTargetSpacing);
+
+        int height = pindexLast->nHeight + 1;
+
+        if (height < (Params().WALLET_UPGRADE_BLOCK()+10) && height >= Params().WALLET_UPGRADE_BLOCK())
+            bnNew *= (int)pow(4.0, (double)(10+Params().WALLET_UPGRADE_BLOCK()-height)); // slash difficulty and gradually ramp back up over 10 blocks
 
         if (bnNew <= 0 || bnNew > bnTargetLimit)
             bnNew = bnTargetLimit;
@@ -109,7 +124,45 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     return bnNew.GetCompact();
 }
 
-bool CheckProofOfWork(uint256 hash, unsigned int nBits)
+unsigned int GetLegacyNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader* pblock, bool fProofOfStake)
+{
+    int64_t nTargetSpacing = 60;
+    int64_t nTargetTimespan = 10 * 60;
+
+    uint256 bnTargetLimit = fProofOfStake ? (~uint256(0) >> 20) : Params().ProofOfWorkLimit();
+
+    if (pindexLast == NULL)
+        return bnTargetLimit.GetCompact(); // genesis block
+
+    const CBlockIndex* pindexPrev = GetLastBlockIndex(pindexLast, fProofOfStake);
+    if (pindexPrev->pprev == NULL)
+        return bnTargetLimit.GetCompact(); // first block
+
+    const CBlockIndex* pindexPrevPrev = GetLastBlockIndex(pindexPrev->pprev, fProofOfStake);
+    if (pindexPrevPrev->pprev == NULL)
+        return bnTargetLimit.GetCompact(); // second block
+
+    int64_t nActualSpacing = pindexPrev->GetBlockTime() - pindexPrevPrev->GetBlockTime();
+
+    if (nActualSpacing < 0)
+        nActualSpacing = nTargetSpacing;
+
+    // ppcoin: target change every block
+    // ppcoin: retarget with exponential moving toward target spacing
+    uint256 bnNew;
+    bnNew.SetCompact(pindexPrev->nBits);
+
+    int64_t nInterval = nTargetTimespan / nTargetSpacing;
+    bnNew *= ((nInterval - 1) * nTargetSpacing + nActualSpacing + nActualSpacing);
+    bnNew /= ((nInterval + 1) * nTargetSpacing);
+
+    if (bnNew <= 0 || bnNew > bnTargetLimit)
+        bnNew = bnTargetLimit;
+
+    return bnNew.GetCompact();
+}
+
+bool CheckProofOfWork(uint256 hash, int nVersion, unsigned int nBits)
 {
     bool fNegative;
     bool fOverflow;
@@ -125,7 +178,7 @@ bool CheckProofOfWork(uint256 hash, unsigned int nBits)
         return error("CheckProofOfWork() : nBits below minimum work");
 
     // Check proof of work matches claimed amount
-    if (hash > bnTarget)
+    if (nVersion >= Params().WALLET_UPGRADE_VERSION() && hash > bnTarget)
         return error("CheckProofOfWork() : hash doesn't match nBits");
 
     return true;

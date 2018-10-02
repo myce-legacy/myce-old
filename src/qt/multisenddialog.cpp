@@ -1,4 +1,5 @@
 // Copyright (c) 2017-2018 The PIVX developers
+// Copyright (c) 2018 The MYCE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -11,6 +12,7 @@
 #include "walletmodel.h"
 #include <QLineEdit>
 #include <QMessageBox>
+#include <QStyle>
 #include <boost/lexical_cast.hpp>
 
 using namespace std;

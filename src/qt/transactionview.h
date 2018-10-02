@@ -1,5 +1,6 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2017 The PIVX developers
+// Copyright (c) 2018 The MYCE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -52,9 +53,9 @@ public:
     enum ColumnWidths {
         STATUS_COLUMN_WIDTH = 23,
         WATCHONLY_COLUMN_WIDTH = 23,
-        DATE_COLUMN_WIDTH = 120,
-        TYPE_COLUMN_WIDTH = 240,
-        AMOUNT_MINIMUM_COLUMN_WIDTH = 120,
+        DATE_COLUMN_WIDTH = 125,
+        TYPE_COLUMN_WIDTH = 180,
+        AMOUNT_MINIMUM_COLUMN_WIDTH = 145,
         MINIMUM_COLUMN_WIDTH = 23
     };
 

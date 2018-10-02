@@ -1,9 +1,10 @@
 // Copyright (c) 2017-2018 The PIVX developers
+// Copyright (c) 2018 The MYCE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef PIVX_MINTPOOL_H
-#define PIVX_MINTPOOL_H
+#ifndef MYCE_MINTPOOL_H
+#define MYCE_MINTPOOL_H
 
 #include <map>
 #include <list>
@@ -50,4 +51,4 @@ public:
 };
 
 
-#endif //PIVX_MINTPOOL_H
+#endif //MYCE_MINTPOOL_H

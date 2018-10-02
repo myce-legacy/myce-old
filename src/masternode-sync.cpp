@@ -1,5 +1,6 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2018 The MYCE developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -51,8 +52,8 @@ bool CMasternodeSync::IsBlockchainSynced()
     CBlockIndex* pindex = chainActive.Tip();
     if (pindex == NULL) return false;
 
-
-    if (pindex->nTime + 60 * 60 < GetTime())
+    // if the last block is over 2 days old, we are not synced
+    if (pindex->nTime + 60 * 60 * 24 * 2 < GetTime())
         return false;
 
     fBlockchainSynced = true;
@@ -308,7 +309,7 @@ void CMasternodeSync::Process()
                 // timeout
                 if (lastMasternodeList == 0 &&
                     (RequestedMasternodeAttempt >= MASTERNODE_SYNC_THRESHOLD * 3 || GetTime() - nAssetSyncStarted > MASTERNODE_SYNC_TIMEOUT * 5)) {
-                    if (IsSporkActive(SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT)) {
+                    if (IsSporkActive(SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT) && chainActive.Height() > Params().WALLET_UPGRADE_BLOCK()+60) {
                         LogPrintf("CMasternodeSync::Process - ERROR - Sync has failed, will retry later\n");
                         RequestedMasternodeAssets = MASTERNODE_SYNC_FAILED;
                         RequestedMasternodeAttempt = 0;
@@ -339,7 +340,7 @@ void CMasternodeSync::Process()
                 // timeout
                 if (lastMasternodeWinner == 0 &&
                     (RequestedMasternodeAttempt >= MASTERNODE_SYNC_THRESHOLD * 3 || GetTime() - nAssetSyncStarted > MASTERNODE_SYNC_TIMEOUT * 5)) {
-                    if (IsSporkActive(SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT)) {
+                    if (IsSporkActive(SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT) && chainActive.Height() > Params().WALLET_UPGRADE_BLOCK()+60) {
                         LogPrintf("CMasternodeSync::Process - ERROR - Sync has failed, will retry later\n");
                         RequestedMasternodeAssets = MASTERNODE_SYNC_FAILED;
                         RequestedMasternodeAttempt = 0;

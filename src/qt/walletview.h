@@ -1,5 +1,6 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2017-2018 The PIVX developers
+// Copyright (c) 2018 The MYCE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -9,6 +10,9 @@
 #include "amount.h"
 #include "askpassphrasedialog.h"
 #include "masternodelist.h"
+#include "addressbookpage.h"
+#include "ui_addressbookpage.h"
+#include "addresstablemodel.h"
 
 #include <QStackedWidget>
 #include <ui_interface.h>
@@ -16,6 +20,7 @@
 class BitcoinGUI;
 class ClientModel;
 class OverviewPage;
+class AddressBookPage;
 class ReceiveCoinsDialog;
 class PrivacyDialog;
 class SendCoinsDialog;
@@ -65,7 +70,8 @@ private:
 
     OverviewPage* overviewPage;
     QWidget* transactionsPage;
-    ReceiveCoinsDialog* receiveCoinsPage;
+    AddressBookPage* addressBookPage;
+    AddressBookPage* receiveCoinsPage;
     PrivacyDialog* privacyPage;
     SendCoinsDialog* sendCoinsPage;
     BlockExplorer* explorerWindow;
@@ -132,7 +138,7 @@ public slots:
     /** Show progress dialog e.g. for rescan */
     void showProgress(const QString& title, int nProgress);
 
-    /** Update selected PIV amount from transactionview */
+    /** Update selected YCE amount from transactionview */
     void trxAmount(QString amount);
 
 signals:

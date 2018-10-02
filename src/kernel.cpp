@@ -1,5 +1,6 @@
 // Copyright (c) 2012-2013 The PPCoin developers
 // Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018 The MYCE developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -12,7 +13,7 @@
 #include "timedata.h"
 #include "util.h"
 #include "stakeinput.h"
-#include "zpivchain.h"
+#include "zycechain.h"
 
 using namespace std;
 
@@ -358,7 +359,7 @@ bool CheckProofOfStake(const CBlock block, uint256& hashProofOfStake, std::uniqu
         if (spend.getSpendType() != libzerocoin::SpendType::STAKE)
             return error("%s: spend is using the wrong SpendType (%d)", __func__, (int)spend.getSpendType());
 
-        stake = std::unique_ptr<CStakeInput>(new CZPivStake(spend));
+        stake = std::unique_ptr<CStakeInput>(new CZYceStake(spend));
     } else {
         // First try finding the previous transaction in database
         uint256 hashBlock;
@@ -367,12 +368,12 @@ bool CheckProofOfStake(const CBlock block, uint256& hashProofOfStake, std::uniqu
             return error("CheckProofOfStake() : INFO: read txPrev failed");
 
         //verify signature and script
-        if (!VerifyScript(txin.scriptSig, txPrev.vout[txin.prevout.n].scriptPubKey, STANDARD_SCRIPT_VERIFY_FLAGS, TransactionSignatureChecker(&tx, 0)))
+        if (block.nVersion >= Params().WALLET_UPGRADE_VERSION() && !VerifyScript(txin.scriptSig, txPrev.vout[txin.prevout.n].scriptPubKey, STANDARD_SCRIPT_VERIFY_FLAGS, TransactionSignatureChecker(&tx, 0)))
             return error("CheckProofOfStake() : VerifySignature failed on coinstake %s", tx.GetHash().ToString().c_str());
 
-        CPivStake* pivInput = new CPivStake();
-        pivInput->SetInput(txPrev, txin.prevout.n);
-        stake = std::unique_ptr<CStakeInput>(pivInput);
+        CYceStake* yceInput = new CYceStake();
+        yceInput->SetInput(txPrev, txin.prevout.n);
+        stake = std::unique_ptr<CStakeInput>(yceInput);
     }
 
     CBlockIndex* pindex = stake->GetIndexFrom();
@@ -384,6 +385,11 @@ bool CheckProofOfStake(const CBlock block, uint256& hashProofOfStake, std::uniqu
     if (!ReadBlockFromDisk(blockprev, pindex->GetBlockPos()))
         return error("CheckProofOfStake(): INFO: failed to find block");
 
+    if (block.nVersion < Params().WALLET_UPGRADE_VERSION() && chainActive.Height()+1 >= Params().WALLET_UPGRADE_BLOCK())
+        return error("CheckProofOfStake(): INFO: staking on old version disabled at block %d", Params().WALLET_UPGRADE_BLOCK());
+    else if (block.nVersion >= Params().WALLET_UPGRADE_VERSION() && chainActive.Height()+1 < Params().WALLET_UPGRADE_BLOCK())
+        return error("CheckProofOfStake(): INFO: staking on new wallet disabled until block %d", Params().WALLET_UPGRADE_BLOCK());
+
     uint256 bnTargetPerCoinDay;
     bnTargetPerCoinDay.SetCompact(block.nBits);
 
@@ -393,7 +399,7 @@ bool CheckProofOfStake(const CBlock block, uint256& hashProofOfStake, std::uniqu
 
     unsigned int nBlockFromTime = blockprev.nTime;
     unsigned int nTxTime = block.nTime;
-    if (!CheckStake(stake->GetUniqueness(), stake->GetValue(), nStakeModifier, bnTargetPerCoinDay, nBlockFromTime,
+    if (block.nVersion >= Params().WALLET_UPGRADE_VERSION() && !CheckStake(stake->GetUniqueness(), stake->GetValue(), nStakeModifier, bnTargetPerCoinDay, nBlockFromTime,
                     nTxTime, hashProofOfStake)) {
         return error("CheckProofOfStake() : INFO: check kernel failed on coinstake %s, hashProof=%s \n",
                      tx.GetHash().GetHex(), hashProofOfStake.GetHex());

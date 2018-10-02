@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=MYCE
+Comment=MYCE P2P Cryptocurrency
+Comment[fr]=MYCE, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=MYCE, eşten eşe kriptografik sanal para birimi
+Exec=myce-qt %u
+Terminal=false
+Type=Application
+Icon=myce128
+MimeType=x-scheme-handler/myce;
+Categories=Office;Finance;
