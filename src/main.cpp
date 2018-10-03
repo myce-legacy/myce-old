@@ -1816,7 +1816,7 @@ int64_t GetBlockValue(int nHeight, bool fProofOfStake)
 	int64_t nSubsidy = 0;
 	if (fProofOfStake)
 	{
-		nHeight--;
+		nHeight--; // Legacy wallet calculates PoS reward with height-1
 		if (nHeight >= 10000 && nHeight <= 50000)
 		{
 			nSubsidy = 25 * COIN;
@@ -1883,7 +1883,7 @@ CAmount GetSeeSaw(const CAmount& blockValue, int nMasternodeCount, int nHeight)
 {
     //if a mn count is inserted into the function we are looking for a specific result for a masternode count
     if (nMasternodeCount < 1){
-        if (IsSporkActive(SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT) && chainActive.Height() > Params().WALLET_UPGRADE_BLOCK()+60)
+        if (IsSporkActive(SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT) && chainActive.Height() > Params().WALLET_UPGRADE_BLOCK()+200)
             nMasternodeCount = mnodeman.stable_size();
         else
             nMasternodeCount = mnodeman.size();
