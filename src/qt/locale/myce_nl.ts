@@ -62,12 +62,12 @@
         <translation>Ontvangstadressen</translation>
     </message>
     <message>
-        <source>These are your MYCE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dit zijn uw MYCE adressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden van geld.</translation>
+        <source>These are your Myce addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dit zijn uw Myce adressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden van geld.</translation>
     </message>
     <message>
-        <source>These are your MYCE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dit zijn uw MYCE adressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
+        <source>These are your Myce addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dit zijn uw Myce adressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Bevestig versleuteling van de portemonnee</translation>
     </message>
     <message>
-        <source>MYCE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your YCEs from being stolen by malware infecting your computer.</source>
-        <translation>MYCE zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen tegen malware infecties op uw computer die uw YCE's kunnen stelen.</translation>
+        <source>Myce will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your YCEs from being stolen by malware infecting your computer.</source>
+        <translation>Myce zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen tegen malware infecties op uw computer die uw YCE's kunnen stelen.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -254,12 +254,12 @@
         <translation>Adres:</translation>
     </message>
     <message>
-        <source>Enter a MYCE Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Voer een MYCE adres in dat u wilt coderen met BIP 38. Voer een wachtwoordzin in in het middelste vak. Druk op versleutelen om de versleutelde privé sleutel te berekenen.</translation>
+        <source>Enter a Myce Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Voer een Myce adres in dat u wilt coderen met BIP 38. Voer een wachtwoordzin in in het middelste vak. Druk op versleutelen om de versleutelde privé sleutel te berekenen.</translation>
     </message>
     <message>
-        <source>The MYCE address to encrypt</source>
-        <translation>Het MYCE adres om te versleutelen</translation>
+        <source>The Myce address to encrypt</source>
+        <translation>Het Myce adres om te versleutelen</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -290,8 +290,8 @@
         <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this MYCE address</source>
-        <translation>Versleutel de privé sleutel voor dit MYCE adres</translation>
+        <source>Encrypt the private key for this Myce address</source>
+        <translation>Versleutel de privé sleutel voor dit Myce adres</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -645,16 +645,16 @@
         <translation>Tabblad werkbalk</translation>
     </message>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Core</translation>
+        <source>Myce</source>
+        <translation>Myce</translation>
     </message>
     <message>
-        <source>Send coins to a MYCE address</source>
-        <translation>Verstuur munten naar een MYCE adres</translation>
+        <source>Send coins to a Myce address</source>
+        <translation>Verstuur munten naar een Myce adres</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and myce: URIs)</source>
-        <translation>Vraag betaling aan (genereert QR codes en MYCE: URI's)</translation>
+        <translation>Vraag betaling aan (genereert QR codes en Myce: URI's)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -669,24 +669,24 @@
         <translation>Bekijk masternodes</translation>
     </message>
     <message>
-        <source>&amp;About MYCE Core</source>
-        <translation>&amp;Over MYCE Core</translation>
+        <source>&amp;About Myce</source>
+        <translation>&amp;Over Myce</translation>
     </message>
     <message>
-        <source>Show information about MYCE Core</source>
-        <translation>Toon informatie over MYCE Kern</translation>
+        <source>Show information about Myce</source>
+        <translation>Toon informatie over Myce Kern</translation>
     </message>
     <message>
-        <source>Modify configuration options for MYCE</source>
-        <translation>Wijzig MYCE configuratie opties</translation>
+        <source>Modify configuration options for Myce</source>
+        <translation>Wijzig Myce configuratie opties</translation>
     </message>
     <message>
-        <source>Sign messages with your MYCE addresses to prove you own them</source>
-        <translation>Onderteken berichten met uw MYCE adressen om te bewijzen dat deze adressen in uw bezit zijn</translation>
+        <source>Sign messages with your Myce addresses to prove you own them</source>
+        <translation>Onderteken berichten met uw Myce adressen om te bewijzen dat deze adressen in uw bezit zijn</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified MYCE addresses</source>
-        <translation>Controleer berichten om te verzekeren dat deze ondertekend zijn met de gespecificeerde MYCE adressen</translation>
+        <source>Verify messages to ensure they were signed with specified Myce addresses</source>
+        <translation>Controleer berichten om te verzekeren dat deze ondertekend zijn met de gespecificeerde Myce adressen</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -717,8 +717,8 @@
         <translation>Open Masternode configuratiebestand</translation>
     </message>
     <message>
-        <source>Open a MYCE: URI or payment request</source>
-        <translation>Open een MYCE: URI of betaalverzoek</translation>
+        <source>Open a Myce: URI or payment request</source>
+        <translation>Open een Myce: URI of betaalverzoek</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -729,16 +729,16 @@
         <translation>Block verkenner venster</translation>
     </message>
     <message>
-        <source>Show the MYCE Core help message to get a list with possible MYCE command-line options</source>
-        <translation>Toon het MYCE Core help bericht om een ​​lijst te krijgen met mogelijke MYCE command line opties</translation>
+        <source>Show the Myce help message to get a list with possible Myce command-line options</source>
+        <translation>Toon het Myce help bericht om een ​​lijst te krijgen met mogelijke Myce command line opties</translation>
     </message>
     <message>
-        <source>MYCE Core client</source>
-        <translation>MYCE Core client</translation>
+        <source>Myce client</source>
+        <translation>Myce client</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to MYCE network</source>
-        <translation><numerusform>%n actieve verbindingen met het MYCE netwerk</numerusform><numerusform>%n actieve connectie(s) naar MYCE netwerk</numerusform></translation>
+        <source>%n active connection(s) to Myce network</source>
+        <translation><numerusform>%n actieve verbindingen met het Myce netwerk</numerusform><numerusform>%n actieve connectie(s) naar Myce netwerk</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1185,8 +1185,8 @@ MultiSend: %1</translation>
         <translation>Wijzig verzend adres</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid MYCE address.</source>
-        <translation>Het ingevoerde adres: "%1" is geen geldig MYCE adres.</translation>
+        <source>The entered address "%1" is not a valid Myce address.</source>
+        <translation>Het ingevoerde adres: "%1" is geen geldig Myce adres.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1231,16 +1231,16 @@ MultiSend: %1</translation>
         <translation>versie</translation>
     </message>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Core</translation>
+        <source>Myce</source>
+        <translation>Myce</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About MYCE Core</source>
-        <translation>Over MYCE Core</translation>
+        <source>About Myce</source>
+        <translation>Over Myce</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1286,16 +1286,16 @@ MultiSend: %1</translation>
         <translation>Welkom</translation>
     </message>
     <message>
-        <source>Welcome to MYCE Core.</source>
-        <translation>Welkom bij MYCE Core.</translation>
+        <source>Welcome to Myce.</source>
+        <translation>Welkom bij Myce.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where MYCE Core will store its data.</source>
-        <translation>Aangezien dit de eerste keer is dat het programma is gestart, kun je kiezen waar MYCE Core zijn data opslaat.</translation>
+        <source>As this is the first time the program is launched, you can choose where Myce will store its data.</source>
+        <translation>Aangezien dit de eerste keer is dat het programma is gestart, kun je kiezen waar Myce zijn data opslaat.</translation>
     </message>
     <message>
-        <source>MYCE Core will download and store a copy of the MYCE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>MYCE Core zal een kopie van de MYCE blockchain downloaden en opslaan. Tenminste %1GB aan data zal worden opgeslagen in deze map en het zal over de tijd groeien. De portemonnee zal ook in deze map worden opgeslagen.</translation>
+        <source>Myce will download and store a copy of the Myce block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Myce zal een kopie van de Myce blockchain downloaden en opslaan. Tenminste %1GB aan data zal worden opgeslagen in deze map en het zal over de tijd groeien. De portemonnee zal ook in deze map worden opgeslagen.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1306,8 +1306,8 @@ MultiSend: %1</translation>
         <translation>Gebruik een aangepaste data directory:</translation>
     </message>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Core</translation>
+        <source>Myce</source>
+        <translation>Myce</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1448,12 +1448,12 @@ MultiSend: %1</translation>
         <translation>Vul het adres in om naar te verzenden</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other MYCE addresses after it matures.
-To Add: enter percentage to give and MYCE address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Myce addresses after it matures.
+To Add: enter percentage to give and Myce address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend stelt je in staat om automatisch tot 100% van uw stake of masternode beloning automatisch te verzenden naar een lijst van andere MYCE adressen nadat het volwassen is. 
-Toevoegen: voer het te geven percentage in en MYCE adres om toe te voegen aan de MultiSend vector.
+        <translation>MultiSend stelt je in staat om automatisch tot 100% van uw stake of masternode beloning automatisch te verzenden naar een lijst van andere Myce adressen nadat het volwassen is. 
+Toevoegen: voer het te geven percentage in en Myce adres om toe te voegen aan de MultiSend vector.
 Verwijderen: Voer adres in om te verwijderen en druk op delete.
 MultiSend zal niet worden geactiveerd tenzij je op Activeer hebt geklikt</translation>
     </message>
@@ -1812,16 +1812,16 @@ Waas alsjeblieft geduldig nadat u op importeren hebt geklikt.</translation>
         <translation>Verduistering configuratie</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening MYCE's configuration screen.</source>
-        <translation>Verduistering is succesvol ingesteld op basic (%1 en 2 rondes). Je kunt dit op elk gewenst moment wijzigen door het configuratiescherm van MYCE te openen.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Myce's configuration screen.</source>
+        <translation>Verduistering is succesvol ingesteld op basic (%1 en 2 rondes). Je kunt dit op elk gewenst moment wijzigen door het configuratiescherm van Myce te openen.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening MYCE's configuration screen.</source>
-        <translation>Verduistering is succesvol ingesteld op hoog (%1 en 8 rondes). U kunt dit op elk gewenst moment wijzigen door het configuratiescherm van MYCE te openen.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Myce's configuration screen.</source>
+        <translation>Verduistering is succesvol ingesteld op hoog (%1 en 8 rondes). U kunt dit op elk gewenst moment wijzigen door het configuratiescherm van Myce te openen.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening MYCE's configuration screen.</source>
-        <translation>Verduistering is succesvol ingesteld op hoog (%1 en 16 rondes). U kunt dit op elk gewenst moment wijzigen door het configuratiescherm van MYCE te openen.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Myce's configuration screen.</source>
+        <translation>Verduistering is succesvol ingesteld op hoog (%1 en 16 rondes). U kunt dit op elk gewenst moment wijzigen door het configuratiescherm van Myce te openen.</translation>
     </message>
 </context>
 <context>
@@ -1882,8 +1882,8 @@ Waas alsjeblieft geduldig nadat u op importeren hebt geklikt.</translation>
         <translation>Als je de uitgaven van onbevestigde wijzigingen uitschakelt, de wijziging van een transactie&lt;br/&gt;kan niet worden gebruikt tot die transactie tenminste één bevestiging heeft.&lt;br/&gt;Dit beïnvloedt ook hoe uw saldo is berekend.</translation>
     </message>
     <message>
-        <source>Automatically open the MYCE client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Open de MYCE client poort automatisch op de router. Dit werkt alleen als je router UPnP ondersteunt en het is ingeschakeld.</translation>
+        <source>Automatically open the Myce client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Open de Myce client poort automatisch op de router. Dit werkt alleen als je router UPnP ondersteunt en het is ingeschakeld.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1902,12 +1902,12 @@ Waas alsjeblieft geduldig nadat u op importeren hebt geklikt.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start MYCE after logging in to the system.</source>
-        <translation>MYCE automatisch opstarten na inloggen op het systeem.</translation>
+        <source>Automatically start Myce after logging in to the system.</source>
+        <translation>Myce automatisch opstarten na inloggen op het systeem.</translation>
     </message>
     <message>
-        <source>&amp;Start MYCE on system login</source>
-        <translation>&amp;MYCE starten bij systeemlogin</translation>
+        <source>&amp;Start Myce on system login</source>
+        <translation>&amp;Myce starten bij systeemlogin</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1934,8 +1934,8 @@ Waas alsjeblieft geduldig nadat u op importeren hebt geklikt.</translation>
         <translation>&amp;Netwerk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting MYCE.</source>
-        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van MYCE.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Myce.</source>
+        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van Myce.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1976,8 +1976,8 @@ https://www.transifex.com/myce-project/myce-project-translations</translation>
         <translation>Inzet splitdrempel:</translation>
     </message>
     <message>
-        <source>Connect to the MYCE network through a SOCKS5 proxy.</source>
-        <translation>Maak verbinding met het MYCE netwerk via een SOCKS5 proxy.</translation>
+        <source>Connect to the Myce network through a SOCKS5 proxy.</source>
+        <translation>Maak verbinding met het Myce netwerk via een SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -2155,8 +2155,8 @@ https://www.transifex.com/myce-project/myce-project-translations</translation>
         <translation>Huidige vergrendelde balans in alleen-lezen-adressen</translation>
     </message>
     <message>
-        <source>Your current MYCE balance, unconfirmed and immature transactions included</source>
-        <translation>Uw huidige MYCE-saldo, onbevestigde en onvolgroeide transacties inbegrepen</translation>
+        <source>Your current Myce balance, unconfirmed and immature transactions included</source>
+        <translation>Uw huidige Myce-saldo, onbevestigde en onvolgroeide transacties inbegrepen</translation>
     </message>
     <message>
         <source>zYCE Balance</source>
@@ -2175,8 +2175,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Onvolwassen: bevestigd, maar minder dan 1 mint van dezelfde denominatie nadat het gemint was.</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MYCE network after a connection is established, but this process has not completed yet.</source>
-        <translation>De weergegeven informatie kan verouderd zijn. Je portemonnee synchroniseert automatisch met het MYCE netwerk nadat een verbinding is opgezet, maar dit proces is nog niet afgerond.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Myce network after a connection is established, but this process has not completed yet.</source>
+        <translation>De weergegeven informatie kan verouderd zijn. Je portemonnee synchroniseert automatisch met het Myce netwerk nadat een verbinding is opgezet, maar dit proces is nog niet afgerond.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -2292,8 +2292,8 @@ Om AutoMint in te schakelend verander je 'enablezeromint=0' naar 'enablezeromint
         <translation>Kan myce niet starten: click-to-pay handler</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid MYCE address or malformed URI parameters.</source>
-        <translation>URL kan niet ontleed worden! Dit kan worden veroorzaakt door een ongeldig MYCE adres of misvormde URL parameters.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Myce address or malformed URI parameters.</source>
+        <translation>URL kan niet ontleed worden! Dit kan worden veroorzaakt door een ongeldig Myce adres of misvormde URL parameters.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2378,8 +2378,8 @@ Om AutoMint in te schakelend verander je 'enablezeromint=0' naar 'enablezeromint
         <translation>Zerocoin Acties:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MYCE network after a connection is established, but this process has not completed yet.</source>
-        <translation>De weergegeven informatie kan verouderd zijn. Je portemonnee synchroniseert automatisch met het MYCE netwerk nadat een verbinding is opgezet, maar dit proces is nog niet afgerond.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Myce network after a connection is established, but this process has not completed yet.</source>
+        <translation>De weergegeven informatie kan verouderd zijn. Je portemonnee synchroniseert automatisch met het Myce netwerk nadat een verbinding is opgezet, maar dit proces is nog niet afgerond.</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2502,8 +2502,8 @@ zYce zijn volwassen wanneer zij meer dan 20 bevestigingen hebben EN meer dan 2 m
         <translation>Betaal &amp;Naar:</translation>
     </message>
     <message>
-        <source>The MYCE address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>Het MYCE adres om de betaling naar te verzenden. Maakt lokale betaling aan jezelf als je leeg bent.</translation>
+        <source>The Myce address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation>Het Myce adres om de betaling naar te verzenden. Maakt lokale betaling aan jezelf als je leeg bent.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3031,8 +3031,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Hoeveelheid</translation>
     </message>
     <message>
-        <source>Enter a MYCE address (e.g. %1)</source>
-        <translation>Voer een MYCE adres in (b.v. %1)</translation>
+        <source>Enter a Myce address (e.g. %1)</source>
+        <translation>Voer een Myce adres in (b.v. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -3169,8 +3169,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Blockchain</translation>
     </message>
     <message>
-        <source>Open the MYCE debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open het MYCE debug log bestand uit de huidige data directory. Dit kan enkele seconden duren voor grote logbestanden.</translation>
+        <source>Open the Myce debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open het Myce debug log bestand uit de huidige data directory. Dit kan enkele seconden duren voor grote logbestanden.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -3385,8 +3385,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Uit:</translation>
     </message>
     <message>
-        <source>Welcome to the MYCE RPC console.</source>
-        <translation>Welkom bij de MYCE RPC console.</translation>
+        <source>Welcome to the Myce RPC console.</source>
+        <translation>Welkom bij de Myce RPC console.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -3512,16 +3512,16 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Een optioneel label om te associëren met het nieuwe ontvangstadres.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the MYCE network.</source>
-        <translation>Een optioneel bericht dat aan het betalingsverzoek wordt gehecht, dat wordt weergegeven wanneer het verzoek wordt geopend. Opmerking: het bericht wordt niet verzonden met de betaling via het MYCE netwerk.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Myce network.</source>
+        <translation>Een optioneel bericht dat aan het betalingsverzoek wordt gehecht, dat wordt weergegeven wanneer het verzoek wordt geopend. Opmerking: het bericht wordt niet verzonden met de betaling via het Myce netwerk.</translation>
     </message>
     <message>
         <source>RECEIVE</source>
         <translation>ontvangen</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the MYCE network.</source>
-        <translation>Een optioneel bericht dat aan het betalingsverzoek wordt gehecht, dat wordt weergegeven wanneer het verzoek wordt geopend.&lt;br&gt;Opmerking: het bericht wordt niet verzonden met de betaling via het MYCE netwerk.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Myce network.</source>
+        <translation>Een optioneel bericht dat aan het betalingsverzoek wordt gehecht, dat wordt weergegeven wanneer het verzoek wordt geopend.&lt;br&gt;Opmerking: het bericht wordt niet verzonden met de betaling via het Myce netwerk.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3813,8 +3813,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Als de aangepaste vergoeding is ingesteld op 1000 uYCEs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uYCE's in vergoeding,&lt;br /&gt;terwijl "totaal minstens" 1000 uYCE's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for MYCE transactions than the network can process.</source>
-        <translation>Alleen de minimale vergoeding betalen is prima, zolang er minder transactie volume is dan ruimte in de blokken. &lt;br /&gt;Maar wees ervan bewust dat dit kan leiden tot een nooit bevestigende transactie wanneer er meer vraag is naar MYCE transacties dan het netwerk kan verwerken.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Myce transactions than the network can process.</source>
+        <translation>Alleen de minimale vergoeding betalen is prima, zolang er minder transactie volume is dan ruimte in de blokken. &lt;br /&gt;Maar wees ervan bewust dat dit kan leiden tot een nooit bevestigende transactie wanneer er meer vraag is naar Myce transacties dan het netwerk kan verwerken.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -3909,8 +3909,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Het split block tool werkt niet met meerdere adressen. Probeer het nog eens.</translation>
     </message>
     <message>
-        <source>Warning: Invalid MYCE address</source>
-        <translation>Waarschuwing: Ongeldig MYCE adres</translation>
+        <source>Warning: Invalid Myce address</source>
+        <translation>Waarschuwing: Ongeldig Myce adres</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -4012,8 +4012,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Betaal &amp;Naar:</translation>
     </message>
     <message>
-        <source>The MYCE address to send the payment to</source>
-        <translation>Het MYCE adres om de betaling naar te verzenden</translation>
+        <source>The Myce address to send the payment to</source>
+        <translation>Het Myce adres om de betaling naar te verzenden</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4052,8 +4052,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Bericht:</translation>
     </message>
     <message>
-        <source>A message that was attached to the MYCE: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MYCE network.</source>
-        <translation>Een bericht dat is gehecht aan de MYCE: URI die bij de transactie wordt opgeslagen voor uw referentie. Opmerking: dit bericht wordt niet verzonden via het MYCE netwerk.</translation>
+        <source>A message that was attached to the Myce: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Myce network.</source>
+        <translation>Een bericht dat is gehecht aan de Myce: URI die bij de transactie wordt opgeslagen voor uw referentie. Opmerking: dit bericht wordt niet verzonden via het Myce netwerk.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -4079,8 +4079,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>MYCE Core is shutting down...</source>
-        <translation>MYCE Core is aan het afsluiten...</translation>
+        <source>Myce is shutting down...</source>
+        <translation>Myce is aan het afsluiten...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -4102,8 +4102,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Je kunt berichten met je adressen ondertekenen om te bewijzen dat je ze bezit. Wees voorzichtig om niets vaags te ondertekenen, omdat phishing aanvallen je misschien kunnen proberen om je identiteit over te geven. Teken alleen volledig gedetailleerde verklaringen aan waar je mee akkoord gaat.</translation>
     </message>
     <message>
-        <source>The MYCE address to sign the message with</source>
-        <translation>Het MYCE adres om het bericht met te ondertekenen</translation>
+        <source>The Myce address to sign the message with</source>
+        <translation>Het Myce adres om het bericht met te ondertekenen</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4134,16 +4134,16 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MYCE address</source>
-        <translation>Onderteken het bericht om te bewijzen dat u het MYCE adres bezit</translation>
+        <source>Sign the message to prove you own this Myce address</source>
+        <translation>Onderteken het bericht om te bewijzen dat u het Myce adres bezit</translation>
     </message>
     <message>
-        <source>The MYCE address the message was signed with</source>
-        <translation>Het MYCE adres waarmee het bericht was ondertekend</translation>
+        <source>The Myce address the message was signed with</source>
+        <translation>Het Myce adres waarmee het bericht was ondertekend</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified MYCE address</source>
-        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde MYCE adres</translation>
+        <source>Verify the message to ensure it was signed with the specified Myce address</source>
+        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde Myce adres</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -4229,8 +4229,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Kern</translation>
+        <source>Myce</source>
+        <translation>Myce Kern</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -4245,8 +4245,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>De Dash Kernontwikkelaars</translation>
     </message>
     <message>
-        <source>The MYCE Core developers</source>
-        <translation>De MYCE Kernontwikkelaars</translation>
+        <source>The Myce developers</source>
+        <translation>De Myce Kernontwikkelaars</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4910,8 +4910,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Het berekende accumulatie controlepunt is niet wat wordt geregistreerd door de blokindex</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. MYCE Core is probably already running.</source>
-        <translation>Kan geen vergrendeling op data directory %s verkrijgen. MYCE Core loopt waarschijnlijk al.</translation>
+        <source>Cannot obtain a lock on data directory %s. Myce is probably already running.</source>
+        <translation>Kan geen vergrendeling op data directory %s verkrijgen. Myce loopt waarschijnlijk al.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -5086,8 +5086,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in de OpenSSL Toolkit &lt;https://www.openssl.org/&gt; en cryptografische software geschreven door Eric Young en UPnP software geschreven door Thomas Bernard.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. MYCE Core is probably already running.</source>
-        <translation>Niet mogelijk te binden aan %s op deze computer. MYCE Core loopt waarschijnlijk al.</translation>
+        <source>Unable to bind to %s on this computer. Myce is probably already running.</source>
+        <translation>Niet mogelijk te binden aan %s op deze computer. Myce loopt waarschijnlijk al.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
@@ -5114,8 +5114,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Waarschuwing: -paytxfee is zeer hoog ingesteld! Dit zijn de transactie kosten die je betaalt als je een transactie verstuurt.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong MYCE Core will not work properly.</source>
-        <translation>Waarschuwing: Controleer of de datum en tijd van je computer juist zijn! Als je klok verkeerd staat, werkt MYCE Core niet goed.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Myce will not work properly.</source>
+        <translation>Waarschuwing: Controleer of de datum en tijd van je computer juist zijn! Als je klok verkeerd staat, werkt Myce niet goed.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -5266,8 +5266,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Copyright (C) 2014-%i The Dash Kernontwikkelaars</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The MYCE Core Developers</source>
-        <translation>Copyright (C) 2015-%i The MYCE Kernontwikkelaars</translation>
+        <source>Copyright (C) 2015-%i The Myce Developers</source>
+        <translation>Copyright (C) 2015-%i The Myce Kernontwikkelaars</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -5354,8 +5354,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Error tijdens het laden van wallet.dat: Portemonnee corrupt</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of MYCE Core</source>
-        <translation>Fout bij het laden van wallet.dat: Portemonnee vereist een nieuwere versie van MYCE Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Myce</source>
+        <translation>Fout bij het laden van wallet.dat: Portemonnee vereist een nieuwere versie van Myce</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -5470,8 +5470,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Informatie</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. MYCE Core is shutting down.</source>
-        <translation>Initialisatie saniteitscontrole mislukt. MYCE Core wordt afgesloten.</translation>
+        <source>Initialization sanity check failed. Myce is shutting down.</source>
+        <translation>Initialisatie saniteitscontrole mislukt. Myce wordt afgesloten.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -5582,8 +5582,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
 </translation>
     </message>
     <message>
-        <source>Disable all MYCE specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Schakel alle specifieke MYCE functionaliteit uit (Masternodes, Zerocoin, SwiftTX, Budgeting) (0-1, standaard: %u)</translation>
+        <source>Disable all Myce specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Schakel alle specifieke Myce functionaliteit uit (Masternodes, Zerocoin, SwiftTX, Budgeting) (0-1, standaard: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
@@ -6294,8 +6294,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Portemonnee is vergrendeld.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart MYCE Core to complete</source>
-        <translation>Wallet moest worden herschreven: start MYCE Core opnieuw om te voltooien</translation>
+        <source>Wallet needed to be rewritten: restart Myce to complete</source>
+        <translation>Wallet moest worden herschreven: start Myce opnieuw om te voltooien</translation>
     </message>
     <message>
         <source>Wallet options:</source>

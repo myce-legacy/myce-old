@@ -509,12 +509,12 @@
         <translation>&amp;Pomoc</translation>
     </message>
     <message>
-        <source>MYCE Core</source>
-        <translation>&amp;Rdzeń MYCE</translation>
+        <source>Myce</source>
+        <translation>&amp;Rdzeń Myce</translation>
     </message>
     <message>
-        <source>Send coins to a MYCE address</source>
-        <translation>Wyślij monety do adresu MYCE</translation>
+        <source>Send coins to a Myce address</source>
+        <translation>Wyślij monety do adresu Myce</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and myce: URIs)</source>
@@ -529,24 +529,24 @@
         <translation>Przeglądaj masternodes</translation>
     </message>
     <message>
-        <source>&amp;About MYCE Core</source>
+        <source>&amp;About Myce</source>
         <translation>&amp;O rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Show information about MYCE Core</source>
+        <source>Show information about Myce</source>
         <translation>Pokaż informacje o rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Modify configuration options for MYCE</source>
-        <translation>Modyfikuj opcje konfiguracji MYCE</translation>
+        <source>Modify configuration options for Myce</source>
+        <translation>Modyfikuj opcje konfiguracji Myce</translation>
     </message>
     <message>
-        <source>Sign messages with your MYCE addresses to prove you own them</source>
-        <translation>Zatwierdź wiadomość z twoimi adresami MYCE, by udowodnić, że jesteś w ich posiadaniu</translation>
+        <source>Sign messages with your Myce addresses to prove you own them</source>
+        <translation>Zatwierdź wiadomość z twoimi adresami Myce, by udowodnić, że jesteś w ich posiadaniu</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified MYCE addresses</source>
-        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu MYCE</translation>
+        <source>Verify messages to ensure they were signed with specified Myce addresses</source>
+        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu Myce</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -573,8 +573,8 @@
         <translation>Otwórz &amp;Plik konfiguracji Masternode</translation>
     </message>
     <message>
-        <source>Open a MYCE: URI or payment request</source>
-        <translation>Otwórz MYCE: URI i żądanie zapłaty</translation>
+        <source>Open a Myce: URI or payment request</source>
+        <translation>Otwórz Myce: URI i żądanie zapłaty</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -585,12 +585,12 @@
         <translation>Okno eksplorera bloków</translation>
     </message>
     <message>
-        <source>Show the MYCE Core help message to get a list with possible MYCE command-line options</source>
-        <translation>Pokaż wiadomość pomocy rdzenia MYCE, aby dostać listę możliwych opcji MYCE command-line</translation>
+        <source>Show the Myce help message to get a list with possible Myce command-line options</source>
+        <translation>Pokaż wiadomość pomocy rdzenia Myce, aby dostać listę możliwych opcji Myce command-line</translation>
     </message>
     <message>
-        <source>MYCE Core client</source>
-        <translation>Rdzeń MYCE klient</translation>
+        <source>Myce client</source>
+        <translation>Rdzeń Myce klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -899,8 +899,8 @@ MultiWysyłlka: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>MYCE Core</source>
-        <translation>&amp;Rdzeń MYCE</translation>
+        <source>Myce</source>
+        <translation>&amp;Rdzeń Myce</translation>
     </message>
     </context>
 <context>
@@ -914,8 +914,8 @@ MultiWysyłlka: %1</translation>
         <translation>Użyj niestandardowej ścieżki danych</translation>
     </message>
     <message>
-        <source>MYCE Core</source>
-        <translation>&amp;Rdzeń MYCE</translation>
+        <source>Myce</source>
+        <translation>&amp;Rdzeń Myce</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1190,12 +1190,12 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>Zezwól na przychodzące połączenia</translation>
     </message>
     <message>
-        <source>Automatically start MYCE after logging in to the system.</source>
-        <translation>Automatycznie uruchom MYCE po zalogowaniu do systemu</translation>
+        <source>Automatically start Myce after logging in to the system.</source>
+        <translation>Automatycznie uruchom Myce po zalogowaniu do systemu</translation>
     </message>
     <message>
-        <source>&amp;Start MYCE on system login</source>
-        <translation>&amp;Uruchom MYCE podczas logowania do systemu</translation>
+        <source>&amp;Start Myce on system login</source>
+        <translation>&amp;Uruchom Myce podczas logowania do systemu</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1214,8 +1214,8 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>&amp;Sieć</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting MYCE.</source>
-        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie MYCE</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Myce.</source>
+        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie Myce</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1224,8 +1224,8 @@ https://www.transifex.com/myce-project/myce-project-translations</source>
 https://www.transifex.com/myce-project/myce-project-translations </translation>
     </message>
     <message>
-        <source>Connect to the MYCE network through a SOCKS5 proxy.</source>
-        <translation>Połącz z siecią MYCE poprzez SOCKS5 proxy.</translation>
+        <source>Connect to the Myce network through a SOCKS5 proxy.</source>
+        <translation>Połącz z siecią Myce poprzez SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1463,8 +1463,8 @@ https://www.transifex.com/myce-project/myce-project-translations </translation>
         <translation>Liczba</translation>
     </message>
     <message>
-        <source>Enter a MYCE address (e.g. %1)</source>
-        <translation>Wprowadź adres MYCE (np. %1)</translation>
+        <source>Enter a Myce address (e.g. %1)</source>
+        <translation>Wprowadź adres Myce (np. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1894,8 +1894,8 @@ https://www.transifex.com/myce-project/myce-project-translations </translation>
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MYCE address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres MYCE jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this Myce address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Myce jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -1929,8 +1929,8 @@ https://www.transifex.com/myce-project/myce-project-translations </translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>MYCE Core</source>
-        <translation>&amp;Rdzeń MYCE</translation>
+        <source>Myce</source>
+        <translation>&amp;Rdzeń Myce</translation>
     </message>
     </context>
 <context>

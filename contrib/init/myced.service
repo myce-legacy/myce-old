@@ -1,5 +1,5 @@
 [Unit]
-Description=MYCE's distributed currency daemon
+Description=Myce's distributed currency daemon
 After=network.target
 
 [Service]

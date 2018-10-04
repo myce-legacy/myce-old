@@ -62,12 +62,12 @@
         <translation>Indirizzi di ricezione</translation>
     </message>
     <message>
-        <source>These are your MYCE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Questi sono gli indirizzi MYCE per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
+        <source>These are your Myce addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Questi sono gli indirizzi Myce per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
     </message>
     <message>
-        <source>These are your MYCE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Questi sono gli indirizzi MYCE per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
+        <source>These are your Myce addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Questi sono gli indirizzi Myce per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Conferma cifratura portafoglio</translation>
     </message>
     <message>
-        <source>MYCE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your YCEs from being stolen by malware infecting your computer.</source>
-        <translation>MYCE verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi YCE dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
+        <source>Myce will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your YCEs from being stolen by malware infecting your computer.</source>
+        <translation>Myce verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi YCE dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -254,12 +254,12 @@
         <translation>Indirizzo:</translation>
     </message>
     <message>
-        <source>Enter a MYCE Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Inserire un indirizzo MYCE da crittografare utilizzando BIP 38. Inserire una password nel campo centrale. Cliccare su "cripta" per generare la chiave privata crittografata.</translation>
+        <source>Enter a Myce Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Inserire un indirizzo Myce da crittografare utilizzando BIP 38. Inserire una password nel campo centrale. Cliccare su "cripta" per generare la chiave privata crittografata.</translation>
     </message>
     <message>
-        <source>The MYCE address to encrypt</source>
-        <translation>Indirizzo MYCE da crittografare</translation>
+        <source>The Myce address to encrypt</source>
+        <translation>Indirizzo Myce da crittografare</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -290,8 +290,8 @@
         <translation>Copiare la firma corrente negli Appunti di sistema</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this MYCE address</source>
-        <translation>Crittografa la chiave privata per questo indirizzo MYCE</translation>
+        <source>Encrypt the private key for this Myce address</source>
+        <translation>Crittografa la chiave privata per questo indirizzo Myce</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -645,12 +645,12 @@
         <translation>Schede degli strumenti</translation>
     </message>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Core</translation>
+        <source>Myce</source>
+        <translation>Myce</translation>
     </message>
     <message>
-        <source>Send coins to a MYCE address</source>
-        <translation>Invia valuta all'indirizzo MYCE</translation>
+        <source>Send coins to a Myce address</source>
+        <translation>Invia valuta all'indirizzo Myce</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and myce: URIs)</source>
@@ -669,24 +669,24 @@
         <translation>Esplora i masternodes</translation>
     </message>
     <message>
-        <source>&amp;About MYCE Core</source>
-        <translation>&amp;Informazioni MYCE Core</translation>
+        <source>&amp;About Myce</source>
+        <translation>&amp;Informazioni Myce</translation>
     </message>
     <message>
-        <source>Show information about MYCE Core</source>
-        <translation>Visualizza informazioni su MYCE Core</translation>
+        <source>Show information about Myce</source>
+        <translation>Visualizza informazioni su Myce</translation>
     </message>
     <message>
-        <source>Modify configuration options for MYCE</source>
-        <translation>Modifica le opzioni di configurazione per MYCE</translation>
+        <source>Modify configuration options for Myce</source>
+        <translation>Modifica le opzioni di configurazione per Myce</translation>
     </message>
     <message>
-        <source>Sign messages with your MYCE addresses to prove you own them</source>
-        <translation>Firma i messaggi con i tuoi indirizzi MYCE per dimostrare di essere il proprietario </translation>
+        <source>Sign messages with your Myce addresses to prove you own them</source>
+        <translation>Firma i messaggi con i tuoi indirizzi Myce per dimostrare di essere il proprietario </translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified MYCE addresses</source>
-        <translation>Verifica i messaggi per assicurarsi che siano stati firmati con indirizzi MYCE specifici</translation>
+        <source>Verify messages to ensure they were signed with specified Myce addresses</source>
+        <translation>Verifica i messaggi per assicurarsi che siano stati firmati con indirizzi Myce specifici</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -717,8 +717,8 @@
         <translation>Apri file di configurazione del Masternodo</translation>
     </message>
     <message>
-        <source>Open a MYCE: URI or payment request</source>
-        <translation>Apri un MYCE: URI o richiesta di pagamento</translation>
+        <source>Open a Myce: URI or payment request</source>
+        <translation>Apri un Myce: URI o richiesta di pagamento</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -729,15 +729,15 @@
         <translation>Finestra Block Explorer</translation>
     </message>
     <message>
-        <source>Show the MYCE Core help message to get a list with possible MYCE command-line options</source>
-        <translation>Mostra il messaggio di aiuto MYCE Core per ottenere un elenco con le possibili opzioni di riga di comando MYCE</translation>
+        <source>Show the Myce help message to get a list with possible Myce command-line options</source>
+        <translation>Mostra il messaggio di aiuto Myce per ottenere un elenco con le possibili opzioni di riga di comando Myce</translation>
     </message>
     <message>
-        <source>MYCE Core client</source>
-        <translation>MYCE Core</translation>
+        <source>Myce client</source>
+        <translation>Myce</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to MYCE network</source>
+        <source>%n active connection(s) to Myce network</source>
         <translation><numerusform>%n connessione attiva alla rete YCEIX</numerusform><numerusform>%n connessioni attive alla rete YCEIX</numerusform></translation>
     </message>
     <message>
@@ -1173,8 +1173,8 @@ MultiSend: %1</translation>
         <translation>Modifica indirizzo di invio</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid MYCE address.</source>
-        <translation>L'indirizzo inserito "%1" non è un indirizzo MYCE valido.</translation>
+        <source>The entered address "%1" is not a valid Myce address.</source>
+        <translation>L'indirizzo inserito "%1" non è un indirizzo Myce valido.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1219,16 +1219,16 @@ MultiSend: %1</translation>
         <translation>versione</translation>
     </message>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Core</translation>
+        <source>Myce</source>
+        <translation>Myce</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About MYCE Core</source>
-        <translation>Informazioni su MYCE Core</translation>
+        <source>About Myce</source>
+        <translation>Informazioni su Myce</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1274,16 +1274,16 @@ MultiSend: %1</translation>
         <translation>Benvenuto</translation>
     </message>
     <message>
-        <source>Welcome to MYCE Core.</source>
+        <source>Welcome to Myce.</source>
         <translation>Benvenuto in YCEIX Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where MYCE Core will store its data.</source>
-        <translation>Essendo il primo avvio dell'applicazione, puoi scegliere dove MYCE Core salverà i propri dati.</translation>
+        <source>As this is the first time the program is launched, you can choose where Myce will store its data.</source>
+        <translation>Essendo il primo avvio dell'applicazione, puoi scegliere dove Myce salverà i propri dati.</translation>
     </message>
     <message>
-        <source>MYCE Core will download and store a copy of the MYCE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>MYCE Core scaricherà e salverà una copia della blockchain MYCE. Verranno salvati almeno %1GB di dati in questa cartella, che cresceranno nel tempo. In questa cartella verrà salvato anche il portafoglio.</translation>
+        <source>Myce will download and store a copy of the Myce block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Myce scaricherà e salverà una copia della blockchain Myce. Verranno salvati almeno %1GB di dati in questa cartella, che cresceranno nel tempo. In questa cartella verrà salvato anche il portafoglio.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1294,8 +1294,8 @@ MultiSend: %1</translation>
         <translation>Utilizza una cartella dati personalizzata:</translation>
     </message>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Core</translation>
+        <source>Myce</source>
+        <translation>Myce</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1436,12 +1436,12 @@ MultiSend: %1</translation>
         <translation>Inserire indirizzo destinatario</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other MYCE addresses after it matures.
-To Add: enter percentage to give and MYCE address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Myce addresses after it matures.
+To Add: enter percentage to give and Myce address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend ti permette di inviare automaticamente ad una lista di indirizzi MYCE fino al 100% delle ricompense di stake o masternodi, dopo che queste sono mature.
-Per Aggiunger: inserisci la percentuale da inviare e l'indirizzo MYCE da aggiungere al vettore MultiSend.
+        <translation>MultiSend ti permette di inviare automaticamente ad una lista di indirizzi Myce fino al 100% delle ricompense di stake o masternodi, dopo che queste sono mature.
+Per Aggiunger: inserisci la percentuale da inviare e l'indirizzo Myce da aggiungere al vettore MultiSend.
 Per Eliminare: Inserisci l'indirizzo da eliminare e premi elimina.
 MultiSend non verrà attivato a meno che tu non prema su Attiva</translation>
     </message>
@@ -1804,8 +1804,8 @@ Per favore controlla l'indirizzo e riprova nuovamente.</translation>
         <translation>Saldo corrente bloccato in indirizzi sola-lettura.</translation>
     </message>
     <message>
-        <source>Your current MYCE balance, unconfirmed and immature transactions included</source>
-        <translation>Il tuo saldo MYCE corrente, incluse le transazioni non confermate e non mature</translation>
+        <source>Your current Myce balance, unconfirmed and immature transactions included</source>
+        <translation>Il tuo saldo Myce corrente, incluse le transazioni non confermate e non mature</translation>
     </message>
     <message>
         <source>zYCE Balance</source>
@@ -2483,8 +2483,8 @@ Per cambiare la percentuale (riavvio non necessario):
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The MYCE address to sign the message with</source>
-        <translation>L'indirizzo MYCE per firmare il messaggio con</translation>
+        <source>The Myce address to sign the message with</source>
+        <translation>L'indirizzo Myce per firmare il messaggio con</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2507,16 +2507,16 @@ Per cambiare la percentuale (riavvio non necessario):
         <translation>Copiare la firma corrente negli Appunti di sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MYCE address</source>
-        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo MYCE</translation>
+        <source>Sign the message to prove you own this Myce address</source>
+        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo Myce</translation>
     </message>
     <message>
-        <source>The MYCE address the message was signed with</source>
-        <translation>L'indirizzo MYCE con cui è stato firmato il messaggio</translation>
+        <source>The Myce address the message was signed with</source>
+        <translation>L'indirizzo Myce con cui è stato firmato il messaggio</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified MYCE address</source>
-        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo MYCE specificato </translation>
+        <source>Verify the message to ensure it was signed with the specified Myce address</source>
+        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo Myce specificato </translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -2554,8 +2554,8 @@ Per cambiare la percentuale (riavvio non necessario):
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Core</translation>
+        <source>Myce</source>
+        <translation>Myce</translation>
     </message>
     </context>
 <context>

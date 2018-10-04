@@ -1,5 +1,5 @@
 // Copyright (c) 2017-2018 The PIVX developers
-// Copyright (c) 2018 The MYCE developers
+// Copyright (c) 2018 The Myce developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -479,7 +479,7 @@ void BlockExplorer::showEvent(QShowEvent*)
 
         if (!GetBoolArg("-txindex", true)) {
             QString Warning = tr("Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (myce.conf).");
-            QMessageBox::warning(this, "MYCE Core Blockchain Explorer", Warning, QMessageBox::Ok);
+            QMessageBox::warning(this, "Myce Blockchain Explorer", Warning, QMessageBox::Ok);
         }
     }
 }

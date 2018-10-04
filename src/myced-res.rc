@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "MYCE"
-            VALUE "FileDescription",    "myced (OSS daemon/client for MYCE)"
+            VALUE "CompanyName",        "Myce"
+            VALUE "FileDescription",    "myced (OSS daemon/client for Myce)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "myced"
             VALUE "LegalCopyright",     COPYRIGHT_STR

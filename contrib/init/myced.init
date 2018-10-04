@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-#  myced The MYCE core server.
+#  myced The Myce server.
 #
 #
 # chkconfig: 345 80 20

@@ -80,12 +80,12 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your MYCE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Myce addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your MYCE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Myce addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -221,7 +221,7 @@
     </message>
     <message>
         <location line="+9"/>
-        <source>MYCE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your YCEs from being stolen by malware infecting your computer.</source>
+        <source>Myce will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your YCEs from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -326,12 +326,12 @@
     </message>
     <message>
         <location line="-424"/>
-        <source>Enter a MYCE Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a Myce Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>The MYCE address to encrypt</source>
+        <source>The Myce address to encrypt</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -375,7 +375,7 @@
     </message>
     <message>
         <location line="+18"/>
-        <source>Encrypt the private key for this MYCE address</source>
+        <source>Encrypt the private key for this Myce address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -832,12 +832,12 @@
     <message>
         <location line="-446"/>
         <location line="+928"/>
-        <source>MYCE Core</source>
+        <source>Myce</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-726"/>
-        <source>Send coins to a MYCE address</source>
+        <source>Send coins to a Myce address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -862,27 +862,27 @@
     </message>
     <message>
         <location line="+31"/>
-        <source>&amp;About MYCE Core</source>
+        <source>&amp;About Myce</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about MYCE Core</source>
+        <source>Show information about Myce</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Modify configuration options for MYCE</source>
+        <source>Modify configuration options for Myce</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>Sign messages with your MYCE addresses to prove you own them</source>
+        <source>Sign messages with your Myce addresses to prove you own them</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified MYCE addresses</source>
+        <source>Verify messages to ensure they were signed with specified Myce addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -922,7 +922,7 @@
     </message>
     <message>
         <location line="+17"/>
-        <source>Open a MYCE: URI or payment request</source>
+        <source>Open a Myce: URI or payment request</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -937,17 +937,17 @@
     </message>
     <message>
         <location line="+4"/>
-        <source>Show the MYCE Core help message to get a list with possible MYCE command-line options</source>
+        <source>Show the Myce help message to get a list with possible Myce command-line options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+233"/>
-        <source>MYCE Core client</source>
+        <source>Myce client</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
         <location line="+212"/>
-        <source>%n active connection(s) to MYCE network</source>
+        <source>%n active connection(s) to Myce network</source>
         <translation type="unfinished">
             <numerusform></numerusform>
             <numerusform></numerusform>
@@ -1522,7 +1522,7 @@ Address: %4
     </message>
     <message>
         <location line="+67"/>
-        <source>The entered address &quot;%1&quot; is not a valid MYCE address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid Myce address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1578,7 +1578,7 @@ Address: %4
     </message>
     <message>
         <location line="+0"/>
-        <source>MYCE Core</source>
+        <source>Myce</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1589,7 +1589,7 @@ Address: %4
     </message>
     <message>
         <location line="+4"/>
-        <source>About MYCE Core</source>
+        <source>About Myce</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1647,17 +1647,17 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to MYCE Core.</source>
+        <source>Welcome to Myce.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where MYCE Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Myce will store its data.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>MYCE Core will download and store a copy of the MYCE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Myce will download and store a copy of the Myce block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1672,7 +1672,7 @@ Address: %4
     </message>
     <message>
         <location filename="../intro.cpp" line="+77"/>
-        <source>MYCE Core</source>
+        <source>Myce</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1848,8 +1848,8 @@ Address: %4
     </message>
     <message>
         <location line="-106"/>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other MYCE addresses after it matures.
-To Add: enter percentage to give and MYCE address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Myce addresses after it matures.
+To Add: enter percentage to give and Myce address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
         <translation type="unfinished"></translation>
@@ -2290,17 +2290,17 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="-27"/>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening MYCE&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Myce&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening MYCE&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Myce&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening MYCE&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Myce&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2376,7 +2376,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+33"/>
-        <source>Automatically open the MYCE client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Myce client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2401,12 +2401,12 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="-210"/>
-        <source>Automatically start MYCE after logging in to the system.</source>
+        <source>Automatically start Myce after logging in to the system.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start MYCE on system login</source>
+        <source>&amp;Start Myce on system login</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2441,7 +2441,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+192"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting MYCE.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Myce.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2493,7 +2493,7 @@ https://www.transifex.com/myce-project/myce-project-translations</source>
     </message>
     <message>
         <location line="+98"/>
-        <source>Connect to the MYCE network through a SOCKS5 proxy.</source>
+        <source>Connect to the Myce network through a SOCKS5 proxy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2724,7 +2724,7 @@ https://www.transifex.com/myce-project/myce-project-translations</source>
     <message>
         <location line="+16"/>
         <location line="+19"/>
-        <source>Your current MYCE balance, unconfirmed and immature transactions included</source>
+        <source>Your current Myce balance, unconfirmed and immature transactions included</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2751,7 +2751,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     <message>
         <location line="-725"/>
         <location line="+852"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MYCE network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Myce network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2904,7 +2904,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+114"/>
-        <source>URI cannot be parsed! This can be caused by an invalid MYCE address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Myce address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3012,7 +3012,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+10"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MYCE network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Myce network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3188,7 +3188,7 @@ zYCE are mature when they have more than 20 confirmations AND more than 2 mints 
     </message>
     <message>
         <location line="+27"/>
-        <source>The MYCE address to send the payment to. Creates local payment to yourself when empty.</source>
+        <source>The Myce address to send the payment to. Creates local payment to yourself when empty.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3857,7 +3857,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+113"/>
-        <source>Enter a MYCE address (e.g. %1)</source>
+        <source>Enter a Myce address (e.g. %1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4060,7 +4060,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+79"/>
-        <source>Open the MYCE debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Myce debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4332,7 +4332,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="-36"/>
-        <source>Welcome to the MYCE RPC console.</source>
+        <source>Welcome to the Myce RPC console.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4496,7 +4496,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="-37"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the MYCE network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Myce network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4506,7 +4506,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+124"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the MYCE network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Myce network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4875,7 +4875,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <location line="+33"/>
         <location line="+13"/>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for MYCE transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Myce transactions than the network can process.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4995,7 +4995,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+629"/>
-        <source>Warning: Invalid MYCE address</source>
+        <source>Warning: Invalid Myce address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5129,7 +5129,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+18"/>
-        <source>The MYCE address to send the payment to</source>
+        <source>The Myce address to send the payment to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5183,7 +5183,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+10"/>
-        <source>A message that was attached to the MYCE: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MYCE network.</source>
+        <source>A message that was attached to the Myce: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Myce network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5218,7 +5218,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+75"/>
-        <source>MYCE Core is shutting down...</source>
+        <source>Myce is shutting down...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5246,7 +5246,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+15"/>
-        <source>The MYCE address to sign the message with</source>
+        <source>The Myce address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5288,17 +5288,17 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+18"/>
-        <source>Sign the message to prove you own this MYCE address</source>
+        <source>Sign the message to prove you own this Myce address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+103"/>
-        <source>The MYCE address the message was signed with</source>
+        <source>The Myce address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+34"/>
-        <source>Verify the message to ensure it was signed with the specified MYCE address</source>
+        <source>Verify the message to ensure it was signed with the specified Myce address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5413,7 +5413,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+36"/>
-        <source>MYCE Core</source>
+        <source>Myce</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5433,7 +5433,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>The MYCE Core developers</source>
+        <source>The Myce developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6291,7 +6291,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+2"/>
-        <source>Cannot obtain a lock on data directory %s. MYCE Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Myce is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6511,7 +6511,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+4"/>
-        <source>Unable to bind to %s on this computer. MYCE Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Myce is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6546,7 +6546,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong MYCE Core will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Myce will not work properly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6736,7 +6736,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Copyright (C) 2015-%i The MYCE Core Developers</source>
+        <source>Copyright (C) 2015-%i The Myce Developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6846,7 +6846,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of MYCE Core</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Myce</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7001,7 +7001,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Initialization sanity check failed. MYCE Core is shutting down.</source>
+        <source>Initialization sanity check failed. Myce is shutting down.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7138,7 +7138,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+38"/>
-        <source>Disable all MYCE specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <source>Disable all Myce specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8028,7 +8028,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart MYCE Core to complete</source>
+        <source>Wallet needed to be rewritten: restart Myce to complete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

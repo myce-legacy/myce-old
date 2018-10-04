@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018 The MYCE developers
+// Copyright (c) 2018 The Myce developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -38,7 +38,7 @@ using namespace std;
 
 //////////////////////////////////////////////////////////////////////////////
 //
-// MYCEMiner
+// MyceMiner
 //
 
 //
@@ -536,7 +536,7 @@ bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     {
         LOCK(cs_main);
         if (pblock->hashPrevBlock != chainActive.Tip()->GetBlockHash())
-            return error("MYCEMiner : generated block is stale");
+            return error("MyceMiner : generated block is stale");
     }
 
     // Remove key from key pool
@@ -556,7 +556,7 @@ bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     if (!ProcessNewBlock(state, NULL, pblock)) {
         if (pblock->IsZerocoinStake())
             pwalletMain->zyceTracker->RemovePending(pblock->vtx[1].GetHash());
-        return error("MYCEMiner : ProcessNewBlock, block not accepted");
+        return error("MyceMiner : ProcessNewBlock, block not accepted");
     }
 
     for (CNode* node : vNodes) {
@@ -574,7 +574,7 @@ int nMintableLastCheck = 0;
 
 void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
 {
-    LogPrintf("MYCEMiner started\n");
+    LogPrintf("MyceMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
     RenameThread("myce-miner");
 
@@ -667,7 +667,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
             continue;
         }
 
-        LogPrintf("Running MYCEMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
+        LogPrintf("Running MyceMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
             ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
         //

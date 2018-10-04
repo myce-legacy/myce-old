@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018 The MYCE developers
+// Copyright (c) 2018 The Myce developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -106,7 +106,7 @@ std::string to_internal(const std::string&);
 
 using namespace std;
 
-// MYCE only features
+// Myce only features
 // Masternode
 bool fMasterNode = false;
 string strMasterNodePrivKey = "";
@@ -238,7 +238,7 @@ bool LogAcceptCategory(const char* category)
             const vector<string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new set<string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "myce" is a composite category enabling all MYCE-related debug output
+            // "myce" is a composite category enabling all Myce-related debug output
             if (ptrCategory->count(string("myce"))) {
                 ptrCategory->insert(string("obfuscation"));
                 ptrCategory->insert(string("swiftx"));
@@ -425,13 +425,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-// Windows < Vista: C:\Documents and Settings\Username\Application Data\MYCE
-// Windows >= Vista: C:\Users\Username\AppData\Roaming\MYCE
-// Mac: ~/Library/Application Support/MYCE
+// Windows < Vista: C:\Documents and Settings\Username\Application Data\Myce
+// Windows >= Vista: C:\Users\Username\AppData\Roaming\Myce
+// Mac: ~/Library/Application Support/Myce
 // Unix: ~/.myce
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "MYCE";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Myce";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -443,7 +443,7 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "MYCE";
+    return pathRet / "Myce";
 #else
     // Unix
     return pathRet / ".myce";

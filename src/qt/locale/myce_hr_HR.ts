@@ -62,12 +62,12 @@
         <translation>Adresa primatelja</translation>
     </message>
     <message>
-        <source>These are your MYCE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>To su vaše MYCE adrese za slanje plaćanja. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
+        <source>These are your Myce addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>To su vaše Myce adrese za slanje plaćanja. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
     </message>
     <message>
-        <source>These are your MYCE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>To su vaše MYCE adrese za primanje uplata. Preporuča se upotreba nove adrese primatelja za svaku transakciju.</translation>
+        <source>These are your Myce addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>To su vaše Myce adrese za primanje uplata. Preporuča se upotreba nove adrese primatelja za svaku transakciju.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Potvrdi šifriranje novčanika</translation>
     </message>
     <message>
-        <source>MYCE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your YCEs from being stolen by malware infecting your computer.</source>
-        <translation>MYCE se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše YCE od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
+        <source>Myce will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your YCEs from being stolen by malware infecting your computer.</source>
+        <translation>Myce se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše YCE od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -254,12 +254,12 @@
         <translation>Adresa:</translation>
     </message>
     <message>
-        <source>Enter a MYCE Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Unesite MYCE adresu koju želite šifrirati pomoću BIP 38. Unesite zaporku u srednjem okviru. Pritisnite šifriranje za izračunavanje šifriranog privatnog ključa.</translation>
+        <source>Enter a Myce Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Unesite Myce adresu koju želite šifrirati pomoću BIP 38. Unesite zaporku u srednjem okviru. Pritisnite šifriranje za izračunavanje šifriranog privatnog ključa.</translation>
     </message>
     <message>
-        <source>The MYCE address to encrypt</source>
-        <translation>MYCE adresa za šifriranje</translation>
+        <source>The Myce address to encrypt</source>
+        <translation>Myce adresa za šifriranje</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -290,8 +290,8 @@
         <translation>Kopirajte trenutačni potpis u međuspremnik sustava</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this MYCE address</source>
-        <translation>Šifriranje privatnog ključa za ovu MYCE adresu</translation>
+        <source>Encrypt the private key for this Myce address</source>
+        <translation>Šifriranje privatnog ključa za ovu Myce adresu</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -645,12 +645,12 @@
         <translation>Alatna traka kartica</translation>
     </message>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Core</translation>
+        <source>Myce</source>
+        <translation>Myce</translation>
     </message>
     <message>
-        <source>Send coins to a MYCE address</source>
-        <translation>Pošaljite kovanice na MYCE adresu</translation>
+        <source>Send coins to a Myce address</source>
+        <translation>Pošaljite kovanice na Myce adresu</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and myce: URIs)</source>
@@ -669,24 +669,24 @@
         <translation>Pretraži masternodes</translation>
     </message>
     <message>
-        <source>&amp;About MYCE Core</source>
-        <translation>O MYCE Core</translation>
+        <source>&amp;About Myce</source>
+        <translation>O Myce</translation>
     </message>
     <message>
-        <source>Show information about MYCE Core</source>
-        <translation>Prikaz informacija o MYCE Core-u</translation>
+        <source>Show information about Myce</source>
+        <translation>Prikaz informacija o Myce-u</translation>
     </message>
     <message>
-        <source>Modify configuration options for MYCE</source>
-        <translation>Izmijenite konfiguracijske opcije za MYCE</translation>
+        <source>Modify configuration options for Myce</source>
+        <translation>Izmijenite konfiguracijske opcije za Myce</translation>
     </message>
     <message>
-        <source>Sign messages with your MYCE addresses to prove you own them</source>
-        <translation>Potpišite poruke s vašim MYCE adresama kako biste dokazali da ih posjedujete</translation>
+        <source>Sign messages with your Myce addresses to prove you own them</source>
+        <translation>Potpišite poruke s vašim Myce adresama kako biste dokazali da ih posjedujete</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified MYCE addresses</source>
-        <translation>Potvrdite poruke kako biste bili sigurni da su potpisani s određenim MYCE adresama</translation>
+        <source>Verify messages to ensure they were signed with specified Myce addresses</source>
+        <translation>Potvrdite poruke kako biste bili sigurni da su potpisani s određenim Myce adresama</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -717,8 +717,8 @@
         <translation>Otvori Masternode konfiguracijsku datoteku</translation>
     </message>
     <message>
-        <source>Open a MYCE: URI or payment request</source>
-        <translation>Otvori MYCE: URI zahtjev za plačanje</translation>
+        <source>Open a Myce: URI or payment request</source>
+        <translation>Otvori Myce: URI zahtjev za plačanje</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -729,16 +729,16 @@
         <translation>Prozor Block preglednika</translation>
     </message>
     <message>
-        <source>Show the MYCE Core help message to get a list with possible MYCE command-line options</source>
-        <translation>Pokažite poruku MYCE Core pomoći da biste dobili popis s mogućim MYCE opcijama naredbenog retka</translation>
+        <source>Show the Myce help message to get a list with possible Myce command-line options</source>
+        <translation>Pokažite poruku Myce pomoći da biste dobili popis s mogućim Myce opcijama naredbenog retka</translation>
     </message>
     <message>
-        <source>MYCE Core client</source>
+        <source>Myce client</source>
         <translation>YCEIX Core Klijent</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to MYCE network</source>
-        <translation><numerusform>%n aktivne veze na MYCE mrežu</numerusform><numerusform>%n aktivne veze na MYCE mrežu</numerusform><numerusform>%n aktivne veze na MYCE mrežu</numerusform></translation>
+        <source>%n active connection(s) to Myce network</source>
+        <translation><numerusform>%n aktivne veze na Myce mrežu</numerusform><numerusform>%n aktivne veze na Myce mrežu</numerusform><numerusform>%n aktivne veze na Myce mrežu</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1185,8 +1185,8 @@ Višestruko slanje: %1</translation>
         <translation>Uređivanje adrese slanja</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid MYCE address.</source>
-        <translation>Unesena adresa "%1" nije važeća MYCE adresa.</translation>
+        <source>The entered address "%1" is not a valid Myce address.</source>
+        <translation>Unesena adresa "%1" nije važeća Myce adresa.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1231,16 +1231,16 @@ Višestruko slanje: %1</translation>
         <translation>verzija</translation>
     </message>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Core</translation>
+        <source>Myce</source>
+        <translation>Myce</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About MYCE Core</source>
-        <translation>O MYCE Core</translation>
+        <source>About Myce</source>
+        <translation>O Myce</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1286,16 +1286,16 @@ Višestruko slanje: %1</translation>
         <translation>Dobrodošli</translation>
     </message>
     <message>
-        <source>Welcome to MYCE Core.</source>
-        <translation>Dobrodošli u MYCE Core.</translation>
+        <source>Welcome to Myce.</source>
+        <translation>Dobrodošli u Myce.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where MYCE Core will store its data.</source>
-        <translation>Budući da je prvi put pokrenut program, možete odabrati gdje će MYCE Core pohraniti svoje podatke.</translation>
+        <source>As this is the first time the program is launched, you can choose where Myce will store its data.</source>
+        <translation>Budući da je prvi put pokrenut program, možete odabrati gdje će Myce pohraniti svoje podatke.</translation>
     </message>
     <message>
-        <source>MYCE Core will download and store a copy of the MYCE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>MYCE Core preuzima i pohranjuje kopiju MYCE blok-lanca. Barem će %1GB podataka biti pohranjeno u ovom direktoriju i to će s vremenom rasti. Novčanik će također biti pohranjena u ovom direktoriju.</translation>
+        <source>Myce will download and store a copy of the Myce block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Myce preuzima i pohranjuje kopiju Myce blok-lanca. Barem će %1GB podataka biti pohranjeno u ovom direktoriju i to će s vremenom rasti. Novčanik će također biti pohranjena u ovom direktoriju.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1306,8 +1306,8 @@ Višestruko slanje: %1</translation>
         <translation>Koristite prilagođeni direktorij podataka:</translation>
     </message>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Core</translation>
+        <source>Myce</source>
+        <translation>Myce</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1448,12 +1448,12 @@ Višestruko slanje: %1</translation>
         <translation>Unesite adresu za slanje</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other MYCE addresses after it matures.
-To Add: enter percentage to give and MYCE address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Myce addresses after it matures.
+To Add: enter percentage to give and Myce address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend vam omogućuje da automatski pošaljete do 100% svoje nagrade za ulog ili masternode  nagrade na popis drugih MYCE adresa nakon što sazrijete.
-Za Dodaj: unesite postotak za davanje i MYCE adresu za dodavanje MultiSend vektoru.
+        <translation>MultiSend vam omogućuje da automatski pošaljete do 100% svoje nagrade za ulog ili masternode  nagrade na popis drugih Myce adresa nakon što sazrijete.
+Za Dodaj: unesite postotak za davanje i Myce adresu za dodavanje MultiSend vektoru.
 Za brisanje: Unesite adresu za brisanje i pritisnite Delete.
 MultiSend neće biti aktiviran dok ne kliknete Aktiviraj</translation>
     </message>
@@ -1811,16 +1811,16 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Obfuscation Konfiguracija</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening MYCE's configuration screen.</source>
-        <translation>Obfuscation je uspješno postavljen na osnovne (%1 i 2 runde). To možete promijeniti u bilo kojem trenutku otvaranjem zaslona za konfiguraciju MYCE-a.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Myce's configuration screen.</source>
+        <translation>Obfuscation je uspješno postavljen na osnovne (%1 i 2 runde). To možete promijeniti u bilo kojem trenutku otvaranjem zaslona za konfiguraciju Myce-a.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening MYCE's configuration screen.</source>
-        <translation>Obfuscation je uspješno postavljen na visoku razinu (%1 i 8 krugova). To možete promijeniti u bilo kojem trenutku otvaranjem zaslona za konfiguraciju MYCE-a</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Myce's configuration screen.</source>
+        <translation>Obfuscation je uspješno postavljen na visoku razinu (%1 i 8 krugova). To možete promijeniti u bilo kojem trenutku otvaranjem zaslona za konfiguraciju Myce-a</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening MYCE's configuration screen.</source>
-        <translation>Obfuscation je uspješno postavljen na maksimalnu razinu (%1 i 16 krugova). To možete promijeniti u bilo kojem trenutku otvaranjem zaslona za konfiguraciju MYCE-a.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Myce's configuration screen.</source>
+        <translation>Obfuscation je uspješno postavljen na maksimalnu razinu (%1 i 16 krugova). To možete promijeniti u bilo kojem trenutku otvaranjem zaslona za konfiguraciju Myce-a.</translation>
     </message>
 </context>
 <context>
@@ -1881,8 +1881,8 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Ako onemogućite potrošnju nepotvrđenih promjena, promjena s transakcijskog kanala bit će upotrijebljena sve dok ta transakcija nema barem jednu potvrdu. To također utječe na izračun salda.</translation>
     </message>
     <message>
-        <source>Automatically open the MYCE client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatski otvorite MYCE klijentski priključak na rooteru. To funkcionira samo kada vaš rooter podržava UPnP i omogućen je.</translation>
+        <source>Automatically open the Myce client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatski otvorite Myce klijentski priključak na rooteru. To funkcionira samo kada vaš rooter podržava UPnP i omogućen je.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1901,12 +1901,12 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Stručnjak</translation>
     </message>
     <message>
-        <source>Automatically start MYCE after logging in to the system.</source>
-        <translation>Automatski pokrenite MYCE nakon prijave u sustav.</translation>
+        <source>Automatically start Myce after logging in to the system.</source>
+        <translation>Automatski pokrenite Myce nakon prijave u sustav.</translation>
     </message>
     <message>
-        <source>&amp;Start MYCE on system login</source>
-        <translation>Pokrenite MYCE na prijavi u sustav</translation>
+        <source>&amp;Start Myce on system login</source>
+        <translation>Pokrenite Myce na prijavi u sustav</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1933,8 +1933,8 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Mreža</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting MYCE.</source>
-        <translation>Ovdje se može postaviti jezik korisničkog sučelja. Ova postavka će stupiti na snagu nakon ponovnog pokretanja MYCE-a.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Myce.</source>
+        <translation>Ovdje se može postaviti jezik korisničkog sučelja. Ova postavka će stupiti na snagu nakon ponovnog pokretanja Myce-a.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1976,8 +1976,8 @@ https://www.transifex.com/myce-project/myce-project-translations</translation>
         <translation>Prag razdvajanja Stake-a:</translation>
     </message>
     <message>
-        <source>Connect to the MYCE network through a SOCKS5 proxy.</source>
-        <translation>Povežite se s MYCE mrežom putem SOCKS5 proxy poslužitelja.</translation>
+        <source>Connect to the Myce network through a SOCKS5 proxy.</source>
+        <translation>Povežite se s Myce mrežom putem SOCKS5 proxy poslužitelja.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -2155,8 +2155,8 @@ https://www.transifex.com/myce-project/myce-project-translations</translation>
         <translation>Trenutačno zaključana ravnoteža u adresama samo za gledanje</translation>
     </message>
     <message>
-        <source>Your current MYCE balance, unconfirmed and immature transactions included</source>
-        <translation>Uključena je vaša trenutna bilanca MYCE, nepotvrđene i nezrele transakcije</translation>
+        <source>Your current Myce balance, unconfirmed and immature transactions included</source>
+        <translation>Uključena je vaša trenutna bilanca Myce, nepotvrđene i nezrele transakcije</translation>
     </message>
     <message>
         <source>zYCE Balance</source>
@@ -2175,8 +2175,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Nezreli: potvrđeno, ali manje od 1 minta iste denominacije nakon mintanja</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MYCE network after a connection is established, but this process has not completed yet.</source>
-        <translation>Prikazane informacije mogu biti zastarjele. Vaš se novčanik automatski sinkronizira s MYCE mrežom nakon uspostavljanja veze, ali taj postupak još nije dovršen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Myce network after a connection is established, but this process has not completed yet.</source>
+        <translation>Prikazane informacije mogu biti zastarjele. Vaš se novčanik automatski sinkronizira s Myce mrežom nakon uspostavljanja veze, ali taj postupak još nije dovršen.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -2292,8 +2292,8 @@ Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablez
         <translation>Ne može se pokrenuti myce: clik-to-pay handler</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid MYCE address or malformed URI parameters.</source>
-        <translation>URI se ne može analizirati! To može biti uzrokovana nevažećom MYCE adresom ili nepravilnim URI parametrima.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Myce address or malformed URI parameters.</source>
+        <translation>URI se ne može analizirati! To može biti uzrokovana nevažećom Myce adresom ili nepravilnim URI parametrima.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2378,8 +2378,8 @@ Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablez
         <translation>Zerocoin radnje:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MYCE network after a connection is established, but this process has not completed yet.</source>
-        <translation>Prikazane informacije mogu biti zastarjele. Vaš se novčanik automatski sinkronizira s MYCE mrežom nakon uspostavljanja veze, ali taj postupak još nije dovršen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Myce network after a connection is established, but this process has not completed yet.</source>
+        <translation>Prikazane informacije mogu biti zastarjele. Vaš se novčanik automatski sinkronizira s Myce mrežom nakon uspostavljanja veze, ali taj postupak još nije dovršen.</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2502,8 +2502,8 @@ zYCE su zreli kada imaju više od 20 potvrda I više od 2 mint od iste denominac
         <translation>Platiti:</translation>
     </message>
     <message>
-        <source>The MYCE address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>MYCE adresa za slanje uplate. Stvara lokalno plaćanje za sebe kada je prazno.</translation>
+        <source>The Myce address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation>Myce adresa za slanje uplate. Stvara lokalno plaćanje za sebe kada je prazno.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3027,8 +3027,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Iznos</translation>
     </message>
     <message>
-        <source>Enter a MYCE address (e.g. %1)</source>
-        <translation>Unesite MYCE adresu (npr., %1)</translation>
+        <source>Enter a Myce address (e.g. %1)</source>
+        <translation>Unesite Myce adresu (npr., %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -3166,8 +3166,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Block chain</translation>
     </message>
     <message>
-        <source>Open the MYCE debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Otvorite MYCE debug log datoteku iz aktualnog direktorija podataka. To može potrajati nekoliko sekundi za velike datoteke zapisnika.</translation>
+        <source>Open the Myce debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Otvorite Myce debug log datoteku iz aktualnog direktorija podataka. To može potrajati nekoliko sekundi za velike datoteke zapisnika.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -3382,8 +3382,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Iz:</translation>
     </message>
     <message>
-        <source>Welcome to the MYCE RPC console.</source>
-        <translation>Dobrodošli na MYCE RPC konzolu.</translation>
+        <source>Welcome to the Myce RPC console.</source>
+        <translation>Dobrodošli na Myce RPC konzolu.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -3509,16 +3509,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Dodatna oznaka za povezivanje s novom adresom primatelja.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the MYCE network.</source>
-        <translation>Dodatna poruka priložena zahtjevu za plaćanje, koji će se prikazati kada se zahtjev otvori. Napomena: poruka neće biti poslana s plaćanjem putem MYCE mreže.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Myce network.</source>
+        <translation>Dodatna poruka priložena zahtjevu za plaćanje, koji će se prikazati kada se zahtjev otvori. Napomena: poruka neće biti poslana s plaćanjem putem Myce mreže.</translation>
     </message>
     <message>
         <source>RECEIVE</source>
         <translation>PRIMI</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the MYCE network.</source>
-        <translation>Dodatna poruka za pridruživanje zahtjevu za plaćanje koja će se prikazati kada se zahtjev otvori.Napomena: poruka neće biti poslana s plaćanjem putem MYCE mreže.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Myce network.</source>
+        <translation>Dodatna poruka za pridruživanje zahtjevu za plaćanje koja će se prikazati kada se zahtjev otvori.Napomena: poruka neće biti poslana s plaćanjem putem Myce mreže.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3813,8 +3813,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Ako je prilagođena naknada postavljena na 1000 uYCE, a transakcija je samo 250 bajta, tada "po kilobajtu" plaća se samo 250 uYCE-ova, a "ukupno barem" plaća 1000 uYCE-ova. Za transakcije veće od kilobajta, oboje plaćaju po kilobajtu.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for MYCE transactions than the network can process.</source>
-        <translation>Plaćanje samo minimalne naknade je sasvim u redu sve dok j obujma transakcija manji od prostora u blokovima. No, budite svjesni da to može dovesti do transakcije koja nikada se ne potvrđuje kada se pojavi više zahtjeva za MYCE transakcijama nego što mreža može obraditi.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Myce transactions than the network can process.</source>
+        <translation>Plaćanje samo minimalne naknade je sasvim u redu sve dok j obujma transakcija manji od prostora u blokovima. No, budite svjesni da to može dovesti do transakcije koja nikada se ne potvrđuje kada se pojavi više zahtjeva za Myce transakcijama nego što mreža može obraditi.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -3909,8 +3909,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Alat za podjelu blocka ne funkcionira s više adresa. Pokušajte ponovo.</translation>
     </message>
     <message>
-        <source>Warning: Invalid MYCE address</source>
-        <translation>Upozorenje: Nevažeća MYCE adresa</translation>
+        <source>Warning: Invalid Myce address</source>
+        <translation>Upozorenje: Nevažeća Myce adresa</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -4012,8 +4012,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Platiti:</translation>
     </message>
     <message>
-        <source>The MYCE address to send the payment to</source>
-        <translation>MYCE adresa za slanje uplate</translation>
+        <source>The Myce address to send the payment to</source>
+        <translation>Myce adresa za slanje uplate</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4052,8 +4052,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Poruka:</translation>
     </message>
     <message>
-        <source>A message that was attached to the MYCE: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MYCE network.</source>
-        <translation>Poruka koja je bila povezana s MYCE: URI koji će biti pohranjen s transakcijom za vašu referencu. Napomena: ova poruka neće biti poslana preko MYCE mreže.</translation>
+        <source>A message that was attached to the Myce: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Myce network.</source>
+        <translation>Poruka koja je bila povezana s Myce: URI koji će biti pohranjen s transakcijom za vašu referencu. Napomena: ova poruka neće biti poslana preko Myce mreže.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -4079,8 +4079,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>MYCE Core is shutting down...</source>
-        <translation>MYCE Core se zatvara ...</translation>
+        <source>Myce is shutting down...</source>
+        <translation>Myce se zatvara ...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -4102,8 +4102,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Možete potpisati poruke s vašim adresama kako biste dokazali da ih posjedujete. Pazite da ne potpišete ništa nejasno, jer napadi za krađu identiteta mogu Vas pokušati uvjeriti da vam potpišu identitet. Potpišite samo detalje oko kojih se slažete.</translation>
     </message>
     <message>
-        <source>The MYCE address to sign the message with</source>
-        <translation>MYCE adresa za potpisivanje poruke</translation>
+        <source>The Myce address to sign the message with</source>
+        <translation>Myce adresa za potpisivanje poruke</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4134,16 +4134,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Kopirajte trenutačni potpis u međuspremnik sustava</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MYCE address</source>
-        <translation>Potpišite poruku da biste dokazali da ste vlasnik ove MYCE adrese</translation>
+        <source>Sign the message to prove you own this Myce address</source>
+        <translation>Potpišite poruku da biste dokazali da ste vlasnik ove Myce adrese</translation>
     </message>
     <message>
-        <source>The MYCE address the message was signed with</source>
-        <translation>MYCE adresa s kojom je potpisana poruka</translation>
+        <source>The Myce address the message was signed with</source>
+        <translation>Myce adresa s kojom je potpisana poruka</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified MYCE address</source>
-        <translation>Potvrdite poruku kako biste bili sigurni da je potpisana s navedenom MYCE adresom</translation>
+        <source>Verify the message to ensure it was signed with the specified Myce address</source>
+        <translation>Potvrdite poruku kako biste bili sigurni da je potpisana s navedenom Myce adresom</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -4229,8 +4229,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Core</translation>
+        <source>Myce</source>
+        <translation>Myce</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -4245,8 +4245,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Dash Core programeri</translation>
     </message>
     <message>
-        <source>The MYCE Core developers</source>
-        <translation>MYCE Core programeri</translation>
+        <source>The Myce developers</source>
+        <translation>Myce programeri</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4911,8 +4911,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Izračunata kontrolna točka akumulatora nije ono što se bilježi indeksom blokova</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. MYCE Core is probably already running.</source>
-        <translation>Nije moguće dobiti zaključavanje na direktoriju podataka %s. MYCE Core vjerojatno već radi.</translation>
+        <source>Cannot obtain a lock on data directory %s. Myce is probably already running.</source>
+        <translation>Nije moguće dobiti zaključavanje na direktoriju podataka %s. Myce vjerojatno već radi.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -5087,8 +5087,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Ovaj proizvod uključuje softver razvijen od strane OpenSSL projekta za uporabu u OpenSSL Toolkitu i kriptografskom softveru kojeg je napisao Eric Young i UPnP softver koji je napisao Thomas Bernard.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. MYCE Core is probably already running.</source>
-        <translation>Nije moguće vezati se na %s na ovom računalu. MYCE Core vjerojatno već radi.</translation>
+        <source>Unable to bind to %s on this computer. Myce is probably already running.</source>
+        <translation>Nije moguće vezati se na %s na ovom računalu. Myce vjerojatno već radi.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
@@ -5115,8 +5115,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Upozorenje: -paytxfee je vrlo visoka! To je transakcijska naknada koju ćete platiti ako šaljete transakciju.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong MYCE Core will not work properly.</source>
-        <translation>Upozorenje: Provjerite jesu li datum i vrijeme vašeg računala točni! Ako je vaš sat pogrešan, MYCE Core neće raditi ispravno.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Myce will not work properly.</source>
+        <translation>Upozorenje: Provjerite jesu li datum i vrijeme vašeg računala točni! Ako je vaš sat pogrešan, Myce neće raditi ispravno.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -5267,8 +5267,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Autorska prava (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The MYCE Core Developers</source>
-        <translation>Autorska prava (C) 2015-%i The MYCE Core Developers</translation>
+        <source>Copyright (C) 2015-%i The Myce Developers</source>
+        <translation>Autorska prava (C) 2015-%i The Myce Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -5356,8 +5356,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Pogreška pri učitavanju wallet.dat: novčanik oštećen</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of MYCE Core</source>
-        <translation>Pogreška prilikom učitavanja wallet.dat: Novčanik zahtijeva noviju verziju MYCE jezgre</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Myce</source>
+        <translation>Pogreška prilikom učitavanja wallet.dat: Novčanik zahtijeva noviju verziju Myce jezgre</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -5472,8 +5472,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Informacije</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. MYCE Core is shutting down.</source>
-        <translation>Provjera ispravnosti inicijalizacije nije uspjela. MYCE Core se zatvara.</translation>
+        <source>Initialization sanity check failed. Myce is shutting down.</source>
+        <translation>Provjera ispravnosti inicijalizacije nije uspjela. Myce se zatvara.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -5583,8 +5583,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>uklonjene nepotvrđene transakcije</translation>
     </message>
     <message>
-        <source>Disable all MYCE specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Onemogući sve specifične funkcije MYCE (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, zadano: %u)</translation>
+        <source>Disable all Myce specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Onemogući sve specifične funkcije Myce (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, zadano: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
@@ -6295,8 +6295,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Novčanik zaključan.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart MYCE Core to complete</source>
-        <translation>Potrebno je prepisati novčanik: ponovo pokrenite MYCE Core</translation>
+        <source>Wallet needed to be rewritten: restart Myce to complete</source>
+        <translation>Potrebno je prepisati novčanik: ponovo pokrenite Myce</translation>
     </message>
     <message>
         <source>Wallet options:</source>

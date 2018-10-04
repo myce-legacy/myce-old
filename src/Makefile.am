@@ -88,7 +88,7 @@ if BUILD_BITCOIN_UTILS
 endif
 
 .PHONY: FORCE
-# myce core #
+# myce #
 BITCOIN_CORE_H = \
   activemasternode.h \
   accumulators.h \

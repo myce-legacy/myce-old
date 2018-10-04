@@ -62,12 +62,12 @@
         <translation>Endereços de recebimento</translation>
     </message>
     <message>
-        <source>These are your MYCE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Esses são seus endereços MYCE para onde enviar pagamentos. Confira sempre o montante e os endereços de destino antes de enviar moedas.</translation>
+        <source>These are your Myce addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Esses são seus endereços Myce para onde enviar pagamentos. Confira sempre o montante e os endereços de destino antes de enviar moedas.</translation>
     </message>
     <message>
-        <source>These are your MYCE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Esses são seus endereços MYCE onde receber pagamentos. Recomenda-se o uso de um novo endereço para cada transacção.</translation>
+        <source>These are your Myce addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Esses são seus endereços Myce onde receber pagamentos. Recomenda-se o uso de um novo endereço para cada transacção.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,8 +172,8 @@
         <translation>Confirmar encriptação da carteira</translation>
     </message>
     <message>
-        <source>MYCE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your YCEs from being stolen by malware infecting your computer.</source>
-        <translation>MYCE encerrará para terminar o processo de encriptação. Lembre-se que encriptar sua carteira não protege completamente suas YCEs contra roubo por malware infectando seu computador.</translation>
+        <source>Myce will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your YCEs from being stolen by malware infecting your computer.</source>
+        <translation>Myce encerrará para terminar o processo de encriptação. Lembre-se que encriptar sua carteira não protege completamente suas YCEs contra roubo por malware infectando seu computador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -666,8 +666,8 @@
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The MYCE address to sign the message with</source>
-        <translation>Um endereço MYCE para assinar a mensagem</translation>
+        <source>The Myce address to sign the message with</source>
+        <translation>Um endereço Myce para assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -698,12 +698,12 @@
         <translation>Copiar a assinatura para a area de trabalho</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MYCE address</source>
-        <translation>Assinar a Mensagem para provar que você e dono desse endereço MYCE.</translation>
+        <source>Sign the message to prove you own this Myce address</source>
+        <translation>Assinar a Mensagem para provar que você e dono desse endereço Myce.</translation>
     </message>
     <message>
-        <source>The MYCE address the message was signed with</source>
-        <translation>O endereço MYCE que foi assinado com</translation>
+        <source>The Myce address the message was signed with</source>
+        <translation>O endereço Myce que foi assinado com</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1250,8 +1250,8 @@
         <translation>Carteira esta bloqueada.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart MYCE Core to complete</source>
-        <translation>Carteira precisa ser reescrita: reinicie o MYCE Core para completar.</translation>
+        <source>Wallet needed to be rewritten: restart Myce to complete</source>
+        <translation>Carteira precisa ser reescrita: reinicie o Myce para completar.</translation>
     </message>
     <message>
         <source>Wallet options:</source>

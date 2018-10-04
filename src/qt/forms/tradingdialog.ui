@@ -2941,7 +2941,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Generate MYCE Deposit Address</string>
+      <string>Generate Myce Deposit Address</string>
      </property>
      <property name="icon">
       <iconset resource="../myce.qrc">

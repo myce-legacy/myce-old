@@ -1,5 +1,5 @@
 // Copyright (c) 2017-2018 The PIVX developers
-// Copyright (c) 2018 The MYCE developers
+// Copyright (c) 2018 The Myce developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -83,7 +83,7 @@ PrivacyDialog::PrivacyDialog(QWidget* parent) : QDialog(parent, Qt::WindowSystem
     ui->labelZsupplyText1000->setText(tr("Denom. <b>1000</b>:"));
     ui->labelZsupplyText5000->setText(tr("Denom. <b>5000</b>:"));
 
-    // MYCE settings
+    // Myce settings
     QSettings settings;
     if (!settings.contains("nSecurityLevel")){
         nSecurityLevel = 42;

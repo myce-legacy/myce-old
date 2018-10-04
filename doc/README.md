@@ -1,13 +1,13 @@
-MYCE Core
+Myce
 =====================
 
 Setup
 ---------------------
-[MYCE Core](http://myce.org/wallet) is the original MYCE client and it builds the backbone of the network. However, it downloads and stores the entire history of MYCE transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Myce](http://myce.org/wallet) is the original Myce client and it builds the backbone of the network. However, it downloads and stores the entire history of Myce transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run MYCE on your native platform.
+The following are some helpful notes on how to run Myce on your native platform.
 
 ### Unix
 
@@ -22,19 +22,19 @@ Unpack the files into a directory, and then run myce-qt.exe.
 
 ### OSX
 
-Drag MYCE-Qt to your applications folder, and then run MYCE-Qt.
+Drag Myce-Qt to your applications folder, and then run Myce-Qt.
 
 ### Need Help?
 
-* See the documentation at the [MYCE Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
+* See the documentation at the [Myce Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [MYCE Forum](http://forum.myce.org/).
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [Myce Forum](http://forum.myce.org/).
 * Join our Discord server [Discord Server](https://discord.myce.org)
-* Join one of our Slack groups [MYCE Slack Groups](https://myce.org/slack-logins/) (Main community is replaced by Discord).
+* Join one of our Slack groups [Myce Slack Groups](https://myce.org/slack-logins/) (Main community is replaced by Discord).
 
 Building
 ---------------------
-The following are developer notes on how to build MYCE on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build Myce on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -56,8 +56,8 @@ The Myce repo's [root README](https://github.com/mycelliumcoin/MycelliumMN/blob/
 
 ### Resources
 
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [MYCE](http://forum.myce.org/) forum.
-* Join the [MYCE-Dev](https://myce-dev.slack.com/) Slack group ([Sign-Up](https://myce-dev.herokuapp.com/)).
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [Myce](http://forum.myce.org/) forum.
+* Join the [Myce-Dev](https://myce-dev.slack.com/) Slack group ([Sign-Up](https://myce-dev.herokuapp.com/)).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

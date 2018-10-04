@@ -1,9 +1,9 @@
-MYCE Core integration/staging repository
+Myce integration/staging repository
 =====================================
 
-[![Build Status](https://travis-ci.org/MYCE-Project/MYCE.svg?branch=master)](https://travis-ci.org/MYCE-Project/MYCE) [![GitHub version](https://badge.fury.io/gh/MYCE-Project%2FMYCE.svg)](https://badge.fury.io/gh/MYCE-Project%2FMYCE)
+[![Build Status](https://travis-ci.org/Myce-Project/Myce.svg?branch=master)](https://travis-ci.org/Myce-Project/Myce) [![GitHub version](https://badge.fury.io/gh/Myce-Project%2FMyce.svg)](https://badge.fury.io/gh/Myce-Project%2FMyce)
 
-MYCE is an open source crypto-currency focused on fast private transactions with low transaction fees & environmental footprint.  It utilizes a custom Proof of Stake protocol for securing its network and uses an innovative variable seesaw reward mechanism that dynamically balances 90% of its block reward size between masternodes and staking nodes and 10% dedicated for budget proposals. The goal of MYCE is to achieve a decentralized sustainable crypto currency with near instant full-time private transactions, fair governance and community intelligence.
+Myce is an open source crypto-currency focused on fast private transactions with low transaction fees & environmental footprint.  It utilizes a custom Proof of Stake protocol for securing its network and uses an innovative variable seesaw reward mechanism that dynamically balances 90% of its block reward size between masternodes and staking nodes and 10% dedicated for budget proposals. The goal of Myce is to achieve a decentralized sustainable crypto currency with near instant full-time private transactions, fair governance and community intelligence.
 - Anonymized transactions using the [_Zerocoin Protocol_](http://www.myce.org/zyce).
 - Fast transactions featuring guaranteed zero confirmation transactions, we call it _SwiftX_.
 - Decentralized blockchain voting utilizing Masternode technology to form a DAO. The blockchain will distribute monthly treasury funds based on successful proposals submitted by the community and voted on by the DAO.
@@ -20,14 +20,14 @@ More information at [myce.org](http://www.myce.org) Visit our ANN thread at [Bit
 <tr><td>Premine</td><td>60,000 YCE*</td></tr>
 </table>
 
-*60,000 YCE Premine was burned in block [279917](http://www.presstab.pw/phpexplorer/MYCE/block.php?blockhash=206d9cfe859798a0b0898ab00d7300be94de0f5469bb446cecb41c3e173a57e0)
+*60,000 YCE Premine was burned in block [279917](http://www.presstab.pw/phpexplorer/Myce/block.php?blockhash=206d9cfe859798a0b0898ab00d7300be94de0f5469bb446cecb41c3e173a57e0)
 
 ### Reward Distribution
 
 <table>
 <th colspan=4>Genesis Block</th>
 <tr><th>Block Height</th><th>Reward Amount</th><th>Notes</th></tr>
-<tr><td>1</td><td>60,000 YCE</td><td>Initial Pre-mine, burnt in block <a href="http://www.presstab.pw/phpexplorer/MYCE/block.php?blockhash=206d9cfe859798a0b0898ab00d7300be94de0f5469bb446cecb41c3e173a57e0">279917</a></td></tr>
+<tr><td>1</td><td>60,000 YCE</td><td>Initial Pre-mine, burnt in block <a href="http://www.presstab.pw/phpexplorer/Myce/block.php?blockhash=206d9cfe859798a0b0898ab00d7300be94de0f5469bb446cecb41c3e173a57e0">279917</a></td></tr>
 </table>
 
 ### PoW Rewards Breakdown

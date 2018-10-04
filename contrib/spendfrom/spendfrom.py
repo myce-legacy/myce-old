@@ -35,9 +35,9 @@ def check_json_precision():
 def determine_db_dir():
     """Return the default location of the myce data directory"""
     if platform.system() == "Darwin":
-        return os.path.expanduser("~/Library/Application Support/MYCE/")
+        return os.path.expanduser("~/Library/Application Support/Myce/")
     elif platform.system() == "Windows":
-        return os.path.join(os.environ['APPDATA'], "MYCE")
+        return os.path.join(os.environ['APPDATA'], "Myce")
     return os.path.expanduser("~/.myce")
 
 def read_bitcoin_config(dbdir):

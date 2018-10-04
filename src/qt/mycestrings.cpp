@@ -32,7 +32,7 @@ QT_TRANSLATE_NOOP("myce-core", ""
 QT_TRANSLATE_NOOP("myce-core", ""
 "Calculated accumulator checkpoint is not what is recorded by block index"),
 QT_TRANSLATE_NOOP("myce-core", ""
-"Cannot obtain a lock on data directory %s. MYCE Core is probably already "
+"Cannot obtain a lock on data directory %s. Myce is probably already "
 "running."),
 QT_TRANSLATE_NOOP("myce-core", ""
 "Change automatic finalized budget voting behavior. mode=auto: Vote for only "
@@ -50,7 +50,7 @@ QT_TRANSLATE_NOOP("myce-core", ""
 "Delete all zerocoin spends and mints that have been recorded to the "
 "blockchain database and reindex them (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("myce-core", ""
-"Disable all MYCE specific functionality (Masternodes, Zerocoin, SwiftX, "
+"Disable all Myce specific functionality (Masternodes, Zerocoin, SwiftX, "
 "Budgeting) (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("myce-core", ""
 "Distributed under the MIT software license, see the accompanying file "
@@ -192,7 +192,7 @@ QT_TRANSLATE_NOOP("myce-core", ""
 "the OpenSSL Toolkit <https://www.openssl.org/> and cryptographic software "
 "written by Eric Young and UPnP software written by Thomas Bernard."),
 QT_TRANSLATE_NOOP("myce-core", ""
-"Unable to bind to %s on this computer. MYCE Core is probably already running."),
+"Unable to bind to %s on this computer. Myce is probably already running."),
 QT_TRANSLATE_NOOP("myce-core", ""
 "Unable to locate enough Obfuscation denominated funds for this transaction."),
 QT_TRANSLATE_NOOP("myce-core", ""
@@ -212,7 +212,7 @@ QT_TRANSLATE_NOOP("myce-core", ""
 "pay if you send a transaction."),
 QT_TRANSLATE_NOOP("myce-core", ""
 "Warning: Please check that your computer's date and time are correct! If "
-"your clock is wrong MYCE Core will not work properly."),
+"your clock is wrong Myce will not work properly."),
 QT_TRANSLATE_NOOP("myce-core", ""
 "Warning: The network does not appear to fully agree! Some miners appear to "
 "be experiencing issues."),
@@ -268,7 +268,7 @@ QT_TRANSLATE_NOOP("myce-core", "Connect to a node to retrieve peer addresses, an
 QT_TRANSLATE_NOOP("myce-core", "Connection options:"),
 QT_TRANSLATE_NOOP("myce-core", "Copyright (C) 2009-%i The Bitcoin Core Developers"),
 QT_TRANSLATE_NOOP("myce-core", "Copyright (C) 2014-%i The Dash Core Developers"),
-QT_TRANSLATE_NOOP("myce-core", "Copyright (C) 2015-%i The MYCE Core Developers"),
+QT_TRANSLATE_NOOP("myce-core", "Copyright (C) 2015-%i The Myce Developers"),
 QT_TRANSLATE_NOOP("myce-core", "Corrupted block database detected"),
 QT_TRANSLATE_NOOP("myce-core", "Could not parse masternode.conf"),
 QT_TRANSLATE_NOOP("myce-core", "Debugging/Testing options:"),
@@ -297,7 +297,7 @@ QT_TRANSLATE_NOOP("myce-core", "Error initializing wallet database environment %
 QT_TRANSLATE_NOOP("myce-core", "Error loading block database"),
 QT_TRANSLATE_NOOP("myce-core", "Error loading wallet.dat"),
 QT_TRANSLATE_NOOP("myce-core", "Error loading wallet.dat: Wallet corrupted"),
-QT_TRANSLATE_NOOP("myce-core", "Error loading wallet.dat: Wallet requires newer version of MYCE Core"),
+QT_TRANSLATE_NOOP("myce-core", "Error loading wallet.dat: Wallet requires newer version of Myce"),
 QT_TRANSLATE_NOOP("myce-core", "Error opening block database"),
 QT_TRANSLATE_NOOP("myce-core", "Error reading from database, shutting down."),
 QT_TRANSLATE_NOOP("myce-core", "Error recovering public key."),
@@ -336,7 +336,7 @@ QT_TRANSLATE_NOOP("myce-core", "Incompatible mode."),
 QT_TRANSLATE_NOOP("myce-core", "Incompatible version."),
 QT_TRANSLATE_NOOP("myce-core", "Incorrect or no genesis block found. Wrong datadir for network?"),
 QT_TRANSLATE_NOOP("myce-core", "Information"),
-QT_TRANSLATE_NOOP("myce-core", "Initialization sanity check failed. MYCE Core is shutting down."),
+QT_TRANSLATE_NOOP("myce-core", "Initialization sanity check failed. Myce is shutting down."),
 QT_TRANSLATE_NOOP("myce-core", "Input is not valid."),
 QT_TRANSLATE_NOOP("myce-core", "Insufficient funds"),
 QT_TRANSLATE_NOOP("myce-core", "Insufficient funds."),
@@ -506,7 +506,7 @@ QT_TRANSLATE_NOOP("myce-core", "Verifying wallet..."),
 QT_TRANSLATE_NOOP("myce-core", "Version 1 zYCE require a security level of 100 to successfully spend."),
 QT_TRANSLATE_NOOP("myce-core", "Wallet %s resides outside data directory %s"),
 QT_TRANSLATE_NOOP("myce-core", "Wallet is locked."),
-QT_TRANSLATE_NOOP("myce-core", "Wallet needed to be rewritten: restart MYCE Core to complete"),
+QT_TRANSLATE_NOOP("myce-core", "Wallet needed to be rewritten: restart Myce to complete"),
 QT_TRANSLATE_NOOP("myce-core", "Wallet options:"),
 QT_TRANSLATE_NOOP("myce-core", "Wallet window title"),
 QT_TRANSLATE_NOOP("myce-core", "Warning"),

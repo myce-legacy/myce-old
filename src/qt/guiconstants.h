@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018 The MYCE developers
+// Copyright (c) 2018 The Myce developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -51,9 +51,9 @@ static const int MAX_URI_LENGTH = 255;
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 35
 
-#define QAPP_ORG_NAME "MYCE"
+#define QAPP_ORG_NAME "Myce"
 #define QAPP_ORG_DOMAIN "myce.org"
-#define QAPP_APP_NAME_DEFAULT "MYCE-Qt"
-#define QAPP_APP_NAME_TESTNET "MYCE-Qt-testnet"
+#define QAPP_APP_NAME_DEFAULT "Myce-Qt"
+#define QAPP_APP_NAME_TESTNET "Myce-Qt-testnet"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H

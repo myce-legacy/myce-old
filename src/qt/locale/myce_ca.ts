@@ -62,12 +62,12 @@
         <translation>Adreces de recepció</translation>
     </message>
     <message>
-        <source>These are your MYCE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Aquestes són les teves adreces MYCE per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
+        <source>These are your Myce addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Aquestes són les teves adreces Myce per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
     </message>
     <message>
-        <source>These are your MYCE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Aquestes són les teves adreces MYCE per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
+        <source>These are your Myce addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Aquestes són les teves adreces Myce per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,8 +168,8 @@
         <translation>Confirma l'encriptació del moneder</translation>
     </message>
     <message>
-        <source>MYCE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your YCEs from being stolen by malware infecting your computer.</source>
-        <translation>MYCE es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus YCE de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
+        <source>Myce will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your YCEs from being stolen by malware infecting your computer.</source>
+        <translation>Myce es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus YCE de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -421,12 +421,12 @@
         <translation>A&amp;juda</translation>
     </message>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Core</translation>
+        <source>Myce</source>
+        <translation>Myce</translation>
     </message>
     <message>
-        <source>Send coins to a MYCE address</source>
-        <translation>Envia monedes a una adreça MYCE</translation>
+        <source>Send coins to a Myce address</source>
+        <translation>Envia monedes a una adreça Myce</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -437,8 +437,8 @@
         <translation>&amp;Masternodes</translation>
     </message>
     <message>
-        <source>&amp;About MYCE Core</source>
-        <translation>&amp;Sobre MYCE Core</translation>
+        <source>&amp;About Myce</source>
+        <translation>&amp;Sobre Myce</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -461,8 +461,8 @@
         <translation>Obre el fitxer de configuració del Masternode</translation>
     </message>
     <message>
-        <source>MYCE Core client</source>
-        <translation>Client MYCE core</translation>
+        <source>Myce client</source>
+        <translation>Client Myce</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -805,8 +805,8 @@
         <translation>Edita l'adreça d'enviament</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid MYCE address.</source>
-        <translation>L'adreça introduïda "%1" no és una adreça MYCE vàlida.</translation>
+        <source>The entered address "%1" is not a valid Myce address.</source>
+        <translation>L'adreça introduïda "%1" no és una adreça Myce vàlida.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -851,16 +851,16 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Core</translation>
+        <source>Myce</source>
+        <translation>Myce</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About MYCE Core</source>
-        <translation>Sobre MYCE Core</translation>
+        <source>About Myce</source>
+        <translation>Sobre Myce</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -906,12 +906,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to MYCE Core.</source>
-        <translation>Benvingut a MYCE Core.</translation>
+        <source>Welcome to Myce.</source>
+        <translation>Benvingut a Myce.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where MYCE Core will store its data.</source>
-        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del MYCE Core.</translation>
+        <source>As this is the first time the program is launched, you can choose where Myce will store its data.</source>
+        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del Myce.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -922,8 +922,8 @@
         <translation>Usar una carpeta de dades personalitzada:</translation>
     </message>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Core</translation>
+        <source>Myce</source>
+        <translation>Myce</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1214,8 +1214,8 @@
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start MYCE after logging in to the system.</source>
-        <translation>Inicia MYCE automàticament després d'identificar-te en el sistema.</translation>
+        <source>Automatically start Myce after logging in to the system.</source>
+        <translation>Inicia Myce automàticament després d'identificar-te en el sistema.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1713,8 +1713,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>MYCE Core is shutting down...</source>
-        <translation>MYCE Core s'està tancant...</translation>
+        <source>Myce is shutting down...</source>
+        <translation>Myce s'està tancant...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1779,8 +1779,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Core</translation>
+        <source>Myce</source>
+        <translation>Myce</translation>
     </message>
     <message>
         <source>Version %1</source>

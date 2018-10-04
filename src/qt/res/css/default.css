@@ -977,7 +977,7 @@ background-image: url(':/images/myce_logo_horizontal');
 background-repeat: no-repeat;
 }
 
-QWidget .QFrame#frame_Header { /* Header with Page-Title and MYCE-image */
+QWidget .QFrame#frame_Header { /* Header with Page-Title and Myce-image */
 max-width:0px;
 max-height:0px;
 background-color:transparent;

@@ -94,7 +94,7 @@
         <item>
          <widget class="QValidatedLineEdit" name="payTo">
           <property name="toolTip">
-           <string>The MYCE address to send the payment to</string>
+           <string>The Myce address to send the payment to</string>
           </property>
          </widget>
         </item>
@@ -203,7 +203,7 @@
        </size>
       </property>
       <property name="toolTip">
-       <string>A message that was attached to the MYCE: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MYCE network.</string>
+       <string>A message that was attached to the Myce: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Myce network.</string>
       </property>
       <property name="textFormat">
        <enum>Qt::PlainText</enum>

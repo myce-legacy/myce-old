@@ -62,12 +62,12 @@
         <translation>Adresy pro přijetí peněz</translation>
     </message>
     <message>
-        <source>These are your MYCE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto jsou Vaše MYCE adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
+        <source>These are your Myce addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto jsou Vaše Myce adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
     </message>
     <message>
-        <source>These are your MYCE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto jsou Vaše MYCE adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
+        <source>These are your Myce addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto jsou Vaše Myce adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,8 +172,8 @@
         <translation>Potvrdit zašifrování peněženky</translation>
     </message>
     <message>
-        <source>MYCE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your YCEs from being stolen by malware infecting your computer.</source>
-        <translation>MYCE se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše YCEy před krádží, pokud je Váš počítač infikován malwarem.</translation>
+        <source>Myce will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your YCEs from being stolen by malware infecting your computer.</source>
+        <translation>Myce se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše YCEy před krádží, pokud je Váš počítač infikován malwarem.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -601,12 +601,12 @@
         <translation>Nástrojová lišta záložek</translation>
     </message>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Core</translation>
+        <source>Myce</source>
+        <translation>Myce</translation>
     </message>
     <message>
-        <source>Send coins to a MYCE address</source>
-        <translation>Odeslat platbuna MYCE adresu</translation>
+        <source>Send coins to a Myce address</source>
+        <translation>Odeslat platbuna Myce adresu</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and myce: URIs)</source>
@@ -625,24 +625,24 @@
         <translation>Procházet masternody</translation>
     </message>
     <message>
-        <source>&amp;About MYCE Core</source>
-        <translation>&amp;O MYCE Core</translation>
+        <source>&amp;About Myce</source>
+        <translation>&amp;O Myce</translation>
     </message>
     <message>
-        <source>Show information about MYCE Core</source>
-        <translation>Zobraz informace o MYCE Core</translation>
+        <source>Show information about Myce</source>
+        <translation>Zobraz informace o Myce</translation>
     </message>
     <message>
-        <source>Modify configuration options for MYCE</source>
-        <translation>Upravit možnosti konfigurace pro MYCE</translation>
+        <source>Modify configuration options for Myce</source>
+        <translation>Upravit možnosti konfigurace pro Myce</translation>
     </message>
     <message>
-        <source>Sign messages with your MYCE addresses to prove you own them</source>
-        <translation>Podepsat zprávy Vaší MYCE adresou pro prokázaní, že jste jejich vlastníkem</translation>
+        <source>Sign messages with your Myce addresses to prove you own them</source>
+        <translation>Podepsat zprávy Vaší Myce adresou pro prokázaní, že jste jejich vlastníkem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified MYCE addresses</source>
-        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými MYCE adresami</translation>
+        <source>Verify messages to ensure they were signed with specified Myce addresses</source>
+        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými Myce adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -673,8 +673,8 @@
         <translation>Otevřít Masternodový konfigurační soubor</translation>
     </message>
     <message>
-        <source>Open a MYCE: URI or payment request</source>
-        <translation>Otevřít MYCE: URI nebo platební žádost</translation>
+        <source>Open a Myce: URI or payment request</source>
+        <translation>Otevřít Myce: URI nebo platební žádost</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -685,12 +685,12 @@
         <translation>Okno blokového průzkumníka</translation>
     </message>
     <message>
-        <source>Show the MYCE Core help message to get a list with possible MYCE command-line options</source>
-        <translation>Zobrazit MYCE Core pomocnou zpráv pro získání seznamu možných parametrů MYCE pro příkazy do příkazové řádky</translation>
+        <source>Show the Myce help message to get a list with possible Myce command-line options</source>
+        <translation>Zobrazit Myce pomocnou zpráv pro získání seznamu možných parametrů Myce pro příkazy do příkazové řádky</translation>
     </message>
     <message>
-        <source>MYCE Core client</source>
-        <translation>MYCE Core klient</translation>
+        <source>Myce client</source>
+        <translation>Myce klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1081,8 +1081,8 @@ MultiSend: %1</translation>
         <translation>Upravit adresu k odeslání platby</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid MYCE address.</source>
-        <translation>Zadaná adresa "%1" není validní MYCE adresa.</translation>
+        <source>The entered address "%1" is not a valid Myce address.</source>
+        <translation>Zadaná adresa "%1" není validní Myce adresa.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1127,12 +1127,12 @@ MultiSend: %1</translation>
         <translation>verze</translation>
     </message>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Core</translation>
+        <source>Myce</source>
+        <translation>Myce</translation>
     </message>
     <message>
-        <source>About MYCE Core</source>
-        <translation>O MYCE Core</translation>
+        <source>About Myce</source>
+        <translation>O Myce</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1166,16 +1166,16 @@ MultiSend: %1</translation>
         <translation>Vítejte</translation>
     </message>
     <message>
-        <source>Welcome to MYCE Core.</source>
-        <translation>Vítejte v MYCE Core.</translation>
+        <source>Welcome to Myce.</source>
+        <translation>Vítejte v Myce.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where MYCE Core will store its data.</source>
-        <translation>Při prvním spuštění programu si můžete vybrat, kam bude MYCE Core ukládat svá data.</translation>
+        <source>As this is the first time the program is launched, you can choose where Myce will store its data.</source>
+        <translation>Při prvním spuštění programu si můžete vybrat, kam bude Myce ukládat svá data.</translation>
     </message>
     <message>
-        <source>MYCE Core will download and store a copy of the MYCE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>MYCE Core stáhne a uloží kopii MYCE blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
+        <source>Myce will download and store a copy of the Myce block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Myce stáhne a uloží kopii Myce blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1186,8 +1186,8 @@ MultiSend: %1</translation>
         <translation>Použít vlastní složku pro data</translation>
     </message>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Core</translation>
+        <source>Myce</source>
+        <translation>Myce</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1550,12 +1550,12 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start MYCE after logging in to the system.</source>
-        <translation>Automaticky spustit MYCE po přihlášení do systému</translation>
+        <source>Automatically start Myce after logging in to the system.</source>
+        <translation>Automaticky spustit Myce po přihlášení do systému</translation>
     </message>
     <message>
-        <source>&amp;Start MYCE on system login</source>
-        <translation>&amp;Spusti MYCE při přihlášení do systému</translation>
+        <source>&amp;Start Myce on system login</source>
+        <translation>&amp;Spusti Myce při přihlášení do systému</translation>
     </message>
     <message>
         <source>Show Masternodes Tab</source>
@@ -2212,8 +2212,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The MYCE address to sign the message with</source>
-        <translation>MYCE adresa pro podepsání zprávy</translation>
+        <source>The Myce address to sign the message with</source>
+        <translation>Myce adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2240,16 +2240,16 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MYCE address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto MYCE adresu</translation>
+        <source>Sign the message to prove you own this Myce address</source>
+        <translation>Podepsat zprávu k prokázání, že vlastníte tuto Myce adresu</translation>
     </message>
     <message>
-        <source>The MYCE address the message was signed with</source>
-        <translation>MYCE adresa zprávy byla podpsána</translation>
+        <source>The Myce address the message was signed with</source>
+        <translation>Myce adresa zprávy byla podpsána</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified MYCE address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou MYCE adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified Myce address</source>
+        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou Myce adresou</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2291,8 +2291,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Core</translation>
+        <source>Myce</source>
+        <translation>Myce</translation>
     </message>
     </context>
 <context>

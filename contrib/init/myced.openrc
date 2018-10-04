@@ -16,8 +16,8 @@ BITCOIND_USER=${BITCOIND_USER:-myce}
 BITCOIND_GROUP=${BITCOIND_GROUP:-myce}
 BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/myced}
 
-name="MYCE Core Daemon"
-description="MYCE crypto-currency p2p network daemon"
+name="Myce Daemon"
+description="Myce crypto-currency p2p network daemon"
 
 command="/usr/bin/myced"
 command_args="-pid=\"${BITCOIND_PIDFILE}\" \
@@ -78,7 +78,7 @@ checkconfig()
 		eerror "It is also recommended that you also set alertnotify so you are "
 		eerror "notified of problems:"
 		eerror ""
-		eerror "ie: alertnotify=echo %%s | mail -s \"MYCE Alert\"" \
+		eerror "ie: alertnotify=echo %%s | mail -s \"Myce Alert\"" \
 			"admin@foo.com"
 		eerror ""
 		return 1

@@ -62,12 +62,12 @@
         <translation>Gavimo adresai</translation>
     </message>
     <message>
-        <source>These are your MYCE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Tai jūsų MYCE adresai mokėjimų išsiuntimams. Visada patikrinkite sumą ir gavėjo adresą prieš siųsdami monetas.</translation>
+        <source>These are your Myce addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Tai jūsų Myce adresai mokėjimų išsiuntimams. Visada patikrinkite sumą ir gavėjo adresą prieš siųsdami monetas.</translation>
     </message>
     <message>
-        <source>These are your MYCE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Tai jūsų MYCE adresai mokėjimų gavimams. Rekomenduojama naudoti naują adresą kiekvienam pavedimui.</translation>
+        <source>These are your Myce addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Tai jūsų Myce adresai mokėjimų gavimams. Rekomenduojama naudoti naują adresą kiekvienam pavedimui.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Patvirtinkite piniginės užšifravimą.</translation>
     </message>
     <message>
-        <source>MYCE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your YCEs from being stolen by malware infecting your computer.</source>
-        <translation>Dabar MYCE išsijungs, kad būtų užbaigtas šifravimo procesas. Atminkite, kad jūsų piniginės užšifravimas negali visiškai apsaugoti jūsų YCE nuo kenkėjiškų programų, užkrėsto jūsų kompiuterio.</translation>
+        <source>Myce will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your YCEs from being stolen by malware infecting your computer.</source>
+        <translation>Dabar Myce išsijungs, kad būtų užbaigtas šifravimo procesas. Atminkite, kad jūsų piniginės užšifravimas negali visiškai apsaugoti jūsų YCE nuo kenkėjiškų programų, užkrėsto jūsų kompiuterio.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -254,12 +254,12 @@
         <translation>Adresas:</translation>
     </message>
     <message>
-        <source>Enter a MYCE Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a Myce Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation>Įveskite Myce adresą, kurį norėtumėte užšifruoti naudojant BIP 38. Vidiniame laukelyje įrašykite slaptą frazę. Paspauskite užšifruoti, jei norite gauti užšifruotą privatųjį raktą.</translation>
     </message>
     <message>
-        <source>The MYCE address to encrypt</source>
-        <translation>MYCE adresas, kurį norite užšifruoti</translation>
+        <source>The Myce address to encrypt</source>
+        <translation>Myce adresas, kurį norite užšifruoti</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -290,8 +290,8 @@
         <translation>Kopijuoti dabartinį parašą</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this MYCE address</source>
-        <translation>Užšifruoti šio MYCE adreso privatų raktą</translation>
+        <source>Encrypt the private key for this Myce address</source>
+        <translation>Užšifruoti šio Myce adreso privatų raktą</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -645,12 +645,12 @@
         <translation>Skirtukų įrankių juosta</translation>
     </message>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Core</translation>
+        <source>Myce</source>
+        <translation>Myce</translation>
     </message>
     <message>
-        <source>Send coins to a MYCE address</source>
-        <translation>Siųsti monetas į MYCE adresą</translation>
+        <source>Send coins to a Myce address</source>
+        <translation>Siųsti monetas į Myce adresą</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and myce: URIs)</source>
@@ -669,24 +669,24 @@
         <translation>Naršyti masternod'us</translation>
     </message>
     <message>
-        <source>&amp;About MYCE Core</source>
-        <translation>&amp;Apie MYCE Core</translation>
+        <source>&amp;About Myce</source>
+        <translation>&amp;Apie Myce</translation>
     </message>
     <message>
-        <source>Show information about MYCE Core</source>
-        <translation>Rodyti informaciją apie MYCE Core</translation>
+        <source>Show information about Myce</source>
+        <translation>Rodyti informaciją apie Myce</translation>
     </message>
     <message>
-        <source>Modify configuration options for MYCE</source>
-        <translation>Keisti MYCE konfigūravimo parinktis</translation>
+        <source>Modify configuration options for Myce</source>
+        <translation>Keisti Myce konfigūravimo parinktis</translation>
     </message>
     <message>
-        <source>Sign messages with your MYCE addresses to prove you own them</source>
-        <translation>Pasirašykite pranešimus naudodami savo MYCE adresus, kad įrodytumėte, kad juos turite</translation>
+        <source>Sign messages with your Myce addresses to prove you own them</source>
+        <translation>Pasirašykite pranešimus naudodami savo Myce adresus, kad įrodytumėte, kad juos turite</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified MYCE addresses</source>
-        <translation>Patvirtinkite pranešimus, kad jie būtų pasirašyti su nurodytais MYCE adresais</translation>
+        <source>Verify messages to ensure they were signed with specified Myce addresses</source>
+        <translation>Patvirtinkite pranešimus, kad jie būtų pasirašyti su nurodytais Myce adresais</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -717,8 +717,8 @@
         <translation>Atidaryti Masternod'o konfigūracijos failą</translation>
     </message>
     <message>
-        <source>Open a MYCE: URI or payment request</source>
-        <translation>Atidaryti MYCE: URI arba mokėjimo prašymą</translation>
+        <source>Open a Myce: URI or payment request</source>
+        <translation>Atidaryti Myce: URI arba mokėjimo prašymą</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -729,16 +729,16 @@
         <translation>Blokų naršyklės langas</translation>
     </message>
     <message>
-        <source>Show the MYCE Core help message to get a list with possible MYCE command-line options</source>
-        <translation>Rodyti MYCE Core žinyną, kad gautumėte sąrašą su galimomis MYCE komandinės eilutės parinktimis</translation>
+        <source>Show the Myce help message to get a list with possible Myce command-line options</source>
+        <translation>Rodyti Myce žinyną, kad gautumėte sąrašą su galimomis Myce komandinės eilutės parinktimis</translation>
     </message>
     <message>
-        <source>MYCE Core client</source>
-        <translation>MYCE Core piniginė</translation>
+        <source>Myce client</source>
+        <translation>Myce piniginė</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to MYCE network</source>
-        <translation><numerusform>%n aktyvių prisijungimų MYCE tinkle ()</numerusform><numerusform>%n aktyvių prisijungimų MYCE tinkle ()</numerusform><numerusform>%n aktyvių prisijungimų MYCE tinkle ()</numerusform><numerusform>%n aktyvių prisijungimų MYCE tinkle ()</numerusform></translation>
+        <source>%n active connection(s) to Myce network</source>
+        <translation><numerusform>%n aktyvių prisijungimų Myce tinkle ()</numerusform><numerusform>%n aktyvių prisijungimų Myce tinkle ()</numerusform><numerusform>%n aktyvių prisijungimų Myce tinkle ()</numerusform><numerusform>%n aktyvių prisijungimų Myce tinkle ()</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1177,8 +1177,8 @@ MultiSend: %1</translation>
         <translation>Keisti siuntimo adresą</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid MYCE address.</source>
-        <translation>Įvestas adresas "%1" nėra galiojantis MYCE adresas.</translation>
+        <source>The entered address "%1" is not a valid Myce address.</source>
+        <translation>Įvestas adresas "%1" nėra galiojantis Myce adresas.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1223,16 +1223,16 @@ MultiSend: %1</translation>
         <translation>versija</translation>
     </message>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Core</translation>
+        <source>Myce</source>
+        <translation>Myce</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bitai)</translation>
     </message>
     <message>
-        <source>About MYCE Core</source>
-        <translation>Apie MYCE Core</translation>
+        <source>About Myce</source>
+        <translation>Apie Myce</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1278,16 +1278,16 @@ MultiSend: %1</translation>
         <translation>Sveiki</translation>
     </message>
     <message>
-        <source>Welcome to MYCE Core.</source>
-        <translation>Sveiki atvykę į MYCE Core</translation>
+        <source>Welcome to Myce.</source>
+        <translation>Sveiki atvykę į Myce</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where MYCE Core will store its data.</source>
-        <translation>Kadangi programa paleista pirmą kartą, galite pasirinkti kur MYCE Core saugos savo duomenis.</translation>
+        <source>As this is the first time the program is launched, you can choose where Myce will store its data.</source>
+        <translation>Kadangi programa paleista pirmą kartą, galite pasirinkti kur Myce saugos savo duomenis.</translation>
     </message>
     <message>
-        <source>MYCE Core will download and store a copy of the MYCE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>MYCE Core atsisiųs ir saugos MYCE blockchain'o kopiją. Šiame kataloge bus saugomas ne mažesnis kaip %1GB duomenų kiekis, kuris laikui bėgant augs. Piniginė taip pat bus saugoma šiame kataloge.</translation>
+        <source>Myce will download and store a copy of the Myce block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Myce atsisiųs ir saugos Myce blockchain'o kopiją. Šiame kataloge bus saugomas ne mažesnis kaip %1GB duomenų kiekis, kuris laikui bėgant augs. Piniginė taip pat bus saugoma šiame kataloge.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1298,8 +1298,8 @@ MultiSend: %1</translation>
         <translation>Naudoti pasirinktą duomenų katalogą:</translation>
     </message>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Core</translation>
+        <source>Myce</source>
+        <translation>Myce</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1440,12 +1440,12 @@ MultiSend: %1</translation>
         <translation>Įveskite adresą kuriam norite siųsti</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other MYCE addresses after it matures.
-To Add: enter percentage to give and MYCE address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Myce addresses after it matures.
+To Add: enter percentage to give and Myce address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend leidžia automatiškai išsiųsti iki 100% jūsų stake'inimo ar masternod'ų atlygio į kitus MYCE adresus.
-Norėdami pridėti: įveskite pateiktą procentą ir MYCE adresą, kurį norite pridėti prie MultiSend sąrašo.
+        <translation>MultiSend leidžia automatiškai išsiųsti iki 100% jūsų stake'inimo ar masternod'ų atlygio į kitus Myce adresus.
+Norėdami pridėti: įveskite pateiktą procentą ir Myce adresą, kurį norite pridėti prie MultiSend sąrašo.
 Norėdami ištrinti: įveskite adresą, kurį norite ištrinti, ir paspauskite ištrinti
 MultiSend nebus aktyvuotas, nebent paspausite "Įjungti"</translation>
     </message>
@@ -1782,16 +1782,16 @@ Patikrinkite adresą ir bandykite dar kartą.</translation>
         <translation>Obfuscation Konfigūracija</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening MYCE's configuration screen.</source>
-        <translation>Obfuscation buvo sėkmingai nustatytas į paprastą (%1 ir 2 raundai). Bet kada galite tai pakeisti, atidarę MYCE konfigūracijos ekraną.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Myce's configuration screen.</source>
+        <translation>Obfuscation buvo sėkmingai nustatytas į paprastą (%1 ir 2 raundai). Bet kada galite tai pakeisti, atidarę Myce konfigūracijos ekraną.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening MYCE's configuration screen.</source>
-        <translation>Obfuscation buvo sėkmingai nustatytas į aukštą (%1 ir 8 raundai). Bet kada galite tai pakeisti, atidarę MYCE konfigūracijos ekraną.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Myce's configuration screen.</source>
+        <translation>Obfuscation buvo sėkmingai nustatytas į aukštą (%1 ir 8 raundai). Bet kada galite tai pakeisti, atidarę Myce konfigūracijos ekraną.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening MYCE's configuration screen.</source>
-        <translation>Obfuscation buvo sėkmingai nustatytas į maksimumą (%1 ir 16 raundai). Bet kada galite tai pakeisti, atidarę MYCE konfigūracijos ekraną.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Myce's configuration screen.</source>
+        <translation>Obfuscation buvo sėkmingai nustatytas į maksimumą (%1 ir 16 raundai). Bet kada galite tai pakeisti, atidarę Myce konfigūracijos ekraną.</translation>
     </message>
 </context>
 <context>
@@ -1844,12 +1844,12 @@ Patikrinkite adresą ir bandykite dar kartą.</translation>
         <translation>Ekspertas</translation>
     </message>
     <message>
-        <source>Automatically start MYCE after logging in to the system.</source>
-        <translation>Automatiškai paleisti MYCE prisijungus prie sistemos.</translation>
+        <source>Automatically start Myce after logging in to the system.</source>
+        <translation>Automatiškai paleisti Myce prisijungus prie sistemos.</translation>
     </message>
     <message>
-        <source>&amp;Start MYCE on system login</source>
-        <translation>&amp;Paleisti MYCE sistemai įsijungiant</translation>
+        <source>&amp;Start Myce on system login</source>
+        <translation>&amp;Paleisti Myce sistemai įsijungiant</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1876,8 +1876,8 @@ Patikrinkite adresą ir bandykite dar kartą.</translation>
         <translation>&amp;Tinklas</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting MYCE.</source>
-        <translation>Čia galite nustatyti vartotojo sąsajos kalbą. Šis nustatymas įsigalios iš naujo paleidus "MYCE".</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Myce.</source>
+        <translation>Čia galite nustatyti vartotojo sąsajos kalbą. Šis nustatymas įsigalios iš naujo paleidus "Myce".</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1910,8 +1910,8 @@ https://www.transifex.com/myce-project/myce-project-translations</translation>
         <translation>Pageidautinas zYCE Automatinio Nukaldinimo Nominalas</translation>
     </message>
     <message>
-        <source>Connect to the MYCE network through a SOCKS5 proxy.</source>
-        <translation>Jungtis prie MYCE tinklo naudojant SOCKS5 tarpinį serverį.</translation>
+        <source>Connect to the Myce network through a SOCKS5 proxy.</source>
+        <translation>Jungtis prie Myce tinklo naudojant SOCKS5 tarpinį serverį.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -2053,8 +2053,8 @@ https://www.transifex.com/myce-project/myce-project-translations</translation>
         <translation>Dabartinis bendras užrakintas balansas tik žiūrėjimo adresuose</translation>
     </message>
     <message>
-        <source>Your current MYCE balance, unconfirmed and immature transactions included</source>
-        <translation>Jūsų dabartinis MYCE balansas, įskaitant nepatvirtintus ir nesubrendusius sandorius</translation>
+        <source>Your current Myce balance, unconfirmed and immature transactions included</source>
+        <translation>Jūsų dabartinis Myce balansas, įskaitant nepatvirtintus ir nesubrendusius sandorius</translation>
     </message>
     <message>
         <source>zYCE Balance</source>
@@ -2073,8 +2073,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo po to, kai buvo konvertuotas.</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MYCE network after a connection is established, but this process has not completed yet.</source>
-        <translation>Rodoma informacija gali būti pasenusi. Jūsų piniginė automatiškai sinchronizuojasi su MYCE tinklu po ryšio aktyvavimo, tačiau šis procesas dar nebaigtas.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Myce network after a connection is established, but this process has not completed yet.</source>
+        <translation>Rodoma informacija gali būti pasenusi. Jūsų piniginė automatiškai sinchronizuojasi su Myce tinklu po ryšio aktyvavimo, tačiau šis procesas dar nebaigtas.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -2210,8 +2210,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Zerocoin Veiksmai:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MYCE network after a connection is established, but this process has not completed yet.</source>
-        <translation>Rodoma informacija gali būti pasenusi. Jūsų piniginė automatiškai sinchronizuojasi su MYCE tinklu po ryšio aktyvavimo, tačiau šis procesas dar nebaigtas.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Myce network after a connection is established, but this process has not completed yet.</source>
+        <translation>Rodoma informacija gali būti pasenusi. Jūsų piniginė automatiškai sinchronizuojasi su Myce tinklu po ryšio aktyvavimo, tačiau šis procesas dar nebaigtas.</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2651,8 +2651,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>Suma</translation>
     </message>
     <message>
-        <source>Enter a MYCE address (e.g. %1)</source>
-        <translation>Įveskite MYCE adresą (pvz. %1)</translation>
+        <source>Enter a Myce address (e.g. %1)</source>
+        <translation>Įveskite Myce adresą (pvz. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2829,8 +2829,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>Iš:</translation>
     </message>
     <message>
-        <source>Welcome to the MYCE RPC console.</source>
-        <translation>Sveiki atvykę į MYCE RPC konsolę.</translation>
+        <source>Welcome to the Myce RPC console.</source>
+        <translation>Sveiki atvykę į Myce RPC konsolę.</translation>
     </message>
     <message>
         <source>never</source>
@@ -3158,8 +3158,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The MYCE address to sign the message with</source>
-        <translation>MYCE adresas, kuriuo pasirašyti žinute</translation>
+        <source>The Myce address to sign the message with</source>
+        <translation>Myce adresas, kuriuo pasirašyti žinute</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3182,16 +3182,16 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>Kopijuoti dabartinį parašą</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MYCE address</source>
-        <translation>Pažymėkite žinutę, kad įrodytumėte, jog jūs šio MYCE adreso savininkas</translation>
+        <source>Sign the message to prove you own this Myce address</source>
+        <translation>Pažymėkite žinutę, kad įrodytumėte, jog jūs šio Myce adreso savininkas</translation>
     </message>
     <message>
-        <source>The MYCE address the message was signed with</source>
-        <translation>MYCE adresas, kurio buvo pasirašyta žinutė</translation>
+        <source>The Myce address the message was signed with</source>
+        <translation>Myce adresas, kurio buvo pasirašyta žinutė</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified MYCE address</source>
-        <translation>Patikrinkite pranešimą, kad jis būtų pasirašytas su nurodytu MYCE adresu</translation>
+        <source>Verify the message to ensure it was signed with the specified Myce address</source>
+        <translation>Patikrinkite pranešimą, kad jis būtų pasirašytas su nurodytu Myce adresu</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -3229,8 +3229,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Core</translation>
+        <source>Myce</source>
+        <translation>Myce</translation>
     </message>
     </context>
 <context>
@@ -3494,8 +3494,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>Klaida kraunant wallet.dat: Piniginė yra sugadinta</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of MYCE Core</source>
-        <translation>Klaida kraunant wallet.dat: Piniginė reikalauja naujesnės MYCE Core versijos</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Myce</source>
+        <translation>Klaida kraunant wallet.dat: Piniginė reikalauja naujesnės Myce versijos</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -3726,8 +3726,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>Piniginė užrakinta.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart MYCE Core to complete</source>
-        <translation>Piniginę reikia perrašyti: paleiskite MYCE Core iš naujo</translation>
+        <source>Wallet needed to be rewritten: restart Myce to complete</source>
+        <translation>Piniginę reikia perrašyti: paleiskite Myce iš naujo</translation>
     </message>
     <message>
         <source>Wallet options:</source>

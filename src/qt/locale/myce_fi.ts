@@ -62,12 +62,12 @@
         <translation>Vastaanottavat osoitteet</translation>
     </message>
     <message>
-        <source>These are your MYCE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Nämä ovat sinun MYCE osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
+        <source>These are your Myce addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Nämä ovat sinun Myce osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
     </message>
     <message>
-        <source>These are your MYCE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Nämä ovat sinun MYCE osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
+        <source>These are your Myce addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Nämä ovat sinun Myce osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,8 +172,8 @@
         <translation>Vahvista lompakon salaus</translation>
     </message>
     <message>
-        <source>MYCE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your YCEs from being stolen by malware infecting your computer.</source>
-        <translation>MYCE sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella YCEien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
+        <source>Myce will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your YCEs from being stolen by malware infecting your computer.</source>
+        <translation>Myce sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella YCEien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -565,12 +565,12 @@
         <translation>&amp;Apua</translation>
     </message>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Ydin</translation>
+        <source>Myce</source>
+        <translation>Myce Ydin</translation>
     </message>
     <message>
-        <source>Send coins to a MYCE address</source>
-        <translation>Lähetä kolikkoja MYCE osoitteeseen</translation>
+        <source>Send coins to a Myce address</source>
+        <translation>Lähetä kolikkoja Myce osoitteeseen</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and myce: URIs)</source>
@@ -585,24 +585,24 @@
         <translation>Selaa masternodeja</translation>
     </message>
     <message>
-        <source>&amp;About MYCE Core</source>
-        <translation>MYCE Core &amp;ytimestä</translation>
+        <source>&amp;About Myce</source>
+        <translation>Myce &amp;ytimestä</translation>
     </message>
     <message>
-        <source>Show information about MYCE Core</source>
-        <translation>Näytä tietoja MYCE Ytimestä</translation>
+        <source>Show information about Myce</source>
+        <translation>Näytä tietoja Myce Ytimestä</translation>
     </message>
     <message>
-        <source>Modify configuration options for MYCE</source>
-        <translation>Muokkaa konfiguraatio vaihtoehtoja MYCE:lle</translation>
+        <source>Modify configuration options for Myce</source>
+        <translation>Muokkaa konfiguraatio vaihtoehtoja Myce:lle</translation>
     </message>
     <message>
-        <source>Sign messages with your MYCE addresses to prove you own them</source>
+        <source>Sign messages with your Myce addresses to prove you own them</source>
         <translation>Allekirjoita viestejä todistaaksesi, että omistat ne.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified MYCE addresses</source>
-        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä MYCE osoiteella.</translation>
+        <source>Verify messages to ensure they were signed with specified Myce addresses</source>
+        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä Myce osoiteella.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -633,8 +633,8 @@
         <translation>Avaa Masternode konfiguraatiotiedosto</translation>
     </message>
     <message>
-        <source>Open a MYCE: URI or payment request</source>
-        <translation>Avaa MYCE: URI tai pyydä maksua</translation>
+        <source>Open a Myce: URI or payment request</source>
+        <translation>Avaa Myce: URI tai pyydä maksua</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -645,12 +645,12 @@
         <translation>Lohkon tutkija näkymä</translation>
     </message>
     <message>
-        <source>Show the MYCE Core help message to get a list with possible MYCE command-line options</source>
-        <translation>Näytä MYCE Ydin apuviesti saadaksesi lista mahdollisista MYCE komentolinja komennoista.</translation>
+        <source>Show the Myce help message to get a list with possible Myce command-line options</source>
+        <translation>Näytä Myce Ydin apuviesti saadaksesi lista mahdollisista Myce komentolinja komennoista.</translation>
     </message>
     <message>
-        <source>MYCE Core client</source>
-        <translation>MYCE Ydin asiakasohjelma</translation>
+        <source>Myce client</source>
+        <translation>Myce Ydin asiakasohjelma</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -908,8 +908,8 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Ydin</translation>
+        <source>Myce</source>
+        <translation>Myce Ydin</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -927,12 +927,12 @@
         <translation>Tervetuloa</translation>
     </message>
     <message>
-        <source>Welcome to MYCE Core.</source>
-        <translation>Tervetuloa MYCE Ytimeen.</translation>
+        <source>Welcome to Myce.</source>
+        <translation>Tervetuloa Myce Ytimeen.</translation>
     </message>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Ydin</translation>
+        <source>Myce</source>
+        <translation>Myce Ydin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1129,11 +1129,11 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>Use 2 separate masternodes to mix funds up to 10000 YCE</source>
-        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 MYCE</translation>
+        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 Myce</translation>
     </message>
     <message>
         <source>Use 8 separate masternodes to mix funds up to 10000 YCE</source>
-        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 MYCE</translation>
+        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 Myce</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
@@ -1141,11 +1141,11 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>This option is the quickest and will cost about ~0.025 YCE to anonymize 10000 YCE</source>
-        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 YCE anonymoidaksesi 10000 MYCE</translation>
+        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 YCE anonymoidaksesi 10000 Myce</translation>
     </message>
     <message>
         <source>This option is moderately fast and will cost about 0.05 YCE to anonymize 10000 YCE</source>
-        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 MYCE anonymoidaksesi 10000 MYCE</translation>
+        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 Myce anonymoidaksesi 10000 Myce</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -1153,7 +1153,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>0.1 YCE per 10000 YCE you anonymize.</source>
-        <translation>0.1 per 10000 MYCE, jotka anonymisoit.</translation>
+        <translation>0.1 per 10000 Myce, jotka anonymisoit.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1202,12 +1202,12 @@ Please check the address and try again.</source>
         <translation>Ekspertti</translation>
     </message>
     <message>
-        <source>Automatically start MYCE after logging in to the system.</source>
-        <translation>Automaattisesti käynnistä MYCE kun kirjaudut sisään.</translation>
+        <source>Automatically start Myce after logging in to the system.</source>
+        <translation>Automaattisesti käynnistä Myce kun kirjaudut sisään.</translation>
     </message>
     <message>
-        <source>&amp;Start MYCE on system login</source>
-        <translation>&amp;Aloita MYCE järjestelmän kirjautumisessa</translation>
+        <source>&amp;Start Myce on system login</source>
+        <translation>&amp;Aloita Myce järjestelmän kirjautumisessa</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1226,12 +1226,12 @@ Please check the address and try again.</source>
         <translation>&amp;Verkko</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting MYCE.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Myce.</source>
         <translation>Käyttöliittymän kielen voi säätää täällä. Tämä asetus tulee voimaan uudelleenkäynnistettyäsi lompakon.</translation>
     </message>
     <message>
-        <source>Connect to the MYCE network through a SOCKS5 proxy.</source>
-        <translation>Yhdistä MYCE verkkoon SOCKS5 proxyn kautta</translation>
+        <source>Connect to the Myce network through a SOCKS5 proxy.</source>
+        <translation>Yhdistä Myce verkkoon SOCKS5 proxyn kautta</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1535,8 +1535,8 @@ Please check the address and try again.</source>
         <translation>Lohko ketju</translation>
     </message>
     <message>
-        <source>Open the MYCE debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Avaa MYCE debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
+        <source>Open the Myce debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Avaa Myce debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -1647,8 +1647,8 @@ Please check the address and try again.</source>
         <translation>Ulos:</translation>
     </message>
     <message>
-        <source>Welcome to the MYCE RPC console.</source>
-        <translation>Tervetuloa MYCE RPC konsoliin.</translation>
+        <source>Welcome to the Myce RPC console.</source>
+        <translation>Tervetuloa Myce RPC konsoliin.</translation>
     </message>
     <message>
         <source>never</source>
@@ -1686,12 +1686,12 @@ Please check the address and try again.</source>
         <translation>Vaihtoehtoinen nimike uudelle vastaanottavalle osoitteelle</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the MYCE network.</source>
-        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana MYCE verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Myce network.</source>
+        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana Myce verkolle.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the MYCE network.</source>
-        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana MYCE  verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Myce network.</source>
+        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana Myce  verkolle.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -1963,8 +1963,8 @@ Please check the address and try again.</source>
         <translation>Kopioi taksa</translation>
     </message>
     <message>
-        <source>Warning: Invalid MYCE address</source>
-        <translation>Varoitus: Virheellinen MYCE osoite</translation>
+        <source>Warning: Invalid Myce address</source>
+        <translation>Varoitus: Virheellinen Myce osoite</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -2014,8 +2014,8 @@ Please check the address and try again.</source>
         <translation>Tämä on normaali maksu.</translation>
     </message>
     <message>
-        <source>The MYCE address to send the payment to</source>
-        <translation>MYCE osoite johon maksu lähetetään</translation>
+        <source>The Myce address to send the payment to</source>
+        <translation>Myce osoite johon maksu lähetetään</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2057,8 +2057,8 @@ Please check the address and try again.</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>MYCE Core is shutting down...</source>
-        <translation>MYCE core sammuu...</translation>
+        <source>Myce is shutting down...</source>
+        <translation>Myce sammuu...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2076,8 +2076,8 @@ Please check the address and try again.</source>
         <translation>Voit allekirjoittaa viestejä osoitteillasi todistaaksesi, että omistat ne. Ole varovainen ettet allekirjoita mitään kummallista, sillä kalasteluyritykset saattavat yrittää huijata sinut luovuttamaan tietoja. Allekirjoita vain täysin yksityiskohtaisia sanomia, jotka hyväksyt.</translation>
     </message>
     <message>
-        <source>The MYCE address to sign the message with</source>
-        <translation>MYCE osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The Myce address to sign the message with</source>
+        <translation>Myce osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2108,16 +2108,16 @@ Please check the address and try again.</source>
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MYCE address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän MYCE osoitteen</translation>
+        <source>Sign the message to prove you own this Myce address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Myce osoitteen</translation>
     </message>
     <message>
-        <source>The MYCE address the message was signed with</source>
-        <translation>MYCE osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The Myce address the message was signed with</source>
+        <translation>Myce osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified MYCE address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla MYCE osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified Myce address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla Myce osoitteella.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2199,8 +2199,8 @@ Please check the address and try again.</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Ydin</translation>
+        <source>Myce</source>
+        <translation>Myce Ydin</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2215,8 +2215,8 @@ Please check the address and try again.</source>
         <translation>Dash Core kehittäjät</translation>
     </message>
     <message>
-        <source>The MYCE Core developers</source>
-        <translation>MYCE core kehittäjät</translation>
+        <source>The Myce developers</source>
+        <translation>Myce kehittäjät</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2568,8 +2568,8 @@ Please check the address and try again.</source>
         <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko korruptoitunut</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of MYCE Core</source>
-        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version MYCE Coresta</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Myce</source>
+        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version Mycesta</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>

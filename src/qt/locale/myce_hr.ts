@@ -62,12 +62,12 @@
         <translation>Adrese za primanje</translation>
     </message>
     <message>
-        <source>These are your MYCE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>To su vaše MYCE adrese za slanje plaćanja. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
+        <source>These are your Myce addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>To su vaše Myce adrese za slanje plaćanja. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
     </message>
     <message>
-        <source>These are your MYCE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>To su vaše MYCE adrese za primanje uplata. Preporuča se upotreba nove adrese primanja za svaku transakciju.</translation>
+        <source>These are your Myce addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>To su vaše Myce adrese za primanje uplata. Preporuča se upotreba nove adrese primanja za svaku transakciju.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,8 +172,8 @@
         <translation>Potvrdite šifriranje novčanika</translation>
     </message>
     <message>
-        <source>MYCE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your YCEs from being stolen by malware infecting your computer.</source>
-        <translation>MYCE se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše YCE od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
+        <source>Myce will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your YCEs from being stolen by malware infecting your computer.</source>
+        <translation>Myce se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše YCE od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -601,12 +601,12 @@
         <translation>Alatna traka kartica</translation>
     </message>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Core</translation>
+        <source>Myce</source>
+        <translation>Myce</translation>
     </message>
     <message>
-        <source>Send coins to a MYCE address</source>
-        <translation>Pošaljite kovanice na MYCE adresu</translation>
+        <source>Send coins to a Myce address</source>
+        <translation>Pošaljite kovanice na Myce adresu</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and myce: URIs)</source>
@@ -625,24 +625,24 @@
         <translation>Pregledajte masternode</translation>
     </message>
     <message>
-        <source>&amp;About MYCE Core</source>
-        <translation>&amp; O MYCE Coreu</translation>
+        <source>&amp;About Myce</source>
+        <translation>&amp; O Myceu</translation>
     </message>
     <message>
-        <source>Show information about MYCE Core</source>
-        <translation>Prikaz informacija o MYCE Coreu</translation>
+        <source>Show information about Myce</source>
+        <translation>Prikaz informacija o Myceu</translation>
     </message>
     <message>
-        <source>Modify configuration options for MYCE</source>
-        <translation>Izmijenite opcije konfiguracije za MYCE</translation>
+        <source>Modify configuration options for Myce</source>
+        <translation>Izmijenite opcije konfiguracije za Myce</translation>
     </message>
     <message>
-        <source>Sign messages with your MYCE addresses to prove you own them</source>
-        <translation>Potpišite poruke s vašim MYCE adresama kako biste dokazali da ih posjedujete</translation>
+        <source>Sign messages with your Myce addresses to prove you own them</source>
+        <translation>Potpišite poruke s vašim Myce adresama kako biste dokazali da ih posjedujete</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified MYCE addresses</source>
-        <translation>Potvrdite poruke kako biste bili sigurni da su potpisani s određenim MYCE adresama</translation>
+        <source>Verify messages to ensure they were signed with specified Myce addresses</source>
+        <translation>Potvrdite poruke kako biste bili sigurni da su potpisani s određenim Myce adresama</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -653,8 +653,8 @@
         <translation>Šifriranje i dešifriranje privatnih ključeva pomoću zaporke</translation>
     </message>
     <message>
-        <source>MYCE Core client</source>
-        <translation>MYCE Core klijent</translation>
+        <source>Myce client</source>
+        <translation>Myce klijent</translation>
     </message>
     <message>
         <source>Error</source>
@@ -751,15 +751,15 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Core</translation>
+        <source>Myce</source>
+        <translation>Myce</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Core</translation>
+        <source>Myce</source>
+        <translation>Myce</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1111,15 +1111,15 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>MYCE Core is shutting down...</source>
-        <translation>MYCE Core se gasi...</translation>
+        <source>Myce is shutting down...</source>
+        <translation>Myce se gasi...</translation>
     </message>
     </context>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The MYCE address to sign the message with</source>
-        <translation>MYCE adresa za potpisivanje poruke s</translation>
+        <source>The Myce address to sign the message with</source>
+        <translation>Myce adresa za potpisivanje poruke s</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1142,16 +1142,16 @@
         <translation>Kopirajte trenutačni potpis u međuspremnik sustava</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MYCE address</source>
-        <translation>Potpišite poruku da biste dokazali da ste vlasnik ove MYCE adrese</translation>
+        <source>Sign the message to prove you own this Myce address</source>
+        <translation>Potpišite poruku da biste dokazali da ste vlasnik ove Myce adrese</translation>
     </message>
     <message>
-        <source>The MYCE address the message was signed with</source>
-        <translation>MYCE adresa s kojom je potpisana poruka</translation>
+        <source>The Myce address the message was signed with</source>
+        <translation>Myce adresa s kojom je potpisana poruka</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified MYCE address</source>
-        <translation>Potvrdite poruku kako biste bili sigurni da je potpisan s navedenom MYCE adresom</translation>
+        <source>Verify the message to ensure it was signed with the specified Myce address</source>
+        <translation>Potvrdite poruku kako biste bili sigurni da je potpisan s navedenom Myce adresom</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1197,8 +1197,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>MYCE Core</source>
-        <translation>MYCE Core</translation>
+        <source>Myce</source>
+        <translation>Myce</translation>
     </message>
     <message>
         <source>Version %1</source>
