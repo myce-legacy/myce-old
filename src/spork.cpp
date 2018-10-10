@@ -6,6 +6,7 @@
 
 #include "spork.h"
 #include "base58.h"
+#include "consensus/validation.h"
 #include "key.h"
 #include "main.h"
 #include "masternode-budget.h"
@@ -62,7 +63,7 @@ void ProcessSpork(CNode* pfrom, std::string& strCommand, CDataStream& vRecv)
 {
     if (fLiteMode) return; //disable all obfuscation/masternode related functionality
 
-    if (strCommand == "spork") {
+    if (strCommand == NetMsgType::SPORK) {
         //LogPrintf("ProcessSpork::spork\n");
         CDataStream vMsg(vRecv);
         CSporkMessage spork;
@@ -107,11 +108,11 @@ void ProcessSpork(CNode* pfrom, std::string& strCommand, CDataStream& vRecv)
         // Myce: add to spork database.
         pSporkDB->WriteSpork(spork.nSporkID, spork);
     }
-    if (strCommand == "getsporks") {
+    if (strCommand == NetMsgType::GETSPORKS) {
         std::map<int, CSporkMessage>::iterator it = mapSporksActive.begin();
 
         while (it != mapSporksActive.end()) {
-            pfrom->PushMessage("spork", it->second);
+            pfrom->PushMessage(NetMsgType::SPORK, it->second);
             it++;
         }
     }

@@ -1,15 +1,13 @@
 # Copyright (c) 2013-2016 The Bitcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
-TESTS += test/test_myce test/bitcoin-util-test.py
+TESTS += test/test_myce
 bin_PROGRAMS += test/test_myce
 TEST_SRCDIR = test
 TEST_BINARY=test/test_myce$(EXEEXT)
 
 
 EXTRA_DIST += \
-	test/bctest.py \
-	test/bitcoin-util-test.py \
 	test/data/bitcoin-util-test.json \
 	test/data/blanktx.hex \
 	test/data/tt-delin1-out.hex \
@@ -70,6 +68,7 @@ BITCOIN_TESTS =\
   test/scheduler_tests.cpp \
   test/script_P2SH_tests.cpp \
   test/script_tests.cpp \
+  test/script_standard_tests.cpp \
   test/scriptnum_tests.cpp \
   test/serialize_tests.cpp \
   test/sighash_tests.cpp \
@@ -86,8 +85,7 @@ BITCOIN_TESTS =\
 if ENABLE_WALLET
 BITCOIN_TESTS += \
   test/accounting_tests.cpp \
-  test/wallet_tests.cpp \
-  test/rpc_wallet_tests.cpp
+  test/wallet_tests.cpp
 endif
 
 test_test_myce_SOURCES = $(BITCOIN_TESTS) $(JSON_TEST_FILES) $(RAW_TEST_FILES)

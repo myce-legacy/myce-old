@@ -104,6 +104,9 @@ public:
     /** New block has been accepted */
     boost::signals2::signal<void(const uint256& hash)> NotifyBlockTip;
 
+    /** New transaction has been added to the mempool */
+    boost::signals2::signal<void(const uint256& hash)> NotifyTransaction;
+    
     /** New block has been accepted and is over a certain size */
     boost::signals2::signal<void(int size, const uint256& hash)> NotifyBlockSize;
 

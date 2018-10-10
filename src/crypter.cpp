@@ -320,6 +320,7 @@ bool CCryptoKeyStore::AddCryptedKey(const CPubKey& vchPubKey, const std::vector<
             return false;
 
         mapCryptedKeys[vchPubKey.GetID()] = make_pair(vchPubKey, vchCryptedSecret);
+        ImplicitlyLearnRelatedKeyScripts(vchPubKey);
     }
     return true;
 }
@@ -347,20 +348,20 @@ bool CCryptoKeyStore::GetKey(const CKeyID& address, CKey& keyOut) const
     return false;
 }
 
-bool CCryptoKeyStore::GetPubKey(const CKeyID& address, CPubKey& vchPubKeyOut) const
+bool CCryptoKeyStore::GetPubKey(const CKeyID &address, CPubKey& vchPubKeyOut) const
 {
-    {
-        LOCK(cs_KeyStore);
-        if (!IsCrypted())
-            return CKeyStore::GetPubKey(address, vchPubKeyOut);
+    LOCK(cs_KeyStore);
+    if (!IsCrypted())
+        return CBasicKeyStore::GetPubKey(address, vchPubKeyOut);
 
-        CryptedKeyMap::const_iterator mi = mapCryptedKeys.find(address);
-        if (mi != mapCryptedKeys.end()) {
-            vchPubKeyOut = (*mi).second.first;
-            return true;
-        }
+    CryptedKeyMap::const_iterator mi = mapCryptedKeys.find(address);
+    if (mi != mapCryptedKeys.end())
+    {
+        vchPubKeyOut = (*mi).second.first;
+        return true;
     }
-    return false;
+    // Check for watch-only pubkeys
+    return CBasicKeyStore::GetPubKey(address, vchPubKeyOut);
 }
 
 bool CCryptoKeyStore::EncryptKeys(CKeyingMaterial& vMasterKeyIn)
@@ -397,7 +398,6 @@ bool CCryptoKeyStore::AddDeterministicSeed(const uint256& seed)
 
             CKeyingMaterial kmSeed(seed.begin(), seed.end());
             vector<unsigned char> vchSeedSecret;
-
 
             //attempt encrypt
             if (EncryptSecret(vMasterKey, kmSeed, hashSeed, vchSeedSecret)) {

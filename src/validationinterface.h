@@ -8,6 +8,8 @@
 #ifndef BITCOIN_VALIDATIONINTERFACE_H
 #define BITCOIN_VALIDATIONINTERFACE_H
 
+#include "consensus/validation.h"
+
 #include <boost/signals2/signal.hpp>
 #include <boost/shared_ptr.hpp>
 
@@ -17,7 +19,6 @@ class CBlockIndex;
 class CReserveScript;
 class CTransaction;
 class CValidationInterface;
-class CValidationState;
 class uint256;
 
 // These functions dispatch to one or all registered wallets

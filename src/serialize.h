@@ -320,7 +320,6 @@ inline void Unserialize(Stream& s, libzerocoin::SpendType & a, int, int = 0)
     a = static_cast<libzerocoin::SpendType>(f);
 }
 
-
 /**
  * Compact Size
  * size <  253        -- 1 byte
@@ -959,6 +958,14 @@ public:
         ::Serialize(*this, obj, nType, nVersion);
         return (*this);
     }
+
+    //
+    // Stream subset
+    //
+    void SetType(int n) { nType = n; }
+    int GetType() { return nType; }
+    void SetVersion(int n) { nVersion = n; }
+    int GetVersion() { return nVersion; }
 
     size_t size() const
     {

@@ -100,6 +100,7 @@ BITCOIN_CORE_H = \
   allocators.h \
   amount.h \
   base58.h \
+  bech32.h \
   bip38.h \
   bloom.h \
   blocksignature.h \
@@ -114,6 +115,8 @@ BITCOIN_CORE_H = \
   coins.h \
   compat.h \
   compat/sanity.h \
+  consensus/merkle.h \
+  consensus/validation.h \
   compressor.h \
   primitives/block.h \
   primitives/deterministicmint.h \
@@ -169,6 +172,8 @@ BITCOIN_CORE_H = \
   script/standard.h \
   script/script_error.h \
   serialize.h \
+  support/allocators/zeroafterfree.h \
+  support/cleanse.h \
   spork.h \
   sporkdb.h \
   stakeinput.h \
@@ -363,10 +368,12 @@ libbitcoin_common_a_SOURCES = \
   allocators.cpp \
   amount.cpp \
   base58.cpp \
+  bech32.cpp \
   bip38.cpp \
   chainparams.cpp \
   coins.cpp \
   compressor.cpp \
+  consensus/merkle.cpp \
   primitives/block.cpp \
   primitives/deterministicmint.cpp \
   primitives/transaction.cpp \
@@ -386,6 +393,7 @@ libbitcoin_common_a_SOURCES = \
   script/sign.cpp \
   script/standard.cpp \
   script/script_error.cpp \
+  support/cleanse.cpp \
   spork.cpp \
   sporkdb.cpp \
   $(BITCOIN_CORE_H)
@@ -528,6 +536,7 @@ CLEANFILES += *.gcda *.gcno
 CLEANFILES += compat/*.gcda compat/*.gcno
 CLEANFILES += crypto/*.gcda crypto/*.gcno
 CLEANFILES += primitives/*.gcda primitives/*.gcno
+CLEANFILES += consensus/*.gcda consensus/*.gcno
 CLEANFILES += script/*.gcda script/*.gcno
 CLEANFILES += univalue/*.gcda univalue/*.gcno
 CLEANFILES += zmq/*.gcda zmq/*.gcno

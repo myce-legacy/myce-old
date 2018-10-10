@@ -89,6 +89,7 @@ static const CRPCConvertParam vRPCConvertParams[] =
         {"lockunspent", 0},
         {"lockunspent", 1},
         {"importprivkey", 2},
+        {"importpubkey", 2},
         {"importaddress", 2},
         {"verifychain", 0},
         {"verifychain", 1},
@@ -142,7 +143,8 @@ static const CRPCConvertParam vRPCConvertParams[] =
         {"searchdzyce", 1},
         {"searchdzyce", 2},
         {"getaccumulatorvalues", 0},
-        {"getfeeinfo", 0}
+        {"getfeeinfo", 0},
+        { "addwitnessaddress", 1}
     };
 
 class CRPCConvertTable

@@ -56,10 +56,12 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
     (0, uint256("0000c74cc66c72cb1a327c5c1d4893ae5276aa50be49fb23cec21df1a2f20d87"))
     (245145, uint256("d74019fd6d432b34e05febb5a8c32ca9e0ab500f21c378f1debcd8c939a59d95"))
-    (341500, uint256("769f485854697c20088703e205017b96853f1a0bfbd288110bed45d39a3a60b4"));
+    (341500, uint256("769f485854697c20088703e205017b96853f1a0bfbd288110bed45d39a3a60b4"))
+    (382600, uint256("552836176069ce72494583d566ee0427abb47b32c70138cb0a16a6fa8608caf1"))
+    (384200, uint256("fab86b440d95a252b477128bd325153106a7220e3c7b5cbc74542f68945aa4f7"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1525106065, // * UNIX timestamp of last checkpoint block
+    1539120009, // * UNIX timestamp of last checkpoint block
     0,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
@@ -119,9 +121,9 @@ public:
         nDefaultPort = 23511;
         bnProofOfWorkLimit = ~uint256(0) >> 16; // Myce starting difficulty is 1 / 2^12
         nMaxReorganizationDepth = 100;
-        nEnforceBlockUpgradeMajority = 750;
-        nRejectBlockOutdatedMajority = 950;
-        nToCheckBlockUpgradeMajority = 1000;
+        nEnforceBlockUpgradeMajority = 1080;
+        nRejectBlockOutdatedMajority = 1368;
+        nToCheckBlockUpgradeMajority = 1440;
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // Myce: 1 day
         nTargetSpacing = 1 * 60;  // Myce: 1 minute
@@ -134,8 +136,8 @@ public:
         nPOSStartBlock = 10000;
         nMandatoryUpgradeBlock = 378500;
         nUpgradeBlockVersion = 8;                                   // Block headers must be this version after upgrade block
-        nZerocoinStartHeight = 9999999;                             // OFF
-        nZerocoinStartTime = 4000000000;                            // OFF
+        nZerocoinStartHeight = 400000;                              // Activates zerocoin, csv, cltv, and segwit
+        //nZerocoinStartTime = 4000000000;                          // OFF
         nModifierUpdateBlock = nZerocoinStartHeight - 1;
         nBlockEnforceSerialRange = nZerocoinStartHeight + 2;        // Enforce serial range starting this block
         nBlockRecalculateAccumulators = nZerocoinStartHeight + 3;   // Trigger a recalculation of accumulators
@@ -143,7 +145,7 @@ public:
         nBlockLastGoodCheckpoint = nZerocoinStartHeight + 3;        // Last valid accumulator checkpoint
         nBlockEnforceInvalidUTXO = nZerocoinStartHeight - 1;        // Start enforcing the invalid UTXO's
         nInvalidAmountFiltered = 0*COIN;                            // Amount of invalid coins filtered through exchanges, that should be considered valid
-        nBlockZerocoinV2 = nZerocoinStartHeight + 10;               // The block that zerocoin v2 becomes active
+        nBlockZerocoinV2 = nZerocoinStartHeight + 30;               // The block that zerocoin v2 becomes active
         nEnforceNewSporkKey = 1525158000;                           // Sporks signed after (GMT): Tuesday, May 1, 2018 7:00:00 AM GMT must use the new spork key
         nRejectOldSporkKey = 1527811200;                            // Fully reject old spork key after (GMT): Friday, June 1, 2018 12:00:00 AM
 
@@ -187,6 +189,8 @@ public:
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x10)(0x00)(0x00).convert_to_container<std::vector<unsigned char> >();
+
+        bech32_hrp = "yc";
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
@@ -258,7 +262,7 @@ public:
         nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
         nMaxMoneyOut = 43199500 * COIN;
         nZerocoinStartHeight = 201576;
-        nZerocoinStartTime = 1501776000;
+        //nZerocoinStartTime = 1501776000;
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
         nBlockRecalculateAccumulators = 9908000; //Trigger a recalculation of accumulators
         nBlockFirstFraudulent = 9891737; //First block that bad serials emerged
@@ -289,6 +293,8 @@ public:
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3a)(0x80)(0x58)(0x37).convert_to_container<std::vector<unsigned char> >();
         // Testnet myce BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
+
+        bech32_hrp = "tp";
 
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
 
@@ -343,6 +349,8 @@ public:
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 51476;
         assert(hashGenesisBlock == uint256("0xc2854de687b4aa9d0113c2d7eeac592c540d1fc5683936266704f639d6fa7125"));
+
+        bech32_hrp = "ycrt";
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
