@@ -317,6 +317,9 @@ inline void SerializeTransaction(TxType& tx, Stream& s, Operation ser_action, in
     unsigned char flags = 0;
     const bool fAllowWitness = !(s.GetVersion() & SERIALIZE_TRANSACTION_NO_WITNESS);
 
+    if (tx.nVersion < 3)
+        READWRITE(*const_cast<unsigned int*>(&tx.nTime));
+
     if (ser_action.ForRead()) {
         const_cast<std::vector<CTxIn>*>(&tx.vin)->clear();
         const_cast<std::vector<CTxOut>*>(&tx.vout)->clear();
@@ -404,16 +407,7 @@ public:
 
     template <typename Stream, typename Operation>
     inline void SerializationOp(Stream& s, Operation ser_action, int nType, int nVersion) {
-        if (this->nVersion < 3)
-        {
-            READWRITE(*const_cast<int32_t*>(&this->nVersion));
-            READWRITE(*const_cast<unsigned int*>(&nTime));
-            READWRITE(*const_cast<std::vector<CTxIn>*>(&vin));
-            READWRITE(*const_cast<std::vector<CTxOut>*>(&vout));
-            READWRITE(*const_cast<uint32_t*>(&nLockTime));
-        }
-        else
-            SerializeTransaction(*this, s, ser_action, nType, nVersion);
+        SerializeTransaction(*this, s, ser_action, nType, nVersion);
         if (ser_action.ForRead()) {
             UpdateHash();
         }
@@ -508,16 +502,7 @@ struct CMutableTransaction
 
     template <typename Stream, typename Operation>
     inline void SerializationOp(Stream& s, Operation ser_action, int nType, int nVersion) {
-        if (this->nVersion < 3)
-        {
-            READWRITE(this->nVersion);
-            READWRITE(nTime);
-            READWRITE(vin);
-            READWRITE(vout);
-            READWRITE(nLockTime);
-        }
-        else
-            SerializeTransaction(*this, s, ser_action, nType, nVersion);
+        SerializeTransaction(*this, s, ser_action, nType, nVersion);
     }
 
     /** Compute the hash of this CMutableTransaction. This is computed on the
