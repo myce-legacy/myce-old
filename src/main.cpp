@@ -2724,7 +2724,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     // Now that the whole chain is irreversibly beyond that time it is applied to all blocks except the
     // two in the chain that violate it. This prevents exploiting the issue against nodes in their
     // initial block download.
-    bool fEnforceBIP30 = true; //(!pindex->phashBlock)) // Enforce on CreateNewBlock invocations which don't have a hash.
+    bool fEnforceBIP30 = true; //(!pindex->phashBlock) // Enforce on CreateNewBlock invocations which don't have a hash.
     if (fEnforceBIP30) {
         BOOST_FOREACH (const CTransaction& tx, block.vtx) {
             const CCoins* coins = view.AccessCoins(tx.GetHash());
@@ -4109,7 +4109,7 @@ bool ContextualCheckBlock(const CBlock& block, CValidationState& state, CBlockIn
         
         vector<CBigNum> vBlockSerials;
         for (const CTransaction& tx : block.vtx) {
-            if (!CheckTransaction(tx, true, true, state, nHeight >= Params().Zerocoin_StartHeight()))
+            if (!CheckTransaction(tx, true, true, state, true))
                 return error("CheckBlock() : CheckTransaction failed");
 
             // double check that there are no double spent zYCE spends in this block
@@ -4129,6 +4129,10 @@ bool ContextualCheckBlock(const CBlock& block, CValidationState& state, CBlockIn
         if (block.nVersion >= Params().Zerocoin_HeaderVersion())
             return state.DoS(50, error("CheckBlockHeader() : block version must be below %d before ZerocoinStartHeight", Params().Zerocoin_HeaderVersion()),
             REJECT_INVALID, "block-version");
+
+        for (const CTransaction& tx : block.vtx) {
+            if (!CheckTransaction(tx, false, true, state, false))
+                return error("CheckBlock() : CheckTransaction failed");
     }
 
     // Check that all transactions are finalized
