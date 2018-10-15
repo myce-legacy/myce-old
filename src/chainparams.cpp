@@ -136,7 +136,7 @@ public:
         nPOSStartBlock = 10000;
         nMandatoryUpgradeBlock = 378500;
         nUpgradeBlockVersion = 8;                                   // Block headers must be this version after upgrade block
-        nZerocoinStartHeight = 400000;                              // Activates zerocoin, csv, cltv, and segwit
+        nZerocoinStartHeight = 379000;                              // Activates zerocoin, csv, cltv, and segwit
         //nZerocoinStartTime = 4000000000;                          // OFF
         nModifierUpdateBlock = nZerocoinStartHeight - 1;
         nBlockEnforceSerialRange = nZerocoinStartHeight + 2;        // Enforce serial range starting this block
@@ -145,7 +145,7 @@ public:
         nBlockLastGoodCheckpoint = nZerocoinStartHeight + 3;        // Last valid accumulator checkpoint
         nBlockEnforceInvalidUTXO = nZerocoinStartHeight - 1;        // Start enforcing the invalid UTXO's
         nInvalidAmountFiltered = 0*COIN;                            // Amount of invalid coins filtered through exchanges, that should be considered valid
-        nBlockZerocoinV2 = nZerocoinStartHeight + 20;               // The block that zerocoin v2 becomes active
+        nBlockZerocoinV2 = nZerocoinStartHeight + 10;               // The block that zerocoin v2 becomes active
         nEnforceNewSporkKey = 1525158000;                           // Sporks signed after (GMT): Tuesday, May 1, 2018 7:00:00 AM GMT must use the new spork key
         nRejectOldSporkKey = 1527811200;                            // Fully reject old spork key after (GMT): Friday, June 1, 2018 12:00:00 AM
 
