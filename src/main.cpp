@@ -1236,6 +1236,9 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
         return state.DoS(100, error("AcceptToMemoryPool: : CheckTransaction failed"), REJECT_INVALID, "bad-tx");
     }
 
+    if ((chainActive.Height() < Params().WALLET_UPGRADE_BLOCK() && tx.nVersion >= 3) || (chainActive.Height() >= Params().WALLET_UPGRADE_BLOCK() && (tx.nVersion < 3 || tx.nVersion > 5)))
+        return state.DoS(100, error("AcceptToMemoryPool: : Unknown transaction version"), REJECT_INVALID, "bad-tx-version");
+
     // Coinbase is only valid in a block, not as a loose transaction
     if (tx.IsCoinBase())
         return state.DoS(100, error("AcceptToMemoryPool: : coinbase as individual tx"),
