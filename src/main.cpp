@@ -5842,7 +5842,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
                     // time the block arrives, the header chain leading up to it is already validated. Not
                     // doing this will result in the received block being rejected as an orphan in case it is
                     // not a direct successor.
-                    if (chainActive.Height() < Params().Zerocoin_StartHeight() || State(pfrom->GetId())->fHaveWitness) {
+                    if (chainActive.Height() + 1 >= Params().Zerocoin_StartHeight() || State(pfrom->GetId())->fHaveWitness) {
                         inv.type = MSG_WITNESS_BLOCK;
                     }
                     vToFetch.push_back(inv);
