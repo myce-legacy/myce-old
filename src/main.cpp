@@ -4136,6 +4136,7 @@ bool ContextualCheckBlock(const CBlock& block, CValidationState& state, CBlockIn
         for (const CTransaction& tx : block.vtx) {
             if (!CheckTransaction(tx, false, true, state, false))
                 return error("CheckBlock() : CheckTransaction failed");
+        }
     }
 
     // Check that all transactions are finalized
@@ -5598,13 +5599,13 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         {
             addrman.SetServices(pfrom->addr, pfrom->nServices);
         }
-        // if (pfrom->nServicesExpected & ~pfrom->nServices)
-        // {
-            // LogPrint("net", "peer=%d does not offer the expected services (%08x offered, %08x expected); disconnecting\n", pfrom->id, pfrom->nServices, pfrom->nServicesExpected);
-            // pfrom->PushMessage(NetMsgType::REJECT, strCommand, REJECT_NONSTANDARD,
-                               // strprintf("Expected to offer services %08x", pfrom->nServicesExpected));
-            // pfrom->fDisconnect = true;
-        // }
+        if (pfrom->nServicesExpected & ~pfrom->nServices)
+        {
+            LogPrint("net", "peer=%d does not offer the expected services (%08x offered, %08x expected); disconnecting\n", pfrom->id, pfrom->nServices, pfrom->nServicesExpected);
+            pfrom->PushMessage(NetMsgType::REJECT, strCommand, REJECT_NONSTANDARD,
+                               strprintf("Expected to offer services %08x", pfrom->nServicesExpected));
+            pfrom->fDisconnect = true;
+        }
 
         if (pfrom->DisconnectOldProtocol(ActiveProtocol(), strCommand))
             return false;
