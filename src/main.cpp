@@ -1236,8 +1236,8 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
         return state.DoS(100, error("AcceptToMemoryPool: : CheckTransaction failed"), REJECT_INVALID, "bad-tx");
     }
 
-    if ((chainActive.Height() < Params().WALLET_UPGRADE_BLOCK() && tx.nVersion >= 3) || (chainActive.Height() >= Params().WALLET_UPGRADE_BLOCK() && (tx.nVersion < 3 || tx.nVersion > 5)))
-        return state.DoS(100, error("AcceptToMemoryPool: : Unknown transaction version %d", tx.nVersion), REJECT_INVALID, "bad-tx-version");
+    // if ((chainActive.Height() < Params().WALLET_UPGRADE_BLOCK() && tx.nVersion >= 3) || (chainActive.Height() >= Params().WALLET_UPGRADE_BLOCK() && (tx.nVersion < 3 || tx.nVersion > 5)))
+        // return state.DoS(100, error("AcceptToMemoryPool: : Unknown transaction version %d", tx.nVersion), REJECT_INVALID, "bad-tx-version");
 
     // Coinbase is only valid in a block, not as a loose transaction
     if (tx.IsCoinBase())
@@ -5828,9 +5828,9 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
             if (!fAlreadyHave && !fImporting && !fReindex && inv.type != MSG_BLOCK)
                 pfrom->AskFor(inv);
 
-            // if (inv.type == MSG_TX && State(pfrom->GetId())->fHaveWitness) {
-                // inv.type = MSG_WITNESS_TX;
-            // }
+            if (inv.type == MSG_TX && State(pfrom->GetId())->fHaveWitness) {
+                inv.type = MSG_WITNESS_TX;
+            }
 
             if (inv.type == MSG_BLOCK) {
                 UpdateBlockAvailability(pfrom->GetId(), inv.hash);
